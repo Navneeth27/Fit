@@ -10,29 +10,31 @@
 	<string>WeLike</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>04ad2d75-7bef-401f-b717-795e32fee0c2</key>
-		<string>https://planet1107.svn.beanstalkapp.com/wli</string>
+		<key>A84A5A150BAEC3E3F0836EBF9759D2C74C5BE296</key>
+		<string>https://github.com/bharv410/wli.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>trunk/WeLikeInk/WeLike.xcodeproj</string>
+	<string>WeLike.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>04ad2d75-7bef-401f-b717-795e32fee0c2</key>
-		<string>../../../..</string>
+		<key>A84A5A150BAEC3E3F0836EBF9759D2C74C5BE296</key>
+		<string>../..</string>
 	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/bharv410/wli.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>04ad2d75-7bef-401f-b717-795e32fee0c2</string>
+	<string>A84A5A150BAEC3E3F0836EBF9759D2C74C5BE296</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.subversion</string>
+			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>04ad2d75-7bef-401f-b717-795e32fee0c2</string>
+			<string>A84A5A150BAEC3E3F0836EBF9759D2C74C5BE296</string>
 			<key>IDESourceControlWCCName</key>
-			<string>wli</string>
+			<string>project-iPhone</string>
 		</dict>
 	</array>
 </dict>

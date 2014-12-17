@@ -29,7 +29,6 @@
 		2C6D27B41896BACA00C459CB /* MNMPullToRefresh.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C6D26B21896BACA00C459CB /* MNMPullToRefresh.strings */; };
 		2C6D27B51896BACA00C459CB /* MNMPullToRefreshIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C6D26B51896BACA00C459CB /* MNMPullToRefreshIcon.png */; };
 		2C6D27B61896BACA00C459CB /* MNMPullToRefreshIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C6D26B61896BACA00C459CB /* MNMPullToRefreshIcon@2x.png */; };
-		2C6D27B71896BACA00C459CB /* MNMPullToRefreshManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6D26B81896BACA00C459CB /* MNMPullToRefreshManager.m */; };
 		2C6D27B81896BACA00C459CB /* MNMPullToRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6D26BA1896BACA00C459CB /* MNMPullToRefreshView.m */; };
 		2C6D27B91896BACA00C459CB /* PNTToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6D26C21896BACA00C459CB /* PNTToolbar.m */; };
 		2C6D27BA1896BACA00C459CB /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6D26C61896BACA00C459CB /* SBJsonParser.m */; };
@@ -170,8 +169,27 @@
 		2CCE1A9917ECD32B00680126 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CCE1A9817ECD32B00680126 /* Foundation.framework */; };
 		2CCE1A9B17ECD32B00680126 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CCE1A9A17ECD32B00680126 /* CoreGraphics.framework */; };
 		2CCE1A9D17ECD32B00680126 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CCE1A9C17ECD32B00680126 /* UIKit.framework */; };
+		AD7160191A38B9A90043E740 /* AWSiOSSDKv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD7160181A38B9A90043E740 /* AWSiOSSDKv2.framework */; };
+		AD71601B1A38B9D60043E740 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AD71601A1A38B9D60043E740 /* libsqlite3.dylib */; };
+		AD71601D1A38B9E40043E740 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AD71601C1A38B9E40043E740 /* libz.dylib */; };
+		AD71603E1A38BAC60043E740 /* autoscaling-2011-01-01.json in Resources */ = {isa = PBXBuildFile; fileRef = AD71602F1A38BAC60043E740 /* autoscaling-2011-01-01.json */; };
+		AD71603F1A38BAC60043E740 /* cognito-identity-2014-06-30.json in Resources */ = {isa = PBXBuildFile; fileRef = AD7160301A38BAC60043E740 /* cognito-identity-2014-06-30.json */; };
+		AD7160401A38BAC60043E740 /* css-2014-06-30.json in Resources */ = {isa = PBXBuildFile; fileRef = AD7160311A38BAC60043E740 /* css-2014-06-30.json */; };
+		AD7160411A38BAC60043E740 /* dynamodb-2012-08-10.json in Resources */ = {isa = PBXBuildFile; fileRef = AD7160321A38BAC60043E740 /* dynamodb-2012-08-10.json */; };
+		AD7160421A38BAC60043E740 /* ec2-2014-09-01.json in Resources */ = {isa = PBXBuildFile; fileRef = AD7160331A38BAC60043E740 /* ec2-2014-09-01.json */; };
+		AD7160431A38BAC60043E740 /* elasticloadbalancing-2012-06-01.json in Resources */ = {isa = PBXBuildFile; fileRef = AD7160341A38BAC60043E740 /* elasticloadbalancing-2012-06-01.json */; };
+		AD7160441A38BAC60043E740 /* email-2010-12-01.json in Resources */ = {isa = PBXBuildFile; fileRef = AD7160351A38BAC60043E740 /* email-2010-12-01.json */; };
+		AD7160451A38BAC60043E740 /* kinesis-2013-12-02.json in Resources */ = {isa = PBXBuildFile; fileRef = AD7160361A38BAC60043E740 /* kinesis-2013-12-02.json */; };
+		AD7160461A38BAC60043E740 /* mobileanalytics-2014-06-30.json in Resources */ = {isa = PBXBuildFile; fileRef = AD7160371A38BAC60043E740 /* mobileanalytics-2014-06-30.json */; };
+		AD7160471A38BAC60043E740 /* monitoring-2010-08-01.json in Resources */ = {isa = PBXBuildFile; fileRef = AD7160381A38BAC60043E740 /* monitoring-2010-08-01.json */; };
+		AD7160481A38BAC60043E740 /* s3-2006-03-01.json in Resources */ = {isa = PBXBuildFile; fileRef = AD7160391A38BAC60043E740 /* s3-2006-03-01.json */; };
+		AD7160491A38BAC60043E740 /* sdb-2009-04-15.json in Resources */ = {isa = PBXBuildFile; fileRef = AD71603A1A38BAC60043E740 /* sdb-2009-04-15.json */; };
+		AD71604A1A38BAC60043E740 /* sns-2010-03-31.json in Resources */ = {isa = PBXBuildFile; fileRef = AD71603B1A38BAC60043E740 /* sns-2010-03-31.json */; };
+		AD71604B1A38BAC60043E740 /* sqs-2012-11-05.json in Resources */ = {isa = PBXBuildFile; fileRef = AD71603C1A38BAC60043E740 /* sqs-2012-11-05.json */; };
+		AD71604C1A38BAC60043E740 /* sts-2011-06-15.json in Resources */ = {isa = PBXBuildFile; fileRef = AD71603D1A38BAC60043E740 /* sts-2011-06-15.json */; };
 		AD8CF6F31A3131710002250B /* fatlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = AD8CF6F21A3131710002250B /* fatlogo.png */; };
 		AD8CF6F51A322BB10002250B /* whitebg.png in Resources */ = {isa = PBXBuildFile; fileRef = AD8CF6F41A322BB10002250B /* whitebg.png */; };
+		ADD1E6381A423FD100E1F8D4 /* MNMPullToRefreshManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6D26B81896BACA00C459CB /* MNMPullToRefreshManager.m */; };
 		C7B4244B183D0809003B51D0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7B4244A183D0809003B51D0 /* MapKit.framework */; };
 		C7B424B5183D2507003B51D0 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7B424B4183D2507003B51D0 /* CoreData.framework */; };
 		C7B424B7183D2519003B51D0 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7B424B6183D2519003B51D0 /* MessageUI.framework */; };
@@ -419,6 +437,24 @@
 		2CCE1A9817ECD32B00680126 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2CCE1A9A17ECD32B00680126 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2CCE1A9C17ECD32B00680126 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AD7160181A38B9A90043E740 /* AWSiOSSDKv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSiOSSDKv2.framework; sourceTree = "<group>"; };
+		AD71601A1A38B9D60043E740 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		AD71601C1A38B9E40043E740 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		AD71602F1A38BAC60043E740 /* autoscaling-2011-01-01.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "autoscaling-2011-01-01.json"; sourceTree = "<group>"; };
+		AD7160301A38BAC60043E740 /* cognito-identity-2014-06-30.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "cognito-identity-2014-06-30.json"; sourceTree = "<group>"; };
+		AD7160311A38BAC60043E740 /* css-2014-06-30.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "css-2014-06-30.json"; sourceTree = "<group>"; };
+		AD7160321A38BAC60043E740 /* dynamodb-2012-08-10.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "dynamodb-2012-08-10.json"; sourceTree = "<group>"; };
+		AD7160331A38BAC60043E740 /* ec2-2014-09-01.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "ec2-2014-09-01.json"; sourceTree = "<group>"; };
+		AD7160341A38BAC60043E740 /* elasticloadbalancing-2012-06-01.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "elasticloadbalancing-2012-06-01.json"; sourceTree = "<group>"; };
+		AD7160351A38BAC60043E740 /* email-2010-12-01.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "email-2010-12-01.json"; sourceTree = "<group>"; };
+		AD7160361A38BAC60043E740 /* kinesis-2013-12-02.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "kinesis-2013-12-02.json"; sourceTree = "<group>"; };
+		AD7160371A38BAC60043E740 /* mobileanalytics-2014-06-30.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "mobileanalytics-2014-06-30.json"; sourceTree = "<group>"; };
+		AD7160381A38BAC60043E740 /* monitoring-2010-08-01.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "monitoring-2010-08-01.json"; sourceTree = "<group>"; };
+		AD7160391A38BAC60043E740 /* s3-2006-03-01.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "s3-2006-03-01.json"; sourceTree = "<group>"; };
+		AD71603A1A38BAC60043E740 /* sdb-2009-04-15.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "sdb-2009-04-15.json"; sourceTree = "<group>"; };
+		AD71603B1A38BAC60043E740 /* sns-2010-03-31.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "sns-2010-03-31.json"; sourceTree = "<group>"; };
+		AD71603C1A38BAC60043E740 /* sqs-2012-11-05.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "sqs-2012-11-05.json"; sourceTree = "<group>"; };
+		AD71603D1A38BAC60043E740 /* sts-2011-06-15.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "sts-2011-06-15.json"; sourceTree = "<group>"; };
 		AD8CF6F21A3131710002250B /* fatlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fatlogo.png; sourceTree = "<group>"; };
 		AD8CF6F41A322BB10002250B /* whitebg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whitebg.png; sourceTree = "<group>"; };
 		C7B4244A183D0809003B51D0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -434,9 +470,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD71601D1A38B9E40043E740 /* libz.dylib in Frameworks */,
+				AD71601B1A38B9D60043E740 /* libsqlite3.dylib in Frameworks */,
 				2C8AF2801A1B772F0003B22E /* QuartzCore.framework in Frameworks */,
 				2C8AF27E1A1B77220003B22E /* OpenGLES.framework in Frameworks */,
 				2C8AF27B1A1B76BB0003B22E /* Accelerate.framework in Frameworks */,
+				AD7160191A38B9A90043E740 /* AWSiOSSDKv2.framework in Frameworks */,
 				C7B424BD183D2563003B51D0 /* StoreKit.framework in Frameworks */,
 				C7B424BB183D254C003B51D0 /* libz.1.2.5.dylib in Frameworks */,
 				C7B424B9183D2540003B51D0 /* libsqlite3.0.dylib in Frameworks */,
@@ -475,6 +514,7 @@
 		2C6D26751896BACA00C459CB /* 3rdParty */ = {
 			isa = PBXGroup;
 			children = (
+				AD71602E1A38BABB0043E740 /* AWSJson */,
 				2C8AF2811A1B77BA0003B22E /* AviarySDK */,
 				2C6D26761896BACA00C459CB /* AFNetworking */,
 				2C6D26A71896BACA00C459CB /* BlockFramework */,
@@ -1175,6 +1215,9 @@
 		2CCE1A9717ECD32B00680126 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AD71601C1A38B9E40043E740 /* libz.dylib */,
+				AD71601A1A38B9D60043E740 /* libsqlite3.dylib */,
+				AD7160181A38B9A90043E740 /* AWSiOSSDKv2.framework */,
 				2C8AF27F1A1B772F0003B22E /* QuartzCore.framework */,
 				2C8AF27D1A1B77220003B22E /* OpenGLES.framework */,
 				2C8AF27A1A1B76BB0003B22E /* Accelerate.framework */,
@@ -1189,6 +1232,28 @@
 				2CCE1A9C17ECD32B00680126 /* UIKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AD71602E1A38BABB0043E740 /* AWSJson */ = {
+			isa = PBXGroup;
+			children = (
+				AD71602F1A38BAC60043E740 /* autoscaling-2011-01-01.json */,
+				AD7160301A38BAC60043E740 /* cognito-identity-2014-06-30.json */,
+				AD7160311A38BAC60043E740 /* css-2014-06-30.json */,
+				AD7160321A38BAC60043E740 /* dynamodb-2012-08-10.json */,
+				AD7160331A38BAC60043E740 /* ec2-2014-09-01.json */,
+				AD7160341A38BAC60043E740 /* elasticloadbalancing-2012-06-01.json */,
+				AD7160351A38BAC60043E740 /* email-2010-12-01.json */,
+				AD7160361A38BAC60043E740 /* kinesis-2013-12-02.json */,
+				AD7160371A38BAC60043E740 /* mobileanalytics-2014-06-30.json */,
+				AD7160381A38BAC60043E740 /* monitoring-2010-08-01.json */,
+				AD7160391A38BAC60043E740 /* s3-2006-03-01.json */,
+				AD71603A1A38BAC60043E740 /* sdb-2009-04-15.json */,
+				AD71603B1A38BAC60043E740 /* sns-2010-03-31.json */,
+				AD71603C1A38BAC60043E740 /* sqs-2012-11-05.json */,
+				AD71603D1A38BAC60043E740 /* sts-2011-06-15.json */,
+			);
+			name = AWSJson;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1256,8 +1321,11 @@
 				2C6D281C1896BACA00C459CB /* nav-btn-back.png in Resources */,
 				2C6D27E01896BACA00C459CB /* WLICommentsViewController.xib in Resources */,
 				2C6D28171896BACA00C459CB /* map-pin@2x.png in Resources */,
+				AD7160491A38BAC60043E740 /* sdb-2009-04-15.json in Resources */,
+				AD71604B1A38BAC60043E740 /* sqs-2012-11-05.json in Resources */,
 				2C6D27F21896BACA00C459CB /* WLIEditProfileViewController.xib in Resources */,
 				2C6D282E1896BACA00C459CB /* tabbar-nearby.png in Resources */,
+				AD7160421A38BAC60043E740 /* ec2-2014-09-01.json in Resources */,
 				2C6D28021896BACA00C459CB /* btn-follow.png in Resources */,
 				2C6D27D31896BACA00C459CB /* WLILikeCell.xib in Resources */,
 				2C6D27EE1896BACA00C459CB /* WLIPopularViewController.xib in Resources */,
@@ -1265,20 +1333,26 @@
 				2C6D27B61896BACA00C459CB /* MNMPullToRefreshIcon@2x.png in Resources */,
 				2C6D28091896BACA00C459CB /* btn-unfollow@2x.png in Resources */,
 				2C6D27E61896BACA00C459CB /* WLILikesViewController.xib in Resources */,
+				AD7160471A38BAC60043E740 /* monitoring-2010-08-01.json in Resources */,
 				2C6D28371896BACA00C459CB /* tabbar-timeline@2x.png in Resources */,
 				2C6D27F01896BACA00C459CB /* WLIPostViewController.xib in Resources */,
 				2C6D280C1896BACA00C459CB /* Default@2x.png in Resources */,
+				AD7160431A38BAC60043E740 /* elasticloadbalancing-2012-06-01.json in Resources */,
 				2C6D280B1896BACA00C459CB /* Default.png in Resources */,
 				2C6D27F41896BACA00C459CB /* WLIProfileViewController.xib in Resources */,
 				2C6D280A1896BACA00C459CB /* Default-568h@2x.png in Resources */,
+				AD7160411A38BAC60043E740 /* dynamodb-2012-08-10.json in Resources */,
 				2C6D281F1896BACA00C459CB /* nav-btn-close@2x.png in Resources */,
 				2C6D28311896BACA00C459CB /* tabbar-newpost@2x.png in Resources */,
 				2C6D27B51896BACA00C459CB /* MNMPullToRefreshIcon.png in Resources */,
 				2C6D28231896BACA00C459CB /* nav-btn-reload@2x.png in Resources */,
 				2C6D28061896BACA00C459CB /* btn-liked.png in Resources */,
 				2C6D28361896BACA00C459CB /* tabbar-timeline.png in Resources */,
+				AD71604C1A38BAC60043E740 /* sts-2011-06-15.json in Resources */,
 				2C6D282F1896BACA00C459CB /* tabbar-nearby@2x.png in Resources */,
 				2C6D280E1896BACA00C459CB /* AppIcon29x29@2x.png in Resources */,
+				AD71603E1A38BAC60043E740 /* autoscaling-2011-01-01.json in Resources */,
+				AD71604A1A38BAC60043E740 /* sns-2010-03-31.json in Resources */,
 				2C6D27F61896BACA00C459CB /* WLIRegisterViewController.xib in Resources */,
 				AD8CF6F31A3131710002250B /* fatlogo.png in Resources */,
 				2C6D28041896BACA00C459CB /* btn-like.png in Resources */,
@@ -1300,6 +1374,7 @@
 				2C6D27E41896BACA00C459CB /* WLIFollowingViewController.xib in Resources */,
 				2C6D281A1896BACA00C459CB /* nav-back64.png in Resources */,
 				2C6D28011896BACA00C459CB /* btn-comment@2x.png in Resources */,
+				AD7160451A38BAC60043E740 /* kinesis-2013-12-02.json in Resources */,
 				2C6D281B1896BACA00C459CB /* nav-back64@2x.png in Resources */,
 				2C6D28291896BACA00C459CB /* avatar-overlay@2x.png in Resources */,
 				2C6D28111896BACA00C459CB /* AppIcon60x60.png in Resources */,
@@ -1320,14 +1395,19 @@
 				2C6D28381896BACA00C459CB /* layout-timeline.png in Resources */,
 				2C6D28131896BACA00C459CB /* AppIcon80x80.png in Resources */,
 				2C6D28321896BACA00C459CB /* tabbar-popular.png in Resources */,
+				AD7160481A38BAC60043E740 /* s3-2006-03-01.json in Resources */,
+				AD71603F1A38BAC60043E740 /* cognito-identity-2014-06-30.json in Resources */,
 				2C6D28281896BACA00C459CB /* avatar-overlay.png in Resources */,
 				2C6D27F81896BACA00C459CB /* WLISearchViewController.xib in Resources */,
 				2C6D281E1896BACA00C459CB /* nav-btn-close.png in Resources */,
+				AD7160441A38BAC60043E740 /* email-2010-12-01.json in Resources */,
 				2C6D27C61896BACA00C459CB /* InfoPlist.strings in Resources */,
+				AD7160461A38BAC60043E740 /* mobileanalytics-2014-06-30.json in Resources */,
 				2C6D28331896BACA00C459CB /* tabbar-popular@2x.png in Resources */,
 				2C6D28211896BACA00C459CB /* nav-btn-edit@2x.png in Resources */,
 				2C6D28271896BACA00C459CB /* avatar-empty@2x.png in Resources */,
 				2C6D28001896BACA00C459CB /* btn-comment.png in Resources */,
+				AD7160401A38BAC60043E740 /* css-2014-06-30.json in Resources */,
 				2C6D282D1896BACA00C459CB /* pulldown-refresh-icon@2x.png in Resources */,
 				2C6D28241896BACA00C459CB /* nav-btn-save.png in Resources */,
 				2C6D28031896BACA00C459CB /* btn-follow@2x.png in Resources */,
@@ -1346,7 +1426,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C6D27B71896BACA00C459CB /* MNMPullToRefreshManager.m in Sources */,
+				ADD1E6381A423FD100E1F8D4 /* MNMPullToRefreshManager.m in Sources */,
 				2C6D27BD1896BACA00C459CB /* SBJsonStreamParserAdapter.m in Sources */,
 				2C5B5C991A1A8FAE00175A58 /* AFHTTPRequestOperationManager.m in Sources */,
 				2C5B5C801A1A8F9500175A58 /* UIButton+AFNetworking.m in Sources */,
@@ -1513,9 +1593,15 @@
 		2CCE1AC217ECD32B00680126 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WeLike/3rdParty/AviarySDK",
+					"$(PROJECT_DIR)",
+					"/Users/panafold/Downloads/aws-ios-sdk-2.0.13/third-party",
+					"/Users/panafold/Downloads/Bolts-iOS/ios",
+					"/Users/panafold/Downloads/Bolts-iOS",
+					2/ios,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WeLike/WeLike-Prefix.pch";
@@ -1539,9 +1625,15 @@
 		2CCE1AC317ECD32B00680126 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WeLike/3rdParty/AviarySDK",
+					"$(PROJECT_DIR)",
+					"/Users/panafold/Downloads/aws-ios-sdk-2.0.13/third-party",
+					"/Users/panafold/Downloads/Bolts-iOS/ios",
+					"/Users/panafold/Downloads/Bolts-iOS",
+					2/ios,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WeLike/WeLike-Prefix.pch";
