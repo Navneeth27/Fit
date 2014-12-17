@@ -10,7 +10,7 @@
 #import <AWSiOSSDKv2/S3.h>
 #import <AWSiOSSDKv2/AWSCore.h>
 
-#define kBaseLink @"fitovate.elasticbeanstalk.com"
+#define kBaseLink @"http://fitovate.elasticbeanstalk.com"
 #define kAPIKey @"!#wli!sdWQDScxzczFžŽYewQsq_?wdX09612627364[3072∑34260-#"
 #define kConnectionTimeout 30
 #define kCompressionQuality 1.0f
@@ -162,7 +162,7 @@ static WLIConnect *sharedConnect;
         completion(nil, BAD_REQUEST);
     } else {
         NSDictionary *parameters = @{@"username" : username, @"password" : password, @"email" : email, @"userFullname" : userFullName, @"userTypeID" : @(userType), @"userInfo" : userInfo, @"userLat" : @(latitude), @"userLong" : @(longitude), @"userAddress" : companyAddress, @"userPhone" : companyPhone, @"userWeb" : companyWeb};
-        [httpClient POST:@"api/register" parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
+        [httpClient POST:@"/register" parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
             if (userAvatar) {
                 NSData *imageData = UIImageJPEGRepresentation(userAvatar, kCompressionQuality);
                 if (imageData) {
@@ -192,7 +192,7 @@ static WLIConnect *sharedConnect;
         completion(nil, BAD_REQUEST);
     } else {
         NSDictionary *parameters = @{@"userID": [NSString stringWithFormat:@"%d", self.currentUser.userID], @"forUserID": [NSString stringWithFormat:@"%d", userID]};
-        [httpClient POST:@"api/getProfile" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        [httpClient POST:@"getProfile" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
             NSDictionary *rawUser = [responseObject objectForKey:@"item"];
             WLIUser *user = [[WLIUser alloc] initWithDictionary:rawUser];
             if (user.userID == _currentUser.userID) {
@@ -242,7 +242,7 @@ static WLIConnect *sharedConnect;
             [parameters setObject:companyWeb forKey:@"userWeb"];
         }
         
-        [httpClient POST:@"api/setProfile" parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
+        [httpClient POST:@"setProfile" parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
             if (userAvatar) {
                 NSData *imageData = UIImageJPEGRepresentation(userAvatar, kCompressionQuality);
                 if (imageData) {
@@ -267,7 +267,7 @@ static WLIConnect *sharedConnect;
 - (void)newUsersWithPageSize:(int)pageSize onCompletion:(void (^)(NSMutableArray *users, ServerResponse serverResponseCode))completion {
     
     NSDictionary *parameters = @{@"userID": [NSString stringWithFormat:@"%d", self.currentUser.userID], @"take": [NSString stringWithFormat:@"%d", pageSize]};
-    [httpClient POST:@"api/getNewUsers" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    [httpClient POST:@"getNewUsers" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSArray *rawUsers = [responseObject objectForKey:@"items"];
         
         NSMutableArray *users = [NSMutableArray arrayWithCapacity:rawUsers.count];
@@ -295,7 +295,7 @@ static WLIConnect *sharedConnect;
         [parameters setObject:[NSString stringWithFormat:@"%d", page] forKey:@"page"];
         [parameters setObject:[NSString stringWithFormat:@"%d", pageSize] forKey:@"take"];
         
-        [httpClient POST:@"api/findUsers" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        [httpClient POST:@"findUsers" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
             NSArray *rawUsers = [responseObject objectForKey:@"items"];
             
             NSMutableArray *users = [NSMutableArray arrayWithCapacity:rawUsers.count];
@@ -324,7 +324,7 @@ static WLIConnect *sharedConnect;
         [parameters setObject:[NSString stringWithFormat:@"%d", page] forKey:@"page"];
         [parameters setObject:[NSString stringWithFormat:@"%d", pageSize] forKey:@"take"];
         
-        [httpClient POST:@"api/getTimeline" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        [httpClient POST:@"getTimeline" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
             NSArray *rawPosts = [responseObject objectForKey:@"items"];
             
             NSMutableArray *posts = [NSMutableArray arrayWithCapacity:rawPosts.count];
@@ -352,7 +352,7 @@ static WLIConnect *sharedConnect;
     [parameters setObject:[NSString stringWithFormat:@"%d", page] forKey:@"page"];
     [parameters setObject:[NSString stringWithFormat:@"%d", pageSize] forKey:@"take"];
     
-    [httpClient POST:@"api/getLocationsForLatLong" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    [httpClient POST:@"getLocationsForLatLong" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSArray *rawUsers = [responseObject objectForKey:@"items"];
         
         NSMutableArray *users = [NSMutableArray arrayWithCapacity:rawUsers.count];
@@ -381,7 +381,7 @@ static WLIConnect *sharedConnect;
         [parameters setObject:[NSString stringWithFormat:@"%d", self.currentUser.userID] forKey:@"userID"];
         [parameters setObject:postTitle forKey:@"postTitle"];
         
-        [httpClient POST:@"api/sendPost" parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
+        [httpClient POST:@"sendPost" parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
             if (postImage) {
                 NSData *imageData = UIImageJPEGRepresentation(postImage, kCompressionQuality);
                 if (imageData) {
@@ -420,7 +420,7 @@ static WLIConnect *sharedConnect;
     [parameters setObject:[NSString stringWithFormat:@"%d", self.currentUser.userID] forKey:@"userID"];
     [parameters setObject:[NSString stringWithFormat:@"%d", pageSize] forKey:@"take"];
     
-    [httpClient POST:@"api/getRecentPosts" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    [httpClient POST:@"getRecentPosts" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSArray *rawPosts = [responseObject objectForKey:@"items"];
         
         NSMutableArray *posts = [NSMutableArray arrayWithCapacity:rawPosts.count];
@@ -443,7 +443,7 @@ static WLIConnect *sharedConnect;
     [parameters setObject:[NSString stringWithFormat:@"%d", self.currentUser.userID] forKey:@"userID"];
     [parameters setObject:[NSString stringWithFormat:@"%d", page] forKey:@"page"];
     [parameters setObject:[NSString stringWithFormat:@"%d", pageSize] forKey:@"take"];
-    [httpClient POST:@"api/getPopularPosts" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    [httpClient POST:@"getPopularPosts" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSArray *rawPosts = [responseObject objectForKey:@"items"];
         
         NSMutableArray *posts = [NSMutableArray arrayWithCapacity:rawPosts.count];
@@ -469,7 +469,7 @@ static WLIConnect *sharedConnect;
     [parameters setObject:[NSString stringWithFormat:@"%d", self.currentUser.userID] forKey:@"userID"];
     [parameters setObject:[NSString stringWithFormat:@"%d", postID] forKey:@"postID"];
     [parameters setObject:commentText forKey:@"commentText"];
-    [httpClient POST:@"api/setComment" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    [httpClient POST:@"setComment" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSDictionary *rawComment = [responseObject objectForKey:@"item"];
         WLIComment *comment = [[WLIComment alloc] initWithDictionary:rawComment];
         
@@ -486,7 +486,7 @@ static WLIConnect *sharedConnect;
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
     [parameters setObject:[NSString stringWithFormat:@"%d", self.currentUser.userID] forKey:@"userID"];
     [parameters setObject:[NSString stringWithFormat:@"%d", commentID] forKey:@"commentID"];
-    [httpClient POST:@"api/removeComment" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    [httpClient POST:@"removeComment" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
         //NSDictionary *rawComment = [responseObject objectForKey:@"item"];
         //WLIComment *comment = [[WLIComment alloc] initWithDictionary:rawComment];
         
@@ -505,7 +505,7 @@ static WLIConnect *sharedConnect;
     [parameters setObject:[NSString stringWithFormat:@"%d", postID] forKey:@"postID"];
     [parameters setObject:[NSString stringWithFormat:@"%d", page] forKey:@"page"];
     [parameters setObject:[NSString stringWithFormat:@"%d", pageSize] forKey:@"take"];
-    [httpClient POST:@"api/getComments" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    [httpClient POST:@"getComments" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSArray *rawComments = [responseObject objectForKey:@"items"];
         
         NSMutableArray *comments = [NSMutableArray arrayWithCapacity:rawComments.count];
@@ -530,7 +530,7 @@ static WLIConnect *sharedConnect;
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
     [parameters setObject:[NSString stringWithFormat:@"%d", self.currentUser.userID] forKey:@"userID"];
     [parameters setObject:[NSString stringWithFormat:@"%d", postID] forKey:@"postID"];
-    [httpClient POST:@"api/setLike" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    [httpClient POST:@"setLike" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSDictionary *rawLike = [responseObject objectForKey:@"item"];
         WLILike *like = [[WLILike alloc] initWithDictionary:rawLike];
         
@@ -547,7 +547,7 @@ static WLIConnect *sharedConnect;
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
     [parameters setObject:[NSString stringWithFormat:@"%d", self.currentUser.userID] forKey:@"userID"];
     [parameters setObject:[NSString stringWithFormat:@"%d", postID] forKey:@"postID"];
-    [httpClient POST:@"api/removeLike" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    [httpClient POST:@"removeLike" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
         [self debugger:parameters.description methodLog:@"api/removeLike" dataLogFormatted:responseObject];
         completion(OK);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
@@ -563,7 +563,7 @@ static WLIConnect *sharedConnect;
     [parameters setObject:[NSString stringWithFormat:@"%d", postID] forKey:@"postID"];
     [parameters setObject:[NSString stringWithFormat:@"%d", page] forKey:@"page"];
     [parameters setObject:[NSString stringWithFormat:@"%d", pageSize] forKey:@"take"];
-    [httpClient POST:@"api/getLikes" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    [httpClient POST:@"getLikes" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSArray *rawLikes = [responseObject objectForKey:@"items"];
         
         NSMutableArray *likes = [NSMutableArray arrayWithCapacity:rawLikes.count];
@@ -588,7 +588,7 @@ static WLIConnect *sharedConnect;
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
     [parameters setObject:[NSString stringWithFormat:@"%d", self.currentUser.userID] forKey:@"userID"];
     [parameters setObject:[NSString stringWithFormat:@"%d", userID] forKey:@"followingID"];
-    [httpClient POST:@"api/setFollow" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    [httpClient POST:@"setFollow" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSDictionary *rawFollow = [responseObject objectForKey:@"item"];
         WLIFollow *follow = [[WLIFollow alloc] initWithDictionary:rawFollow];
         self.currentUser.followingCount++;
@@ -605,7 +605,7 @@ static WLIConnect *sharedConnect;
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
     [parameters setObject:[NSString stringWithFormat:@"%d", self.currentUser.userID] forKey:@"userID"];
     [parameters setObject:[NSString stringWithFormat:@"%d", followID] forKey:@"followingID"];
-    [httpClient POST:@"api/removeFollow" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    [httpClient POST:@"removeFollow" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
         //NSDictionary *rawFollow = [responseObject objectForKey:@"item"];
         //WLIFollow *follow = [[WLIFollow alloc] initWithDictionary:rawFollow];
         self.currentUser.followingCount--;
@@ -627,7 +627,7 @@ static WLIConnect *sharedConnect;
         [parameters setObject:[NSString stringWithFormat:@"%d", page] forKey:@"page"];
         [parameters setObject:[NSString stringWithFormat:@"%d", pageSize] forKey:@"take"];
         [parameters setObject:[NSString stringWithFormat:@"%d", userID] forKey:@"forUserID"];
-        [httpClient POST:@"api/getFollowers" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        [httpClient POST:@"getFollowers" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
             NSArray *rawUsers = responseObject[@"items"];
             
             NSMutableArray *users = [NSMutableArray arrayWithCapacity:rawUsers.count];
@@ -655,7 +655,7 @@ static WLIConnect *sharedConnect;
         [parameters setObject:[NSString stringWithFormat:@"%d", page] forKey:@"page"];
         [parameters setObject:[NSString stringWithFormat:@"%d", pageSize] forKey:@"take"];
         [parameters setObject:[NSString stringWithFormat:@"%d", userID] forKey:@"forUserID"];
-        [httpClient POST:@"api/getFollowing" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        [httpClient POST:@"getFollowing" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
             NSArray *rawUsers = responseObject[@"items"];
             
             NSMutableArray *users = [NSMutableArray arrayWithCapacity:rawUsers.count];
