@@ -14,9 +14,10 @@
 #import "WLISearchViewController.h"
 #import "WLIWelcomeViewController.h"
 #import "WLIAppDelegate.h"
+#import <MediaPlayer/MediaPlayer.h>
 
 @implementation WLIProfileViewController
-
+MPMoviePlayerController *moviePlayerController;
 
 #pragma mark - Object lifecycle
 
@@ -134,6 +135,30 @@
             self.labelWeb.text = self.user.companyWeb;
             self.labelEmail.text = self.user.companyEmail;
         }];
+        
+        //if its a trainer and its NOT ME
+        if ((self.user.userType == WLIUserTypeCompany) && (self.user.userID != [WLIConnect sharedConnect].currentUser.userID)) {
+            //benharvey ben harvey edit change
+            
+            //remove spaces in name for url
+            NSString *usernameWithoutSpaces=[self.user.userUsername
+                                             stringByReplacingOccurrencesOfString:@" " withString:@""];
+//            NSString *urlString =[NSString stringWithFormat:@"https://s3.amazonaws.com/fitovatevideoss/%@",usernameWithoutSpaces];
+            NSString *urlString =@"http://techslides.com/demos/sample-videos/small.mp4";
+            NSURL *url =[[NSURL alloc]initWithString:urlString];
+            
+            moviePlayerController = [[MPMoviePlayerController alloc] initWithContentURL:url];
+            [moviePlayerController.view setFrame:self.movieView.bounds];  // player's frame must match parent's
+            [self.movieView addSubview:moviePlayerController.view];
+            
+            // Configure the movie player controller
+            moviePlayerController.controlStyle = MPMovieControlStyleNone;
+            [moviePlayerController prepareToPlay];
+            // Start the movie
+            [moviePlayerController play];
+        }else{
+            [_movieView setHidden:YES];
+        }
     }
 }
 

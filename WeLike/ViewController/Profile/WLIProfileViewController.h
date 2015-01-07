@@ -30,6 +30,8 @@
 @property (strong, nonatomic) IBOutlet UIButton *buttonSearchUsers;
 @property (strong, nonatomic) IBOutlet UIButton *buttonLogout;
 
+@property (weak, nonatomic) IBOutlet UIView *movieView;
+
 @property (strong, nonatomic, setter = setUser:) WLIUser *user;
 
 - (IBAction)buttonFollowToggleTouchUpInside:(id)sender;

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
-        <deployment defaultVersion="1536" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WLIProfileViewController">
@@ -18,6 +18,7 @@
                 <outlet property="labelName" destination="e5h-Ox-X36" id="GVB-wW-PA8"/>
                 <outlet property="labelPhone" destination="3ES-TU-kVB" id="EJD-N0-Br1"/>
                 <outlet property="labelWeb" destination="mLc-4H-VDV" id="Idc-aV-9I3"/>
+                <outlet property="movieView" destination="4cK-ac-ivy" id="zFM-bK-sx7"/>
                 <outlet property="scrollViewUserProfile" destination="Kdl-4c-3qY" id="cg9-Yr-fQB"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
@@ -146,15 +147,23 @@
                                 <action selector="buttonLogoutTouchUpInside:" destination="-1" eventType="touchUpInside" id="DDZ-Gm-pr3"/>
                             </connections>
                         </button>
+                        <view contentMode="scaleToFill" id="4cK-ac-ivy">
+                            <rect key="frame" x="8" y="216" width="304" height="284"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
                     </subviews>
                 </scrollView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
-            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
     </objects>
     <resources>
         <image name="avatar-overlay.png" width="100" height="100"/>
     </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>
