@@ -142,7 +142,7 @@ MPMoviePlayerController *moviePlayerController;
             
             //remove spaces in name for url
             NSString *usernameWithoutSpaces=[self.user.userUsername
-                                             stringByReplacingOccurrencesOfString:@" " withString:@""];
+                                             stringByReplacingOccurrencesOfString:@" " withString:@"+"];
             NSString *urlString =[NSString stringWithFormat:@"https://s3.amazonaws.com/fitovatevideoss/%@",usernameWithoutSpaces];
             //NSString *urlString =@"http://techslides.com/demos/sample-videos/small.mp4";
             NSURL *url =[[NSURL alloc]initWithString:urlString];
