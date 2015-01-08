@@ -169,6 +169,7 @@
 		2CCE1A9917ECD32B00680126 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CCE1A9817ECD32B00680126 /* Foundation.framework */; };
 		2CCE1A9B17ECD32B00680126 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CCE1A9A17ECD32B00680126 /* CoreGraphics.framework */; };
 		2CCE1A9D17ECD32B00680126 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CCE1A9C17ECD32B00680126 /* UIKit.framework */; };
+		6B410FD61A5E12D8004B4823 /* ooVooSDK-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B410FD51A5E12D8004B4823 /* ooVooSDK-iOS.framework */; };
 		AD7160191A38B9A90043E740 /* AWSiOSSDKv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD7160181A38B9A90043E740 /* AWSiOSSDKv2.framework */; };
 		AD71601B1A38B9D60043E740 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AD71601A1A38B9D60043E740 /* libsqlite3.dylib */; };
 		AD71601D1A38B9E40043E740 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AD71601C1A38B9E40043E740 /* libz.dylib */; };
@@ -437,6 +438,7 @@
 		2CCE1A9817ECD32B00680126 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2CCE1A9A17ECD32B00680126 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2CCE1A9C17ECD32B00680126 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6B410FD51A5E12D8004B4823 /* ooVooSDK-iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "ooVooSDK-iOS.framework"; sourceTree = "<group>"; };
 		AD7160181A38B9A90043E740 /* AWSiOSSDKv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSiOSSDKv2.framework; sourceTree = "<group>"; };
 		AD71601A1A38B9D60043E740 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		AD71601C1A38B9E40043E740 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -477,6 +479,7 @@
 				2C8AF27B1A1B76BB0003B22E /* Accelerate.framework in Frameworks */,
 				AD7160191A38B9A90043E740 /* AWSiOSSDKv2.framework in Frameworks */,
 				C7B424BD183D2563003B51D0 /* StoreKit.framework in Frameworks */,
+				6B410FD61A5E12D8004B4823 /* ooVooSDK-iOS.framework in Frameworks */,
 				C7B424BB183D254C003B51D0 /* libz.1.2.5.dylib in Frameworks */,
 				C7B424B9183D2540003B51D0 /* libsqlite3.0.dylib in Frameworks */,
 				2C8AF2861A1B77F40003B22E /* AviarySDK.framework in Frameworks */,
@@ -1215,6 +1218,7 @@
 		2CCE1A9717ECD32B00680126 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6B410FD51A5E12D8004B4823 /* ooVooSDK-iOS.framework */,
 				AD71601C1A38B9E40043E740 /* libz.dylib */,
 				AD71601A1A38B9D60043E740 /* libsqlite3.dylib */,
 				AD7160181A38B9A90043E740 /* AWSiOSSDKv2.framework */,
@@ -1612,10 +1616,7 @@
 					"$(PROJECT_DIR)/WeLike/3rdParty/AviarySDK",
 				);
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = (
-					"-all_load",
-					"-ObjC",
-				);
+				OTHER_LDFLAGS = "$(OTHER_LDFLAGS)";
 				PRODUCT_NAME = WeLike;
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
@@ -1643,10 +1644,7 @@
 					"$(SRCROOT)/WeLike/3rdParty/AviarySDK",
 					"$(PROJECT_DIR)/WeLike/3rdParty/AviarySDK",
 				);
-				OTHER_LDFLAGS = (
-					"-all_load",
-					"-ObjC",
-				);
+				OTHER_LDFLAGS = "$(OTHER_LDFLAGS)";
 				PRODUCT_NAME = WeLike;
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;

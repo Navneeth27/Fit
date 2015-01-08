@@ -134,7 +134,7 @@
         [imageView addSubview:overlay];
         
         UIButton *button = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
-        button.tintColor = [UIColor colorWithRed:255.0f/255.0f green:80.0f/255.0f blue:70.0f/255.0f alpha:1.0f];
+        button.tintColor = [UIColor colorWithRed:92.0f/255.0f green:173.0f/255.0f blue:255.0f/255.0f alpha:1.0f];
         annotationView.rightCalloutAccessoryView = button;
     }
     NSURL *url = [NSURL URLWithString:company.userAvatarPath];

@@ -36,18 +36,18 @@ int keyboardHeight() {
         
         previousButton = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"Previous",nil) style:UIBarButtonItemStyleBordered target:self
                                                          action:@selector(previousField:)];
-        [previousButton setTintColor:[UIColor colorWithRed:255.0f/255.0f green:80.0f/255.0f blue:70.0f/255.0f alpha:1.0f]];
+        [previousButton setTintColor:[UIColor colorWithRed:92.0f/255.0f green:173.0f/255.0f blue:255.0f/255.0f alpha:1.0f]];
         
         nextButton = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"Next",nil)
                                                       style:UIBarButtonItemStyleBordered target:self
                                                      action:@selector(nextField:)];
-        [nextButton setTintColor:[UIColor colorWithRed:255.0f/255.0f green:80.0f/255.0f blue:70.0f/255.0f alpha:1.0f]];
+        [nextButton setTintColor:[UIColor colorWithRed:92.0f/255.0f green:173.0f/255.0f blue:255.0f/255.0f alpha:1.0f]];
         
         UIBarButtonItem *spaceBetweenButtons = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
                                                                                              target:nil action:nil];
         
         doneButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(resignKeyboard:)];
-        [doneButton setTintColor:[UIColor colorWithRed:255.0f/255.0f green:80.0f/255.0f blue:70.0f/255.0f alpha:1.0f]];
+        [doneButton setTintColor:[UIColor colorWithRed:92.0f/255.0f green:173.0f/255.0f blue:255.0f/255.0f alpha:1.0f]];
         
         if (self.hidePrevNextButtons) {
             [self setItems:[NSArray arrayWithObjects:spaceBetweenButtons, doneButton, nil]];

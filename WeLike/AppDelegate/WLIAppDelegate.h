@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "WLITabBarController.h"
 #import <CoreLocation/CoreLocation.h>
+#import <ooVooSDK-iOS/ooVooSDK-iOS.h>
 
 @interface WLIAppDelegate : UIResponder <UIApplicationDelegate, UITabBarControllerDelegate>
 
