@@ -31,7 +31,7 @@
     
     [super viewDidLoad];
     self.tabBar.translucent = NO;
-    self.tabBar.barTintColor = [UIColor colorWithRed:255/255.0f green:70/255.0f blue:80/255.0f alpha:1.0f];
+    self.tabBar.barTintColor = [UIColor colorWithRed:92.0f/255.0f green:173.0f/255.0f blue:255.0f/255.0f alpha:1.0f];
     self.tabBar.tintColor = [UIColor blackColor];
     self.tabBar.selectedImageTintColor = [UIColor whiteColor];
     [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[[UIColor whiteColor] colorWithAlphaComponent:0.8f], NSForegroundColorAttributeName, nil] forState:UIControlStateNormal];

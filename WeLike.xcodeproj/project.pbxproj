@@ -110,9 +110,6 @@
 		2C6D28071896BACA00C459CB /* btn-liked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C6D27631896BACA00C459CB /* btn-liked@2x.png */; };
 		2C6D28081896BACA00C459CB /* btn-unfollow.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C6D27641896BACA00C459CB /* btn-unfollow.png */; };
 		2C6D28091896BACA00C459CB /* btn-unfollow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C6D27651896BACA00C459CB /* btn-unfollow@2x.png */; };
-		2C6D280A1896BACA00C459CB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C6D27661896BACA00C459CB /* Default-568h@2x.png */; };
-		2C6D280B1896BACA00C459CB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C6D27671896BACA00C459CB /* Default.png */; };
-		2C6D280C1896BACA00C459CB /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C6D27681896BACA00C459CB /* Default@2x.png */; };
 		2C6D280D1896BACA00C459CB /* AppIcon29x29.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C6D276A1896BACA00C459CB /* AppIcon29x29.png */; };
 		2C6D280E1896BACA00C459CB /* AppIcon29x29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C6D276B1896BACA00C459CB /* AppIcon29x29@2x.png */; };
 		2C6D280F1896BACA00C459CB /* AppIcon57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C6D276C1896BACA00C459CB /* AppIcon57x57.png */; };
@@ -170,6 +167,10 @@
 		2CCE1A9B17ECD32B00680126 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CCE1A9A17ECD32B00680126 /* CoreGraphics.framework */; };
 		2CCE1A9D17ECD32B00680126 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CCE1A9C17ECD32B00680126 /* UIKit.framework */; };
 		6B410FD61A5E12D8004B4823 /* ooVooSDK-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B410FD51A5E12D8004B4823 /* ooVooSDK-iOS.framework */; };
+		6BA07B0D1A5F4B3600382FF1 /* Default-568h@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6BA07B0C1A5F4B3600382FF1 /* Default-568h@2x.jpg */; };
+		6BA07B0F1A5F4B6600382FF1 /* Default.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6BA07B0E1A5F4B6600382FF1 /* Default.jpg */; };
+		6BA07B111A5F4B8000382FF1 /* Default@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6BA07B101A5F4B8000382FF1 /* Default@2x.jpg */; };
+		6BA07B131A5F4BB900382FF1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BA07B121A5F4BB900382FF1 /* Default-568h@2x.png */; };
 		AD7160191A38B9A90043E740 /* AWSiOSSDKv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD7160181A38B9A90043E740 /* AWSiOSSDKv2.framework */; };
 		AD71601B1A38B9D60043E740 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AD71601A1A38B9D60043E740 /* libsqlite3.dylib */; };
 		AD71601D1A38B9E40043E740 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AD71601C1A38B9E40043E740 /* libz.dylib */; };
@@ -378,9 +379,6 @@
 		2C6D27631896BACA00C459CB /* btn-liked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-liked@2x.png"; sourceTree = "<group>"; };
 		2C6D27641896BACA00C459CB /* btn-unfollow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-unfollow.png"; sourceTree = "<group>"; };
 		2C6D27651896BACA00C459CB /* btn-unfollow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-unfollow@2x.png"; sourceTree = "<group>"; };
-		2C6D27661896BACA00C459CB /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		2C6D27671896BACA00C459CB /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		2C6D27681896BACA00C459CB /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		2C6D276A1896BACA00C459CB /* AppIcon29x29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon29x29.png; sourceTree = "<group>"; };
 		2C6D276B1896BACA00C459CB /* AppIcon29x29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon29x29@2x.png"; sourceTree = "<group>"; };
 		2C6D276C1896BACA00C459CB /* AppIcon57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon57x57.png; sourceTree = "<group>"; };
@@ -439,6 +437,10 @@
 		2CCE1A9A17ECD32B00680126 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2CCE1A9C17ECD32B00680126 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6B410FD51A5E12D8004B4823 /* ooVooSDK-iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "ooVooSDK-iOS.framework"; sourceTree = "<group>"; };
+		6BA07B0C1A5F4B3600382FF1 /* Default-568h@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Default-568h@2x.jpg"; sourceTree = "<group>"; };
+		6BA07B0E1A5F4B6600382FF1 /* Default.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Default.jpg; sourceTree = "<group>"; };
+		6BA07B101A5F4B8000382FF1 /* Default@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Default@2x.jpg"; sourceTree = "<group>"; };
+		6BA07B121A5F4BB900382FF1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		AD7160181A38B9A90043E740 /* AWSiOSSDKv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSiOSSDKv2.framework; sourceTree = "<group>"; };
 		AD71601A1A38B9D60043E740 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		AD71601C1A38B9E40043E740 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -1058,11 +1060,11 @@
 		2C6D275A1896BACA00C459CB /* WLI-images */ = {
 			isa = PBXGroup;
 			children = (
+				6BA07B101A5F4B8000382FF1 /* Default@2x.jpg */,
+				6BA07B0E1A5F4B6600382FF1 /* Default.jpg */,
+				6BA07B0C1A5F4B3600382FF1 /* Default-568h@2x.jpg */,
 				AD8CF6F41A322BB10002250B /* whitebg.png */,
 				2C6D275B1896BACA00C459CB /* buttons */,
-				2C6D27661896BACA00C459CB /* Default-568h@2x.png */,
-				2C6D27671896BACA00C459CB /* Default.png */,
-				2C6D27681896BACA00C459CB /* Default@2x.png */,
 				2C6D27691896BACA00C459CB /* icons */,
 				2C6D27731896BACA00C459CB /* map */,
 				2C6D27761896BACA00C459CB /* navigationbar */,
@@ -1201,6 +1203,7 @@
 		2CCE1A8C17ECD32B00680126 = {
 			isa = PBXGroup;
 			children = (
+				6BA07B121A5F4BB900382FF1 /* Default-568h@2x.png */,
 				2C6D26741896BACA00C459CB /* WeLike */,
 				2CCE1A9717ECD32B00680126 /* Frameworks */,
 				2CCE1A9617ECD32B00680126 /* Products */,
@@ -1340,11 +1343,10 @@
 				AD7160471A38BAC60043E740 /* monitoring-2010-08-01.json in Resources */,
 				2C6D28371896BACA00C459CB /* tabbar-timeline@2x.png in Resources */,
 				2C6D27F01896BACA00C459CB /* WLIPostViewController.xib in Resources */,
-				2C6D280C1896BACA00C459CB /* Default@2x.png in Resources */,
 				AD7160431A38BAC60043E740 /* elasticloadbalancing-2012-06-01.json in Resources */,
-				2C6D280B1896BACA00C459CB /* Default.png in Resources */,
 				2C6D27F41896BACA00C459CB /* WLIProfileViewController.xib in Resources */,
-				2C6D280A1896BACA00C459CB /* Default-568h@2x.png in Resources */,
+				6BA07B0D1A5F4B3600382FF1 /* Default-568h@2x.jpg in Resources */,
+				6BA07B0F1A5F4B6600382FF1 /* Default.jpg in Resources */,
 				AD7160411A38BAC60043E740 /* dynamodb-2012-08-10.json in Resources */,
 				2C6D281F1896BACA00C459CB /* nav-btn-close@2x.png in Resources */,
 				2C6D28311896BACA00C459CB /* tabbar-newpost@2x.png in Resources */,
@@ -1357,6 +1359,7 @@
 				2C6D280E1896BACA00C459CB /* AppIcon29x29@2x.png in Resources */,
 				AD71603E1A38BAC60043E740 /* autoscaling-2011-01-01.json in Resources */,
 				AD71604A1A38BAC60043E740 /* sns-2010-03-31.json in Resources */,
+				6BA07B111A5F4B8000382FF1 /* Default@2x.jpg in Resources */,
 				2C6D27F61896BACA00C459CB /* WLIRegisterViewController.xib in Resources */,
 				AD8CF6F31A3131710002250B /* fatlogo.png in Resources */,
 				2C6D28041896BACA00C459CB /* btn-like.png in Resources */,
@@ -1388,6 +1391,7 @@
 				2C6D282C1896BACA00C459CB /* pulldown-refresh-icon.png in Resources */,
 				2C6D283C1896BACA00C459CB /* welcome-logo@2x.png in Resources */,
 				2C6D27E21896BACA00C459CB /* WLIFollowersViewController.xib in Resources */,
+				6BA07B131A5F4BB900382FF1 /* Default-568h@2x.png in Resources */,
 				2C6D27B41896BACA00C459CB /* MNMPullToRefresh.strings in Resources */,
 				2C6D28391896BACA00C459CB /* welcome-background.png in Resources */,
 				2C6D28081896BACA00C459CB /* btn-unfollow.png in Resources */,
