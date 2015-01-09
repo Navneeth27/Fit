@@ -129,16 +129,45 @@
     self.tabBarController = [[WLITabBarController alloc] init];
     self.tabBarController.delegate = self;
     self.tabBarController.viewControllers = @[timelineNavigationController, popularNavigationController,newPostNavigationController, nearbyNavigationController, profileNavigationController];
+    
+    
+    //get white image
+    UIImage *source=[UIImage imageNamed:@"tabbar-newpost"];
+    // begin a new image context, to draw our colored image onto with the right scale
+    UIGraphicsBeginImageContextWithOptions(source.size, NO, [UIScreen mainScreen].scale);
+    
+    // get a reference to that context we created
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    UIColor *color=[UIColor whiteColor];
+    // set the fill color
+    [color setFill];
+    
+    // translate/flip the graphics context (for transforming from CG* coords to UI* coords
+    CGContextTranslateCTM(context, 0, source.size.height);
+    CGContextScaleCTM(context, 1.0, -1.0);
+    
+    CGContextSetBlendMode(context, kCGBlendModeColorBurn);
+    CGRect rect = CGRectMake(0, 0, source.size.width, source.size.height);
+    CGContextDrawImage(context, rect, source.CGImage);
+    
+    CGContextSetBlendMode(context, kCGBlendModeSourceIn);
+    CGContextAddRect(context, rect);
+    CGContextDrawPath(context,kCGPathFill);
+    
+    // generate a new UIImage from the graphics context we drew onto
+    UIImage *coloredImg = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
 
-    UITabBarItem *timelineTabBarItem = [[UITabBarItem alloc] initWithTitle:@"Timeline" image:[[UIImage imageNamed:@"tabbar-timeline"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"tabbar-timeline"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+    UITabBarItem *timelineTabBarItem = [[UITabBarItem alloc] initWithTitle:@"Timeline" image:[coloredImg imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[coloredImg imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
     timelineViewController.tabBarItem = timelineTabBarItem;
-    UITabBarItem *popularTabBarItem = [[UITabBarItem alloc] initWithTitle:@"Popular" image:[[UIImage imageNamed:@"tabbar-popular"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"tabbar-popular"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+    UITabBarItem *popularTabBarItem = [[UITabBarItem alloc] initWithTitle:@"Popular" image:[coloredImg imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[coloredImg imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
     popularViewController.tabBarItem = popularTabBarItem;
-    UITabBarItem *newPostTabBarItem = [[UITabBarItem alloc] initWithTitle:@"New post" image:[[UIImage imageNamed:@"tabbar-newpost"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"tabbar-newpost"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+    UITabBarItem *newPostTabBarItem = [[UITabBarItem alloc] initWithTitle:@"New post" image:[coloredImg imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[coloredImg imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
     newPostViewController.tabBarItem = newPostTabBarItem;
-    UITabBarItem *nearbyTabBarItem = [[UITabBarItem alloc] initWithTitle:@"Nearby" image:[[UIImage imageNamed:@"tabbar-nearby"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"tabbar-nearby"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+    UITabBarItem *nearbyTabBarItem = [[UITabBarItem alloc] initWithTitle:@"Nearby" image:[coloredImg imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[coloredImg imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
     nearbyViewController.tabBarItem = nearbyTabBarItem;
-    UITabBarItem *profileTabBarItem = [[UITabBarItem alloc] initWithTitle:@"Profile" image:[[UIImage imageNamed:@"tabbar-profile"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"tabbar-profile"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+    UITabBarItem *profileTabBarItem = [[UITabBarItem alloc] initWithTitle:@"Profile" image:[coloredImg imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[coloredImg imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
     profileViewController.tabBarItem = profileTabBarItem;
     
     self.window.rootViewController = self.tabBarController;
