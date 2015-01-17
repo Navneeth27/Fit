@@ -162,11 +162,18 @@
 		2CCE1A9917ECD32B00680126 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CCE1A9817ECD32B00680126 /* Foundation.framework */; };
 		2CCE1A9B17ECD32B00680126 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CCE1A9A17ECD32B00680126 /* CoreGraphics.framework */; };
 		2CCE1A9D17ECD32B00680126 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CCE1A9C17ECD32B00680126 /* UIKit.framework */; };
+		6B0A19D41A69E86A002A35C2 /* i386Symbols.c in Sources */ = {isa = PBXBuildFile; fileRef = 6B0A19D31A69E86A002A35C2 /* i386Symbols.c */; };
+		6B0A19D91A69ED86002A35C2 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B0A19D81A69ED86002A35C2 /* libstdc++.dylib */; };
 		6B267D321A65ED3B00F0C056 /* tabbartimeline@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B267D301A65ED3B00F0C056 /* tabbartimeline@2x.png */; };
 		6B267D331A65ED3B00F0C056 /* tabbartimeline.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B267D311A65ED3B00F0C056 /* tabbartimeline.png */; };
 		6B267D361A65EE5000F0C056 /* nav-btn-close.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B267D341A65EE5000F0C056 /* nav-btn-close.png */; };
 		6B267D371A65EE5000F0C056 /* nav-btn-close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B267D351A65EE5000F0C056 /* nav-btn-close@2x.png */; };
-		6B410FD61A5E12D8004B4823 /* ooVooSDK-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B410FD51A5E12D8004B4823 /* ooVooSDK-iOS.framework */; };
+		6B28E1941A69EE99007A3C24 /* ooVooSDK-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B410FD51A5E12D8004B4823 /* ooVooSDK-iOS.framework */; };
+		6B28E1961A69F0DE007A3C24 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B28E1951A69F0DE007A3C24 /* AVFoundation.framework */; };
+		6B28E19A1A69F107007A3C24 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B28E1991A69F107007A3C24 /* CoreAudio.framework */; };
+		6B28E19C1A69F111007A3C24 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B28E19B1A69F111007A3C24 /* AudioToolbox.framework */; };
+		6B28E19E1A69F14F007A3C24 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B28E19D1A69F14F007A3C24 /* CoreMedia.framework */; };
+		6B28E1A01A69F180007A3C24 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B28E19F1A69F180007A3C24 /* CoreTelephony.framework */; };
 		6B5E08A81A609B160020D78B /* WLIChooseVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5E08A61A609B160020D78B /* WLIChooseVideoViewController.m */; };
 		6B5E08A91A609B160020D78B /* WLIChooseVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B5E08A71A609B160020D78B /* WLIChooseVideoViewController.xib */; };
 		6BA07B0D1A5F4B3600382FF1 /* Default-568h@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6BA07B0C1A5F4B3600382FF1 /* Default-568h@2x.jpg */; };
@@ -434,10 +441,19 @@
 		2CCE1A9817ECD32B00680126 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2CCE1A9A17ECD32B00680126 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2CCE1A9C17ECD32B00680126 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6B0A19D31A69E86A002A35C2 /* i386Symbols.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = i386Symbols.c; sourceTree = "<group>"; };
+		6B0A19D61A69ED4A002A35C2 /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
+		6B0A19D81A69ED86002A35C2 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		6B267D301A65ED3B00F0C056 /* tabbartimeline@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbartimeline@2x.png"; sourceTree = "<group>"; };
 		6B267D311A65ED3B00F0C056 /* tabbartimeline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbartimeline.png; sourceTree = "<group>"; };
 		6B267D341A65EE5000F0C056 /* nav-btn-close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav-btn-close.png"; sourceTree = "<group>"; };
 		6B267D351A65EE5000F0C056 /* nav-btn-close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav-btn-close@2x.png"; sourceTree = "<group>"; };
+		6B28E1951A69F0DE007A3C24 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		6B28E1971A69F103007A3C24 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		6B28E1991A69F107007A3C24 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		6B28E19B1A69F111007A3C24 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		6B28E19D1A69F14F007A3C24 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		6B28E19F1A69F180007A3C24 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		6B410FD51A5E12D8004B4823 /* ooVooSDK-iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "ooVooSDK-iOS.framework"; sourceTree = "<group>"; };
 		6B5E08A51A609B160020D78B /* WLIChooseVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLIChooseVideoViewController.h; sourceTree = "<group>"; };
 		6B5E08A61A609B160020D78B /* WLIChooseVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLIChooseVideoViewController.m; sourceTree = "<group>"; };
@@ -479,6 +495,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B28E1A01A69F180007A3C24 /* CoreTelephony.framework in Frameworks */,
+				6B28E19E1A69F14F007A3C24 /* CoreMedia.framework in Frameworks */,
+				6B28E19C1A69F111007A3C24 /* AudioToolbox.framework in Frameworks */,
+				6B28E19A1A69F107007A3C24 /* CoreAudio.framework in Frameworks */,
+				6B28E1961A69F0DE007A3C24 /* AVFoundation.framework in Frameworks */,
+				6B28E1941A69EE99007A3C24 /* ooVooSDK-iOS.framework in Frameworks */,
+				6B0A19D91A69ED86002A35C2 /* libstdc++.dylib in Frameworks */,
 				AD71601D1A38B9E40043E740 /* libz.dylib in Frameworks */,
 				AD71601B1A38B9D60043E740 /* libsqlite3.dylib in Frameworks */,
 				2C8AF2801A1B772F0003B22E /* QuartzCore.framework in Frameworks */,
@@ -486,7 +509,6 @@
 				2C8AF27B1A1B76BB0003B22E /* Accelerate.framework in Frameworks */,
 				AD7160191A38B9A90043E740 /* AWSiOSSDKv2.framework in Frameworks */,
 				C7B424BD183D2563003B51D0 /* StoreKit.framework in Frameworks */,
-				6B410FD61A5E12D8004B4823 /* ooVooSDK-iOS.framework in Frameworks */,
 				C7B424BB183D254C003B51D0 /* libz.1.2.5.dylib in Frameworks */,
 				C7B424B9183D2540003B51D0 /* libsqlite3.0.dylib in Frameworks */,
 				2C8AF2861A1B77F40003B22E /* AviarySDK.framework in Frameworks */,
@@ -1211,6 +1233,7 @@
 		2CCE1A8C17ECD32B00680126 = {
 			isa = PBXGroup;
 			children = (
+				6B0A19D31A69E86A002A35C2 /* i386Symbols.c */,
 				6BA07B121A5F4BB900382FF1 /* Default-568h@2x.png */,
 				2C6D26741896BACA00C459CB /* WeLike */,
 				2CCE1A9717ECD32B00680126 /* Frameworks */,
@@ -1229,6 +1252,14 @@
 		2CCE1A9717ECD32B00680126 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6B28E19F1A69F180007A3C24 /* CoreTelephony.framework */,
+				6B28E19D1A69F14F007A3C24 /* CoreMedia.framework */,
+				6B28E19B1A69F111007A3C24 /* AudioToolbox.framework */,
+				6B28E1991A69F107007A3C24 /* CoreAudio.framework */,
+				6B28E1971A69F103007A3C24 /* AudioUnit.framework */,
+				6B28E1951A69F0DE007A3C24 /* AVFoundation.framework */,
+				6B0A19D81A69ED86002A35C2 /* libstdc++.dylib */,
+				6B0A19D61A69ED4A002A35C2 /* libstdc++.6.0.9.dylib */,
 				6B410FD51A5E12D8004B4823 /* ooVooSDK-iOS.framework */,
 				AD71601C1A38B9E40043E740 /* libz.dylib */,
 				AD71601A1A38B9D60043E740 /* libsqlite3.dylib */,
@@ -1516,6 +1547,7 @@
 				2C6D27DB1896BACA00C459CB /* WLIPostCollectionViewCell.m in Sources */,
 				2C6D27DD1896BACA00C459CB /* WLIUserCell.m in Sources */,
 				2C5B5C821A1A8F9500175A58 /* UIProgressView+AFNetworking.m in Sources */,
+				6B0A19D41A69E86A002A35C2 /* i386Symbols.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1618,7 +1650,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
+					"Users/benjamin.harvey/Desktop/stuff/Fitovate/wlinew/wli/ooVooSDK-iOS.framework",
 					"$(PROJECT_DIR)/WeLike/3rdParty/AviarySDK",
 					"$(PROJECT_DIR)",
 					"/Users/panafold/Downloads/aws-ios-sdk-2.0.13/third-party",
@@ -1647,7 +1679,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
+					"Users/benjamin.harvey/Desktop/stuff/Fitovate/wlinew/wli/ooVooSDK-iOS.framework",
 					"$(PROJECT_DIR)/WeLike/3rdParty/AviarySDK",
 					"$(PROJECT_DIR)",
 					"/Users/panafold/Downloads/aws-ios-sdk-2.0.13/third-party",
@@ -1663,6 +1695,7 @@
 					"$(SRCROOT)/WeLike/3rdParty/AviarySDK",
 					"$(PROJECT_DIR)/WeLike/3rdParty/AviarySDK",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "$(OTHER_LDFLAGS)";
 				PRODUCT_NAME = Fitovate;
 				VALID_ARCHS = "armv7 armv7s";
