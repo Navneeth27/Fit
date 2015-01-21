@@ -35,7 +35,7 @@
     [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:92.0f/255.0f green:173.0f/255.0f blue:255.0f/255.0f alpha:1.0f]];
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
-    
+
     if ([UIDevice currentDevice].systemVersion.floatValue >= 7.0f) {
         [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"nav-back64.png"] forBarMetrics:UIBarMetricsDefault];
         [[UINavigationBar appearance] setShadowImage:[UIImage new]];
@@ -79,7 +79,6 @@
             }];
         }
     }];
-    
     
     return YES;
 }
