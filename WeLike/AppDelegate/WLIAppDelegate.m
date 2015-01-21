@@ -62,6 +62,25 @@
      applicationToken:@"MDAxMDAxAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoE%2FTxwzvba3Wy%2FupvESaKZhg1ngT4E8V7bqvT1RpL5F0UIW8FKbWarcsUJ51Nx%2BGwlHpeETeLbU4B8AYBUSRsopL5aGEZx7OrKL%2B%2B60kOeKuNLZuf%2FTVdRXKNLa1LuXU%3D" baseUrl:[[NSUserDefaults standardUserDefaults] stringForKey:@"production"]];
     
     
+    //benmark
+    NSUUID *appID = [[NSUUID alloc] initWithUUIDString:@"c6d3dfe6-a1a8-11e4-b169-142b010033d0"];
+    self.layerClient = [LYRClient clientWithAppID:appID];
+    [self.layerClient connectWithCompletion:^(BOOL success, NSError *error) {
+        if (!success) {
+            NSLog(@"Failed to connect to Layer: %@", error);
+        } else {
+            NSString *userIDString = @"bharv410";
+            // Once connected, authenticate user.
+            // Check Authenticate step for authenticateLayerWithUserID source
+            [self authenticateLayerWithUserID:userIDString completion:^(BOOL success, NSError *error) {
+                if (!success) {
+                    NSLog(@"Failed Authenticating Layer Client with error:%@", error);
+                }
+            }];
+        }
+    }];
+    
+    
     return YES;
 }
 
@@ -184,6 +203,102 @@
     profileViewController.tabBarItem = profileTabBarItem;
     
     self.window.rootViewController = self.tabBarController;
+}
+
+- (void)authenticateLayerWithUserID:(NSString *)userID completion:(void (^)(BOOL success, NSError * error))completion
+{
+    // If the user is authenticated you don't need to re-authenticate.
+    if (self.layerClient.authenticatedUserID) {
+        NSLog(@"Layer Authenticated as User %@", self.layerClient.authenticatedUserID);
+        if (completion) completion(YES, nil);
+        return;
+    }
+    
+    /*
+     * 1. Request an authentication Nonce from Layer
+     */
+    [self.layerClient requestAuthenticationNonceWithCompletion:^(NSString *nonce, NSError *error) {
+        if (!nonce) {
+            if (completion) {
+                completion(NO, error);
+            }
+            return;
+        }
+        
+        /*
+         * 2. Acquire identity Token from Layer Identity Service
+         */
+        [self requestIdentityTokenForUserID:userID appID:[self.layerClient.appID UUIDString] nonce:nonce completion:^(NSString *identityToken, NSError *error) {
+            if (!identityToken) {
+                if (completion) {
+                    completion(NO, error);
+                }
+                return;
+            }
+            
+            /*
+             * 3. Submit identity token to Layer for validation
+             */
+            [self.layerClient authenticateWithIdentityToken:identityToken completion:^(NSString *authenticatedUserID, NSError *error) {
+                if (authenticatedUserID) {
+                    if (completion) {
+                        completion(YES, nil);
+                    }
+                    NSLog(@"Layer Authenticated as User: %@", authenticatedUserID);
+                } else {
+                    completion(NO, error);
+                }
+            }];
+        }];
+    }];
+}
+- (void)requestIdentityTokenForUserID:(NSString *)userID appID:(NSString *)appID nonce:(NSString *)nonce completion:(void(^)(NSString *identityToken, NSError *error))completion
+{
+    NSParameterAssert(userID);
+    NSParameterAssert(appID);
+    NSParameterAssert(nonce);
+    NSParameterAssert(completion);
+    
+    NSURL *identityTokenURL = [NSURL URLWithString:@"https://layer-identity-provider.herokuapp.com/identity_tokens"];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:identityTokenURL];
+    request.HTTPMethod = @"POST";
+    [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    [request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
+    
+    NSDictionary *parameters = @{ @"app_id": appID, @"user_id": userID, @"nonce": nonce };
+    NSData *requestBody = [NSJSONSerialization dataWithJSONObject:parameters options:0 error:nil];
+    request.HTTPBody = requestBody;
+    
+    NSURLSessionConfiguration *sessionConfiguration = [NSURLSessionConfiguration ephemeralSessionConfiguration];
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:sessionConfiguration];
+    [[session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+        if (error) {
+            completion(nil, error);
+            return;
+        }
+        
+        // Deserialize the response
+        NSDictionary *responseObject = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+        if(![responseObject valueForKey:@"error"])
+        {
+            NSString *identityToken = responseObject[@"identity_token"];
+            completion(identityToken, nil);
+        }
+        else
+        {
+            NSString *domain = @"layer-identity-provider.herokuapp.com";
+            NSInteger code = [responseObject[@"status"] integerValue];
+            NSDictionary *userInfo =
+            @{
+              NSLocalizedDescriptionKey: @"Layer Identity Provider Returned an Error.",
+              NSLocalizedRecoverySuggestionErrorKey: @"There may be a problem with your APPID."
+              };
+            
+            NSError *error = [[NSError alloc] initWithDomain:domain code:code userInfo:userInfo];
+            completion(nil, error);
+        }
+        
+    }] resume];
 }
 
 @end

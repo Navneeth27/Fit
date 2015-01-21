@@ -11,12 +11,14 @@
 #import <CoreLocation/CoreLocation.h>
 #import <ooVooSDK-iOS/ooVooSDK-iOS.h>
 #import <AWSiOSSDKv2/AWSCore.h>
+#import <LayerKit/LayerKit.h>
 
 @interface WLIAppDelegate : UIResponder <UIApplicationDelegate, UITabBarControllerDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) WLITabBarController *tabBarController;
 @property (strong, nonatomic) CLLocationManager *locationManager;
+@property (strong, nonatomic) LYRClient *layerClient;
 
 - (void)createViewHierarchy;
 
