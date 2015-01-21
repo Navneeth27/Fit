@@ -34,8 +34,12 @@
     // navigation bar appearance
     [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:92.0f/255.0f green:173.0f/255.0f blue:255.0f/255.0f alpha:1.0f]];
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
-    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
 
+    [[UINavigationBar appearance] setTitleTextAttributes:
+     [NSDictionary dictionaryWithObjectsAndKeys:
+      [UIFont fontWithName:@"Pacifico-Regular" size:21],
+      NSFontAttributeName, nil]];
+    
     if ([UIDevice currentDevice].systemVersion.floatValue >= 7.0f) {
         [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"nav-back64.png"] forBarMetrics:UIBarMetricsDefault];
         [[UINavigationBar appearance] setShadowImage:[UIImage new]];
@@ -50,7 +54,12 @@
     navigationBarAppearance.backgroundColor = [UIColor clearColor];
     [navigationBarAppearance setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
     navigationBarAppearance.shadowImage = [[UIImage alloc] init];
-    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+     [[UINavigationBar appearance] setTitleTextAttributes:
+      [NSDictionary dictionaryWithObjectsAndKeys:
+       [UIColor whiteColor],UITextAttributeTextColor,
+       [UIColor clearColor], UITextAttributeTextShadowColor,
+       [UIFont fontWithName:@"Pacifico-Regular" size:21],
+       NSFontAttributeName, nil]];
 
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
