@@ -32,6 +32,12 @@
     
     [super viewDidLoad];
     [self reloadData:YES];
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemOrganize target:self action:@selector(print_Message)];
+}
+
+-(void)print_Message {
+    NSLog(@"Eh up, someone just pressed the button!");
 }
 
 - (void)didReceiveMemoryWarning {
