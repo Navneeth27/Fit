@@ -156,6 +156,12 @@
 		2CCE1A9D17ECD32B00680126 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CCE1A9C17ECD32B00680126 /* UIKit.framework */; };
 		6B0A19D41A69E86A002A35C2 /* i386Symbols.c in Sources */ = {isa = PBXBuildFile; fileRef = 6B0A19D31A69E86A002A35C2 /* i386Symbols.c */; };
 		6B0A19D91A69ED86002A35C2 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B0A19D81A69ED86002A35C2 /* libstdc++.dylib */; };
+		6B130BDB1A730BBC00FE0E0C /* tabbarnewpost.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B130BD91A730BBC00FE0E0C /* tabbarnewpost.png */; };
+		6B130BDC1A730BBC00FE0E0C /* tabbarnewpost@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B130BDA1A730BBC00FE0E0C /* tabbarnewpost@2x.png */; };
+		6B130BE41A730E9300FE0E0C /* LQSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B130BE21A730E9300FE0E0C /* LQSViewController.m */; };
+		6B130BE51A730E9300FE0E0C /* LQSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B130BE31A730E9300FE0E0C /* LQSViewController.xib */; };
+		6B130BE81A73108E00FE0E0C /* messagesbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B130BE61A73108E00FE0E0C /* messagesbutton@2x.png */; };
+		6B130BE91A73108E00FE0E0C /* messagesbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B130BE71A73108E00FE0E0C /* messagesbutton.png */; };
 		6B267D321A65ED3B00F0C056 /* tabbartimeline@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B267D301A65ED3B00F0C056 /* tabbartimeline@2x.png */; };
 		6B267D331A65ED3B00F0C056 /* tabbartimeline.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B267D311A65ED3B00F0C056 /* tabbartimeline.png */; };
 		6B267D361A65EE5000F0C056 /* nav-btn-close.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B267D341A65EE5000F0C056 /* nav-btn-close.png */; };
@@ -172,8 +178,6 @@
 		6B774ED71A6A1509007A8277 /* tabbarnearby.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B774ED61A6A1509007A8277 /* tabbarnearby.png */; };
 		6B774EDA1A6A197A007A8277 /* tabbarprofile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B774ED81A6A197A007A8277 /* tabbarprofile@2x.png */; };
 		6B774EDB1A6A197A007A8277 /* tabbarprofile.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B774ED91A6A197A007A8277 /* tabbarprofile.png */; };
-		6B7C6AEC1A6EC4DC007230B8 /* tabbarnewpost@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B7C6AEA1A6EC4DC007230B8 /* tabbarnewpost@2x.png */; };
-		6B7C6AED1A6EC4DC007230B8 /* tabbarnewpost.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B7C6AEB1A6EC4DC007230B8 /* tabbarnewpost.png */; };
 		6B7C6AF01A6EC562007230B8 /* tabbarpopular@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B7C6AEE1A6EC562007230B8 /* tabbarpopular@2x.png */; };
 		6B7C6AF11A6EC562007230B8 /* tabbarpopular.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B7C6AEF1A6EC562007230B8 /* tabbarpopular.png */; };
 		6B7D56E21A70629A00325793 /* Pacifico.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B7D56E11A70629A00325793 /* Pacifico.ttf */; };
@@ -438,6 +442,13 @@
 		6B0A19D31A69E86A002A35C2 /* i386Symbols.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = i386Symbols.c; sourceTree = "<group>"; };
 		6B0A19D61A69ED4A002A35C2 /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
 		6B0A19D81A69ED86002A35C2 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		6B130BD91A730BBC00FE0E0C /* tabbarnewpost.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbarnewpost.png; sourceTree = "<group>"; };
+		6B130BDA1A730BBC00FE0E0C /* tabbarnewpost@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbarnewpost@2x.png"; sourceTree = "<group>"; };
+		6B130BE11A730E9300FE0E0C /* LQSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LQSViewController.h; path = LayerMessaging/LQSViewController.h; sourceTree = "<group>"; };
+		6B130BE21A730E9300FE0E0C /* LQSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LQSViewController.m; path = LayerMessaging/LQSViewController.m; sourceTree = "<group>"; };
+		6B130BE31A730E9300FE0E0C /* LQSViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LQSViewController.xib; path = LayerMessaging/LQSViewController.xib; sourceTree = "<group>"; };
+		6B130BE61A73108E00FE0E0C /* messagesbutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "messagesbutton@2x.png"; sourceTree = "<group>"; };
+		6B130BE71A73108E00FE0E0C /* messagesbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = messagesbutton.png; sourceTree = "<group>"; };
 		6B267D301A65ED3B00F0C056 /* tabbartimeline@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbartimeline@2x.png"; sourceTree = "<group>"; };
 		6B267D311A65ED3B00F0C056 /* tabbartimeline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbartimeline.png; sourceTree = "<group>"; };
 		6B267D341A65EE5000F0C056 /* nav-btn-close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav-btn-close.png"; sourceTree = "<group>"; };
@@ -456,8 +467,6 @@
 		6B774ED61A6A1509007A8277 /* tabbarnearby.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbarnearby.png; sourceTree = "<group>"; };
 		6B774ED81A6A197A007A8277 /* tabbarprofile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbarprofile@2x.png"; sourceTree = "<group>"; };
 		6B774ED91A6A197A007A8277 /* tabbarprofile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbarprofile.png; sourceTree = "<group>"; };
-		6B7C6AEA1A6EC4DC007230B8 /* tabbarnewpost@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbarnewpost@2x.png"; sourceTree = "<group>"; };
-		6B7C6AEB1A6EC4DC007230B8 /* tabbarnewpost.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbarnewpost.png; sourceTree = "<group>"; };
 		6B7C6AEE1A6EC562007230B8 /* tabbarpopular@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbarpopular@2x.png"; sourceTree = "<group>"; };
 		6B7C6AEF1A6EC562007230B8 /* tabbarpopular.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbarpopular.png; sourceTree = "<group>"; };
 		6B7D56E11A70629A00325793 /* Pacifico.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pacifico.ttf; sourceTree = "<group>"; };
@@ -912,6 +921,7 @@
 		2C6D27151896BACA00C459CB /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				6B130BDD1A730D3900FE0E0C /* LayerMessaging */,
 				2C6D27161896BACA00C459CB /* Comments */,
 				2C6D271A1896BACA00C459CB /* Followers */,
 				2C6D271E1896BACA00C459CB /* Following */,
@@ -1107,6 +1117,8 @@
 		2C6D275A1896BACA00C459CB /* WLI-images */ = {
 			isa = PBXGroup;
 			children = (
+				6B130BE61A73108E00FE0E0C /* messagesbutton@2x.png */,
+				6B130BE71A73108E00FE0E0C /* messagesbutton.png */,
 				6BA07B101A5F4B8000382FF1 /* Default@2x.jpg */,
 				6BA07B0E1A5F4B6600382FF1 /* Default.jpg */,
 				6BA07B0C1A5F4B3600382FF1 /* Default-568h@2x.jpg */,
@@ -1204,10 +1216,10 @@
 		2C6D278E1896BACA00C459CB /* tabbar */ = {
 			isa = PBXGroup;
 			children = (
+				6B130BD91A730BBC00FE0E0C /* tabbarnewpost.png */,
+				6B130BDA1A730BBC00FE0E0C /* tabbarnewpost@2x.png */,
 				6B7C6AEE1A6EC562007230B8 /* tabbarpopular@2x.png */,
 				6B7C6AEF1A6EC562007230B8 /* tabbarpopular.png */,
-				6B7C6AEA1A6EC4DC007230B8 /* tabbarnewpost@2x.png */,
-				6B7C6AEB1A6EC4DC007230B8 /* tabbarnewpost.png */,
 				6B774ED81A6A197A007A8277 /* tabbarprofile@2x.png */,
 				6B774ED91A6A197A007A8277 /* tabbarprofile.png */,
 				6B774ED61A6A1509007A8277 /* tabbarnearby.png */,
@@ -1299,6 +1311,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6B130BDD1A730D3900FE0E0C /* LayerMessaging */ = {
+			isa = PBXGroup;
+			children = (
+				6B130BE11A730E9300FE0E0C /* LQSViewController.h */,
+				6B130BE21A730E9300FE0E0C /* LQSViewController.m */,
+				6B130BE31A730E9300FE0E0C /* LQSViewController.xib */,
+			);
+			name = LayerMessaging;
+			sourceTree = "<group>";
+		};
 		AD71602E1A38BABB0043E740 /* AWSJson */ = {
 			isa = PBXGroup;
 			children = (
@@ -1382,6 +1404,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B130BDB1A730BBC00FE0E0C /* tabbarnewpost.png in Resources */,
 				2C6D27D11896BACA00C459CB /* WLICommentCell.xib in Resources */,
 				2C6D27FB1896BACA00C459CB /* WLITimelineViewController.xib in Resources */,
 				AD8CF6F51A322BB10002250B /* whitebg.png in Resources */,
@@ -1390,15 +1413,16 @@
 				2C6D27EA1896BACA00C459CB /* WLINearbyViewController.xib in Resources */,
 				6B267D321A65ED3B00F0C056 /* tabbartimeline@2x.png in Resources */,
 				2C6D28151896BACA00C459CB /* iTunesArtwork@2x.png in Resources */,
+				6B130BE81A73108E00FE0E0C /* messagesbutton@2x.png in Resources */,
 				2C6D281C1896BACA00C459CB /* nav-btn-back.png in Resources */,
 				2C6D27E01896BACA00C459CB /* WLICommentsViewController.xib in Resources */,
 				6B7C6AF01A6EC562007230B8 /* tabbarpopular@2x.png in Resources */,
 				2C6D28171896BACA00C459CB /* map-pin@2x.png in Resources */,
 				AD7160491A38BAC60043E740 /* sdb-2009-04-15.json in Resources */,
+				6B130BDC1A730BBC00FE0E0C /* tabbarnewpost@2x.png in Resources */,
 				AD71604B1A38BAC60043E740 /* sqs-2012-11-05.json in Resources */,
 				2C6D27F21896BACA00C459CB /* WLIEditProfileViewController.xib in Resources */,
 				6B7D56E21A70629A00325793 /* Pacifico.ttf in Resources */,
-				6B7C6AEC1A6EC4DC007230B8 /* tabbarnewpost@2x.png in Resources */,
 				AD7160421A38BAC60043E740 /* ec2-2014-09-01.json in Resources */,
 				6B774EDB1A6A197A007A8277 /* tabbarprofile.png in Resources */,
 				2C6D28021896BACA00C459CB /* btn-follow.png in Resources */,
@@ -1408,7 +1432,6 @@
 				2C6D27B61896BACA00C459CB /* MNMPullToRefreshIcon@2x.png in Resources */,
 				2C6D28091896BACA00C459CB /* btn-unfollow@2x.png in Resources */,
 				2C6D27E61896BACA00C459CB /* WLILikesViewController.xib in Resources */,
-				6B7C6AED1A6EC4DC007230B8 /* tabbarnewpost.png in Resources */,
 				AD7160471A38BAC60043E740 /* monitoring-2010-08-01.json in Resources */,
 				2C6D27F01896BACA00C459CB /* WLIPostViewController.xib in Resources */,
 				AD7160431A38BAC60043E740 /* elasticloadbalancing-2012-06-01.json in Resources */,
@@ -1463,6 +1486,7 @@
 				2C6D27B41896BACA00C459CB /* MNMPullToRefresh.strings in Resources */,
 				2C6D28391896BACA00C459CB /* welcome-background.png in Resources */,
 				2C6D28081896BACA00C459CB /* btn-unfollow.png in Resources */,
+				6B130BE51A730E9300FE0E0C /* LQSViewController.xib in Resources */,
 				2C8AF2871A1B77F40003B22E /* AviarySDKResources.bundle in Resources */,
 				2C6D280F1896BACA00C459CB /* AppIcon57x57.png in Resources */,
 				6B5E08A91A609B160020D78B /* WLIChooseVideoViewController.xib in Resources */,
@@ -1485,6 +1509,7 @@
 				AD7160401A38BAC60043E740 /* css-2014-06-30.json in Resources */,
 				2C6D282D1896BACA00C459CB /* pulldown-refresh-icon@2x.png in Resources */,
 				2C6D28241896BACA00C459CB /* nav-btn-save.png in Resources */,
+				6B130BE91A73108E00FE0E0C /* messagesbutton.png in Resources */,
 				2C6D28031896BACA00C459CB /* btn-follow@2x.png in Resources */,
 				2C6D28121896BACA00C459CB /* AppIcon60x60@2x.png in Resources */,
 				2C6D28141896BACA00C459CB /* iTunesArtwork.png in Resources */,
@@ -1599,6 +1624,7 @@
 				2C6D27C91896BACA00C459CB /* WLIComment.m in Sources */,
 				2C6D27E11896BACA00C459CB /* WLIFollowersViewController.m in Sources */,
 				2C5B5C831A1A8F9500175A58 /* UIRefreshControl+AFNetworking.m in Sources */,
+				6B130BE41A730E9300FE0E0C /* LQSViewController.m in Sources */,
 				2C6D27DB1896BACA00C459CB /* WLIPostCollectionViewCell.m in Sources */,
 				2C6D27DD1896BACA00C459CB /* WLIUserCell.m in Sources */,
 				2C5B5C821A1A8F9500175A58 /* UIProgressView+AFNetworking.m in Sources */,

@@ -10,6 +10,7 @@
 #import "WLIPostCell.h"
 #import "WLILoadingCell.h"
 #import "GlobalDefines.h"
+#import "LQSViewController.h"
 
 @implementation WLITimelineViewController
 
@@ -33,11 +34,25 @@
     [super viewDidLoad];
     [self reloadData:YES];
     
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemOrganize target:self action:@selector(print_Message)];
+    
+    
+    
+    
+    
+    UIButton *button =[[UIButton alloc] initWithFrame:CGRectMake(0, 0, 35, 35)];
+    [button setImage:[UIImage imageNamed:@"messagesbutton.png"] forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(print_Message) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *back = [[UIBarButtonItem alloc] initWithCustomView:button];
+    
+    self.navigationItem.rightBarButtonItem =back;
 }
 
 -(void)print_Message {
     NSLog(@"Eh up, someone just pressed the button!");
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Home" style:UIBarButtonItemStylePlain target:nil action:nil];
+    LQSViewController *newVc = [[LQSViewController alloc]init];
+    [self.navigationController pushViewController:newVc animated:YES];
+                                
 }
 
 - (void)didReceiveMemoryWarning {
