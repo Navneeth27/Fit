@@ -37,7 +37,8 @@
 
     [[UINavigationBar appearance] setTitleTextAttributes:
      [NSDictionary dictionaryWithObjectsAndKeys:
-      [UIFont fontWithName:@"Pacifico-Regular" size:21],
+      [UIFont fontWithName:@"Pacifico-Regular" size:24
+       ],
       NSFontAttributeName, nil]];
     
     if ([UIDevice currentDevice].systemVersion.floatValue >= 7.0f) {
@@ -58,7 +59,7 @@
       [NSDictionary dictionaryWithObjectsAndKeys:
        [UIColor whiteColor],UITextAttributeTextColor,
        [UIColor clearColor], UITextAttributeTextShadowColor,
-       [UIFont fontWithName:@"Pacifico-Regular" size:21],
+       [UIFont fontWithName:@"Pacifico-Regular" size:24],
        NSFontAttributeName, nil]];
 
     self.window.backgroundColor = [UIColor whiteColor];
