@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "26495341F37AC4527A7BEE19"
+               BlueprintIdentifier = "D3730C92852DCE56045E30CB"
                BuildableName = "libPods-Fitovate.a"
                BlueprintName = "Pods-Fitovate"
                ReferencedContainer = "container:Pods.xcodeproj">

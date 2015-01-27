@@ -34,7 +34,7 @@
     UIButton *saveButton = [UIButton buttonWithType:UIButtonTypeCustom];
     saveButton.adjustsImageWhenHighlighted = NO;
     saveButton.frame = CGRectMake(0.0f, 0.0f, 40.0f, 30.0f);
-    [saveButton setImage:[UIImage imageNamed:@"nav-btn-save.png"] forState:UIControlStateNormal];
+    [saveButton setImage:[UIImage imageNamed:@"nav-btn-edit.png"] forState:UIControlStateNormal];
     [saveButton addTarget:self action:@selector(barButtonItemSaveTouchUpInside:) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:saveButton];
     

@@ -40,7 +40,7 @@
     NSString *path = [videoURL path];
     NSData *data = [[NSFileManager defaultManager] contentsAtPath:path];
     
-    AWSStaticCredentialsProvider *credentialsProvider = [AWSStaticCredentialsProvider credentialsWithAccessKey:@"AKIAJ2QBU7ZWBP7XR7AQ" secretKey:@"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"];
+    AWSStaticCredentialsProvider *credentialsProvider = [AWSStaticCredentialsProvider credentialsWithAccessKey:@"AKIAI2TXM2GGTX5OF2HA" secretKey:@"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"];
     AWSServiceConfiguration *configuration = [AWSServiceConfiguration configurationWithRegion:AWSRegionUSEast1
                                                                           credentialsProvider:credentialsProvider];
     
