@@ -35,7 +35,8 @@
     [self reloadData:YES];
     
     
-    
+    UIBarButtonItem *anotherButton = [[UIBarButtonItem alloc] initWithTitle:@"Activity" style:UIBarButtonItemStylePlain target:self action:@selector(goToActivity)];
+    self.navigationItem.leftBarButtonItem = anotherButton;
     
     
     
@@ -53,6 +54,13 @@
     LQSViewController *newVc = [[LQSViewController alloc]init];
     [self.navigationController pushViewController:newVc animated:YES];
                                 
+}
+-(void)goToActivity {
+    NSLog(@"Going to activity!");
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Home" style:UIBarButtonItemStylePlain target:nil action:nil];
+    LQSViewController *newVc = [[LQSViewController alloc]init];
+    [self.navigationController pushViewController:newVc animated:YES];
+    
 }
 
 - (void)didReceiveMemoryWarning {

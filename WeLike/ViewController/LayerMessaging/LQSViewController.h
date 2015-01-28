@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LQSViewController : UIViewController
-
+@interface LQSViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@property (strong, nonatomic) NSArray *items;
 @end
