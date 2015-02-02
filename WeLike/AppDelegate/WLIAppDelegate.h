@@ -18,7 +18,6 @@
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) WLITabBarController *tabBarController;
 @property (strong, nonatomic) CLLocationManager *locationManager;
-@property (strong, nonatomic) LYRClient *layerClient;
 
 - (void)createViewHierarchy;
 

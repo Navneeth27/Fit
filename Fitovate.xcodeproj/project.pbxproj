@@ -179,6 +179,7 @@
 		6BA07B0F1A5F4B6600382FF1 /* Default.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6BA07B0E1A5F4B6600382FF1 /* Default.jpg */; };
 		6BA07B111A5F4B8000382FF1 /* Default@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6BA07B101A5F4B8000382FF1 /* Default@2x.jpg */; };
 		6BA07B131A5F4BB900382FF1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BA07B121A5F4BB900382FF1 /* Default-568h@2x.png */; };
+		6BA374E91A8031A000250A62 /* LQSChatMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA374E81A8031A000250A62 /* LQSChatMessageCell.m */; };
 		6BDEA6941A7844270077651F /* avatar-overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BDEA6921A7844270077651F /* avatar-overlay.png */; };
 		6BDEA6951A7844270077651F /* avatar-overlay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BDEA6931A7844270077651F /* avatar-overlay@2x.png */; };
 		6BDEA6981A7846380077651F /* nav-btn-edit.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BDEA6961A7846380077651F /* nav-btn-edit.png */; };
@@ -468,6 +469,8 @@
 		6BA07B0E1A5F4B6600382FF1 /* Default.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Default.jpg; sourceTree = "<group>"; };
 		6BA07B101A5F4B8000382FF1 /* Default@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Default@2x.jpg"; sourceTree = "<group>"; };
 		6BA07B121A5F4BB900382FF1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		6BA374E71A8031A000250A62 /* LQSChatMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQSChatMessageCell.h; sourceTree = "<group>"; };
+		6BA374E81A8031A000250A62 /* LQSChatMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQSChatMessageCell.m; sourceTree = "<group>"; };
 		6BDEA6921A7844270077651F /* avatar-overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatar-overlay.png"; sourceTree = "<group>"; };
 		6BDEA6931A7844270077651F /* avatar-overlay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatar-overlay@2x.png"; sourceTree = "<group>"; };
 		6BDEA6961A7846380077651F /* nav-btn-edit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav-btn-edit.png"; sourceTree = "<group>"; };
@@ -1314,6 +1317,8 @@
 		6B130BDD1A730D3900FE0E0C /* LayerMessaging */ = {
 			isa = PBXGroup;
 			children = (
+				6BA374E71A8031A000250A62 /* LQSChatMessageCell.h */,
+				6BA374E81A8031A000250A62 /* LQSChatMessageCell.m */,
 				6B130BE11A730E9300FE0E0C /* LQSViewController.h */,
 				6B130BE21A730E9300FE0E0C /* LQSViewController.m */,
 				6B130BE31A730E9300FE0E0C /* LQSViewController.xib */,
@@ -1585,6 +1590,7 @@
 				2C6D27E91896BACA00C459CB /* WLINearbyViewController.m in Sources */,
 				2C6D27D81896BACA00C459CB /* WLIPostCell.m in Sources */,
 				2C6D27FA1896BACA00C459CB /* WLITimelineViewController.m in Sources */,
+				6BA374E91A8031A000250A62 /* LQSChatMessageCell.m in Sources */,
 				2C6D27EF1896BACA00C459CB /* WLIPostViewController.m in Sources */,
 				2C6D27B21896BACA00C459CB /* MBProgressHUD.m in Sources */,
 				2C6D27CF1896BACA00C459CB /* WLIUser.m in Sources */,

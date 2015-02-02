@@ -17,8 +17,10 @@
 ///---------------------------
 
 /**
- @abstract The option key used in the conversation to specify the metadata content that is synchronized across participants.
- The value associated to this key must be passed in the `options` dictionary argument when creating the conversation.
+ @abstract The option key for configuring metadata during Conversation creation.
+ @discussion The `LYRConversationOptionsMetadataKey` enables developers to configure metadata on the conversation at the moment it is created, guaranteeing that the
+ metadata will be available on the conversation when the change notification is published. The value given must be an `NSDictionary` of `NSString` key-value pairs. The 
+ functionality provided is identical to calling `setValuesForMetadataKeyPathsWithDictionary:merge:` with a `merge` argument of `NO` on the conversation after initialization.
  */
 extern NSString *const LYRConversationOptionsMetadataKey;
 
@@ -51,7 +53,7 @@ extern NSString *const LYRConversationOptionsDeliveryReceiptsEnabledKey;
  of a given user withinin the backend application acting as the identity provider for the Layer-enabled mobile application.
  
  The `participants` property is queryable via the `LYRPredicateOperatorIsEqualTo`, `LYRPredicateOperatorIsNotEqualTo`, `LYRPredicateOperatorIsIn`, and `LYRPredicateOperatorIsNotIn` operators. For convenience, 
- queries against the `participants` set will always implicitly include the authenticated user.
+ queries with an equality predicate (`LYRPredicateOperatorIsEqualTo` and `LYRPredicateOperatorIsNotEqualTo`) for the `participants` property will implicitly include the authenticated user.
  */
 @property (nonatomic, readonly) NSSet *participants LYR_QUERYABLE_PROPERTY;
 

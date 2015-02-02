@@ -1,10 +1,10 @@
 PODS:
-  - LayerKit (0.9.5)
+  - LayerKit (0.9.6)
 
 DEPENDENCIES:
   - LayerKit
 
 SPEC CHECKSUMS:
-  LayerKit: 75c6ca98c8740a727eea3cbfafb6123405c38925
+  LayerKit: 0e07ecf202c88c5eb17fa4f52301e0dea89afe7f
 
 COCOAPODS: 0.35.0
