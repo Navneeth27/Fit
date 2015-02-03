@@ -45,14 +45,13 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    // Return number of objects in queryController
-    return [self.queryController numberOfObjectsInSection:section];
+    return 10;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *simpleTableIdentifier = @"SimpleTableCell";
+    static NSString *simpleTableIdentifier = @"myCell";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
     
@@ -117,14 +116,14 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 - (void)authenticateLayerWithUserID:(NSString *)userID completion:(void (^)(BOOL success, NSError * error))completion
 {
     // If the user is authenticated you don't need to re-authenticate.
@@ -253,7 +252,6 @@
     // Set up query controller
     self.queryController = [self.layerClient queryControllerWithQuery:query];
     self.queryController.delegate = self;
-    
     NSError *error;
     BOOL success = [self.queryController execute:&error];
     if (success) {
@@ -269,10 +267,10 @@
 
 
 - (void)queryController:(LYRQueryController *)controller
-        didChangeObject:(id)object
-            atIndexPath:(NSIndexPath *)indexPath
-          forChangeType:(LYRQueryControllerChangeType)type
-           newIndexPath:(NSIndexPath *)newIndexPath
+didChangeObject:(id)object
+atIndexPath:(NSIndexPath *)indexPath
+forChangeType:(LYRQueryControllerChangeType)type
+newIndexPath:(NSIndexPath *)newIndexPath
 {
     
     NSLog(@"Noticed a change");
