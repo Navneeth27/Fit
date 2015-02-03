@@ -45,7 +45,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 10;
+    return [self.queryController numberOfObjectsInSection:0];
 }
 
 
@@ -256,6 +256,7 @@
     BOOL success = [self.queryController execute:&error];
     if (success) {
         NSLog(@"Query fetched %tu message objects", [self.queryController numberOfObjectsInSection:0]);
+        [self.tableView reloadData];
     } else {
         NSLog(@"Query failed with error: %@", error);
     }
