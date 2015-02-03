@@ -15,14 +15,6 @@
 @end
 
 @implementation LQSViewController
-@synthesize items = _items;
-
-- (NSArray *)items
-{
-    if (!_items)
-        _items = @[@"Item1", @"Item2", @"Item3", @"Item4"];
-    return _items;
-}
 
 
 - (void)viewDidLoad {
@@ -41,18 +33,22 @@
             [self authenticateLayerWithUserID:userIDString completion:^(BOOL success, NSError *error) {
                 if (!success) {
                     NSLog(@"Failed Authenticating Layer Client with error:%@", error);
+                }else{
+                    NSLog(@"grabbing conversations...");
+                    [self fetchLayerConversation];
                 }
             }];
         }
     }];
 }
 //this displays all messages
-/*
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return number of objects in queryController
     return [self.queryController numberOfObjectsInSection:section];
 }
+
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -77,7 +73,7 @@
     cell.textLabel.text = [NSString stringWithFormat:@"%@:%@",[message sentByUserID], [[NSString alloc] initWithData:messagePart.data encoding:NSUTF8StringEncoding]];
 }
 
-*/
+
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -94,29 +90,11 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    return [self.items count];
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"myCell"];
-    if (!cell)
-    {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"myCell"];
-    }
-    
-    cell.textLabel.text = [self.items objectAtIndex:indexPath.row];
-    
-    return cell;
-}
-
 - (void)sendMessage:(NSString *)messageText{
     // If no conversations exist, create a new conversation object with two participants
     if (!self.conversation) {
         NSError *error = nil;
-        self.conversation = [self.layerClient newConversationWithParticipants:[NSSet setWithArray:@[ @"TestConversationGuy"]] options:nil error:&error];
+        self.conversation = [self.layerClient newConversationWithParticipants:[NSSet setWithArray:@[ @"Simulator", @ "Dashboard" ]] options:nil error:&error];
         if (!self.conversation) {
             NSLog(@"New Conversation creation failed: %@", error);
         }
@@ -245,14 +223,13 @@
 - (void)fetchLayerConversation
 {
     LYRQuery *query = [LYRQuery queryWithClass:[LYRConversation class]];
-    query.predicate = [LYRPredicate predicateWithProperty:@"participants" operator:LYRPredicateOperatorIsEqualTo value:@[ @"Device", @"Simulator", @"Dashboard" ]];
     
     query.sortDescriptors = @[ [NSSortDescriptor sortDescriptorWithKey:@"createdAt" ascending:NO] ];
     
     NSError *error;
     NSOrderedSet *conversations = [self.layerClient executeQuery:query error:&error];
     if (!error) {
-        NSLog(@"%tu conversations with participants %@", conversations.count, @[ @"<PARTICIPANT>" ]);
+        NSLog(@"%tu conversations with participants %@", conversations.count, @[ @"bharv410" ]);
     } else {
         NSLog(@"Query failed with error %@", error);
     }
@@ -297,6 +274,8 @@
           forChangeType:(LYRQueryControllerChangeType)type
            newIndexPath:(NSIndexPath *)newIndexPath
 {
+    
+    NSLog(@"Noticed a change");
     // Automatically update tableview when there are change events
     switch (type) {
         case LYRQueryControllerChangeTypeInsert:

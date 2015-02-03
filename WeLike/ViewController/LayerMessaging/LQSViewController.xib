@@ -7,7 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LQSViewController">
             <connections>
-                <outlet property="tableView" destination="5a6-g1-Jb7" id="2by-yS-oVH"/>
+                <outlet property="tableView" destination="5a6-g1-Jb7" id="gv3-FN-skf"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

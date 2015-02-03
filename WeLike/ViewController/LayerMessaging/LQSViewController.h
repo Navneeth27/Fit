@@ -10,7 +10,7 @@
 #import <LayerKit/LayerKit.h>
 
 @interface LQSViewController : UIViewController <UITableViewDelegate, UITableViewDataSource,LYRQueryControllerDelegate>
-@property (strong, nonatomic) NSArray *items;
+
 @property (strong, nonatomic) LYRClient *layerClient;
 @property (nonatomic, retain) LYRQueryController *queryController;
 @property (nonatomic) LYRConversation *conversation;
