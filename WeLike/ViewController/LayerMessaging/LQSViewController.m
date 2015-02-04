@@ -81,12 +81,16 @@
     
     // Display Alert Message
     [messageAlert show];
-    [self sendMessage:@"test message sending"];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+-(IBAction)SendBtnClick:(id)sender
+{
+    NSLog(@"BtnClick");
+    [self sendMessage:@"test message sending"];
 }
 
 - (void)sendMessage:(NSString *)messageText{
