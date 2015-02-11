@@ -49,7 +49,7 @@
     self.navigationItem.rightBarButtonItem =back;
 }
 
--(void)print_Message {
+-(void)goToMessages {
     NSLog(@"Eh up, someone just pressed the button!");
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Home" style:UIBarButtonItemStylePlain target:nil action:nil];
     LQSViewController *newVc = [[LQSViewController alloc]init];
