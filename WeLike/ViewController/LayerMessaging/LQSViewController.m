@@ -8,11 +8,13 @@
 
 #import "LQSViewController.h"
 #import "LQSChatMessageCell.h"
+#import "WLIConnect.h"
 
 @interface LQSViewController ()
 
 
 @end
+
 
 @implementation LQSViewController
 
@@ -27,7 +29,7 @@
         if (!success) {
             NSLog(@"Failed to connect to Layer: %@", error);
         } else {
-            NSString *userIDString = @"bharv410";
+            NSString *userIDString = WLIConnect.sharedConnect.currentUser.userUsername;
             // Once connected, authenticate user.
             // Check Authenticate step for authenticateLayerWithUserID source
             [self authenticateLayerWithUserID:userIDString completion:^(BOOL success, NSError *error) {

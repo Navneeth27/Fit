@@ -168,6 +168,8 @@
 		6B28E1A01A69F180007A3C24 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B28E19F1A69F180007A3C24 /* CoreTelephony.framework */; };
 		6B5E08A81A609B160020D78B /* WLIChooseVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5E08A61A609B160020D78B /* WLIChooseVideoViewController.m */; };
 		6B5E08A91A609B160020D78B /* WLIChooseVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B5E08A71A609B160020D78B /* WLIChooseVideoViewController.xib */; };
+		6B66C77B1A8C1FA20057962A /* WLIActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B66C7791A8C1FA20057962A /* WLIActivityViewController.m */; };
+		6B66C77C1A8C1FA20057962A /* WLIActivityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B66C77A1A8C1FA20057962A /* WLIActivityViewController.xib */; };
 		6B774ED51A6A14C5007A8277 /* tabbarnearby@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B774ED41A6A14C5007A8277 /* tabbarnearby@2x.png */; };
 		6B774ED71A6A1509007A8277 /* tabbarnearby.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B774ED61A6A1509007A8277 /* tabbarnearby.png */; };
 		6B774EDA1A6A197A007A8277 /* tabbarprofile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B774ED81A6A197A007A8277 /* tabbarprofile@2x.png */; };
@@ -458,6 +460,9 @@
 		6B5E08A51A609B160020D78B /* WLIChooseVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLIChooseVideoViewController.h; sourceTree = "<group>"; };
 		6B5E08A61A609B160020D78B /* WLIChooseVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLIChooseVideoViewController.m; sourceTree = "<group>"; };
 		6B5E08A71A609B160020D78B /* WLIChooseVideoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WLIChooseVideoViewController.xib; sourceTree = "<group>"; };
+		6B66C7781A8C1FA20057962A /* WLIActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLIActivityViewController.h; sourceTree = "<group>"; };
+		6B66C7791A8C1FA20057962A /* WLIActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLIActivityViewController.m; sourceTree = "<group>"; };
+		6B66C77A1A8C1FA20057962A /* WLIActivityViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WLIActivityViewController.xib; sourceTree = "<group>"; };
 		6B774ED41A6A14C5007A8277 /* tabbarnearby@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbarnearby@2x.png"; sourceTree = "<group>"; };
 		6B774ED61A6A1509007A8277 /* tabbarnearby.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbarnearby.png; sourceTree = "<group>"; };
 		6B774ED81A6A197A007A8277 /* tabbarprofile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbarprofile@2x.png"; sourceTree = "<group>"; };
@@ -1322,6 +1327,9 @@
 				6B130BE11A730E9300FE0E0C /* LQSViewController.h */,
 				6B130BE21A730E9300FE0E0C /* LQSViewController.m */,
 				6B130BE31A730E9300FE0E0C /* LQSViewController.xib */,
+				6B66C7781A8C1FA20057962A /* WLIActivityViewController.h */,
+				6B66C7791A8C1FA20057962A /* WLIActivityViewController.m */,
+				6B66C77A1A8C1FA20057962A /* WLIActivityViewController.xib */,
 			);
 			name = LayerMessaging;
 			sourceTree = "<group>";
@@ -1424,6 +1432,7 @@
 				2C6D27E01896BACA00C459CB /* WLICommentsViewController.xib in Resources */,
 				6B7C6AF01A6EC562007230B8 /* tabbarpopular@2x.png in Resources */,
 				2C6D28171896BACA00C459CB /* map-pin@2x.png in Resources */,
+				6B66C77C1A8C1FA20057962A /* WLIActivityViewController.xib in Resources */,
 				AD7160491A38BAC60043E740 /* sdb-2009-04-15.json in Resources */,
 				6B130BDC1A730BBC00FE0E0C /* tabbarnewpost@2x.png in Resources */,
 				AD71604B1A38BAC60043E740 /* sqs-2012-11-05.json in Resources */,
@@ -1570,6 +1579,7 @@
 				2C5B5C801A1A8F9500175A58 /* UIButton+AFNetworking.m in Sources */,
 				2C5B5C9F1A1A8FAE00175A58 /* AFURLResponseSerialization.m in Sources */,
 				2C6D27E31896BACA00C459CB /* WLIFollowingViewController.m in Sources */,
+				6B66C77B1A8C1FA20057962A /* WLIActivityViewController.m in Sources */,
 				2C6D27BF1896BACA00C459CB /* SBJsonStreamTokeniser.m in Sources */,
 				2C6D27BC1896BACA00C459CB /* SBJsonStreamParserAccumulator.m in Sources */,
 				2C6D27E71896BACA00C459CB /* WLILoginViewController.m in Sources */,

@@ -11,6 +11,7 @@
 #import "WLILoadingCell.h"
 #import "GlobalDefines.h"
 #import "LQSViewController.h"
+#import "WLIActivityViewController.h"
 
 @implementation WLITimelineViewController
 
@@ -58,8 +59,8 @@
 -(void)goToActivity {
     NSLog(@"Going to activity!");
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Home" style:UIBarButtonItemStylePlain target:nil action:nil];
-    LQSViewController *newVc = [[LQSViewController alloc]init];
-    [self.navigationController pushViewController:newVc animated:YES];
+    WLIActivityViewController *newVc = [[WLIActivityViewController alloc]init];
+    [self.navigationController pushViewController:newVc animated:NO];
     
 }
 

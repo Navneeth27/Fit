@@ -44,7 +44,7 @@
         UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
         backButton.adjustsImageWhenHighlighted = NO;
         backButton.frame = CGRectMake(0.0f, 0.0f, 40.0f, 30.0f);
-        [backButton setImage:[UIImage imageNamed:@"nav-btn-back.png"] forState:UIControlStateNormal];
+        [backButton setImage:[UIImage imageNamed:@"nav-btn-close.png"] forState:UIControlStateNormal];
         [backButton addTarget:self action:@selector(barButtonItemBackTouchUpInside:) forControlEvents:UIControlEventTouchUpInside];
         self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backButton];
     } else if (self.presentingViewController) {
