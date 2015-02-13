@@ -11,12 +11,8 @@
 #import "WLIViewController.h"
 #import "UIImageView+AFNetworking.h"
 
-@interface WLINearbyViewController : WLIViewController <MKMapViewDelegate> {
-    
-    CLLocation *lastLocation;
-}
+@interface WLINearbyViewController : WLIViewController
 
-@property (strong, nonatomic) IBOutlet MKMapView *mapViewNearby;
 @property (strong, nonatomic) NSArray *users;
 
 @end
