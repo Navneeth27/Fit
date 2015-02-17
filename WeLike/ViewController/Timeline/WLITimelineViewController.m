@@ -43,7 +43,7 @@
     
     UIButton *button =[[UIButton alloc] initWithFrame:CGRectMake(0, 0, 35, 35)];
     [button setImage:[UIImage imageNamed:@"messagesbutton.png"] forState:UIControlStateNormal];
-    [button addTarget:self action:@selector(print_Message) forControlEvents:UIControlEventTouchUpInside];
+    [button addTarget:self action:@selector(goToMessages) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem *back = [[UIBarButtonItem alloc] initWithCustomView:button];
     
     self.navigationItem.rightBarButtonItem =back;
