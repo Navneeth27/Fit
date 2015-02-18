@@ -11,7 +11,7 @@
 #import <AWSiOSSDKv2/AWSCore.h>
 
 #define kBaseLink @"http://fitovate.elasticbeanstalk.com"
-#define kAPIKey @"!#wli!sdWQDScxzczFžŽYewQsq_?wdX09612627364[3072∑34260-#"
+#define kAPIKey @"OZvstMZeRye9GxG2x89Cq8HNCKCqMr6ctpo0pPVK"
 #define kConnectionTimeout 30
 #define kCompressionQuality 1.0f
 
