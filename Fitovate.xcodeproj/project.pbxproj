@@ -188,6 +188,8 @@
 		6BDEA6991A7846380077651F /* nav-btn-edit@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BDEA6971A7846380077651F /* nav-btn-edit@2x.png */; };
 		6BDEA69C1A7847070077651F /* nav-btn-reload.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BDEA69A1A7847070077651F /* nav-btn-reload.png */; };
 		6BDEA69D1A7847070077651F /* nav-btn-reload@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BDEA69B1A7847070077651F /* nav-btn-reload@2x.png */; };
+		6BDFCEF11A95327800AD9289 /* LaunchImage-568h.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BDFCEEF1A95327800AD9289 /* LaunchImage-568h.png */; };
+		6BDFCEF21A95327800AD9289 /* LaunchImage-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BDFCEF01A95327800AD9289 /* LaunchImage-568h@2x.png */; };
 		6F2154DF4C2A89AFB0C493C0 /* libPods-Fitovate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF9C4FCD2BBA02E32AB0947 /* libPods-Fitovate.a */; };
 		AD7160191A38B9A90043E740 /* AWSiOSSDKv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD7160181A38B9A90043E740 /* AWSiOSSDKv2.framework */; };
 		AD71601B1A38B9D60043E740 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AD71601A1A38B9D60043E740 /* libsqlite3.dylib */; };
@@ -482,6 +484,8 @@
 		6BDEA6971A7846380077651F /* nav-btn-edit@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav-btn-edit@2x.png"; sourceTree = "<group>"; };
 		6BDEA69A1A7847070077651F /* nav-btn-reload.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav-btn-reload.png"; sourceTree = "<group>"; };
 		6BDEA69B1A7847070077651F /* nav-btn-reload@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav-btn-reload@2x.png"; sourceTree = "<group>"; };
+		6BDFCEEF1A95327800AD9289 /* LaunchImage-568h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-568h.png"; sourceTree = "<group>"; };
+		6BDFCEF01A95327800AD9289 /* LaunchImage-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-568h@2x.png"; sourceTree = "<group>"; };
 		8067EB659182C964662ECA13 /* Pods-Fitovate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fitovate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fitovate/Pods-Fitovate.debug.xcconfig"; sourceTree = "<group>"; };
 		9FF9C4FCD2BBA02E32AB0947 /* libPods-Fitovate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Fitovate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD7160181A38B9A90043E740 /* AWSiOSSDKv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSiOSSDKv2.framework; sourceTree = "<group>"; };
@@ -1125,6 +1129,8 @@
 		2C6D275A1896BACA00C459CB /* WLI-images */ = {
 			isa = PBXGroup;
 			children = (
+				6BDFCEEF1A95327800AD9289 /* LaunchImage-568h.png */,
+				6BDFCEF01A95327800AD9289 /* LaunchImage-568h@2x.png */,
 				6B130BE61A73108E00FE0E0C /* messagesbutton@2x.png */,
 				6B130BE71A73108E00FE0E0C /* messagesbutton.png */,
 				6BA07B101A5F4B8000382FF1 /* Default@2x.jpg */,
@@ -1431,6 +1437,7 @@
 				2C6D281C1896BACA00C459CB /* nav-btn-back.png in Resources */,
 				2C6D27E01896BACA00C459CB /* WLICommentsViewController.xib in Resources */,
 				6B7C6AF01A6EC562007230B8 /* tabbarpopular@2x.png in Resources */,
+				6BDFCEF21A95327800AD9289 /* LaunchImage-568h@2x.png in Resources */,
 				2C6D28171896BACA00C459CB /* map-pin@2x.png in Resources */,
 				6B66C77C1A8C1FA20057962A /* WLIActivityViewController.xib in Resources */,
 				AD7160491A38BAC60043E740 /* sdb-2009-04-15.json in Resources */,
@@ -1509,6 +1516,7 @@
 				2C6D283B1896BACA00C459CB /* welcome-logo.png in Resources */,
 				2C6D27FD1896BACA00C459CB /* WLIWelcomeViewController.xib in Resources */,
 				2C6D28381896BACA00C459CB /* layout-timeline.png in Resources */,
+				6BDFCEF11A95327800AD9289 /* LaunchImage-568h.png in Resources */,
 				2C6D28131896BACA00C459CB /* AppIcon80x80.png in Resources */,
 				AD7160481A38BAC60043E740 /* s3-2006-03-01.json in Resources */,
 				AD71603F1A38BAC60043E740 /* cognito-identity-2014-06-30.json in Resources */,

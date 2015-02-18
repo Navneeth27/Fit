@@ -1,3 +1,8 @@
+CREATE TABLE "block_list" (
+user_id TEXT NOT NULL,
+synced_at DATETIME,
+unblocked_at DATETIME);
+
 CREATE TABLE "conversation_participants" (
   database_identifier INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
   conversation_database_identifier INTEGER NOT NULL,
@@ -150,6 +155,8 @@ CREATE TABLE synced_changes (
   change_type INTEGER NOT NULL
 );
 
+
+CREATE INDEX block_list_user_id_idx ON block_list(user_id);
 
 CREATE INDEX conversation_participants_conversation_database_identifier_idx ON conversation_participants(conversation_database_identifier);
 
@@ -412,3 +419,5 @@ INSERT INTO schema_migrations (version) VALUES (20141027152445461);
 INSERT INTO schema_migrations (version) VALUES (20141105082802353);
 
 INSERT INTO schema_migrations (version) VALUES (20141110114425514);
+
+INSERT INTO schema_migrations (version) VALUES (20150207191203003);

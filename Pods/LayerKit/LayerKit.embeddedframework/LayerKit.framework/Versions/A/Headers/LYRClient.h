@@ -13,6 +13,7 @@
 #import "LYRMessage.h"
 #import "LYRMessagePart.h"
 #import "LYRConstants.h"
+#import "LYRPolicy.h"
 
 @class LYRClient, LYRQuery, LYRQueryController;
 
@@ -383,6 +384,47 @@ extern NSString *const LYRTypingIndicatorParticipantUserInfoKey;
  @return A newly created query controller.
  */
 - (LYRQueryController *)queryControllerWithQuery:(LYRQuery *)query;
+
+///---------------
+/// @name Policies
+///---------------
+
+/**
+ @abstract Returns the ordered set of `LYRPolicy` objects governing the behavior of the client.
+ @discussion
+ */
+@property (nonatomic, readonly) NSOrderedSet *policies;
+
+/**
+ @abstract Validates the given policy to determine if it represents a valid configuration that can be added to the receiver.
+ @param policy The policy to validate.
+ @param error A pointer to an error that upon failure is set to an error object describing why validation was unsuccessful.
+ @return A Boolean value that indicates if the given policy is valid or not.
+ */
+- (BOOL)validatePolicy:(LYRPolicy *)policy error:(NSError **)error;
+
+/**
+ @abstract Adds the given policy to the receiver.
+ @param policy The policy to be added to the client.
+ @param error A pointer to an error that upon failure is set to an error object describing the policy could not be added.
+ */
+- (BOOL)addPolicy:(LYRPolicy *)policy error:(NSError **)error;
+
+/**
+ @abstract Inserts the given policy in the receiver's policy set at the specified index.
+ @param policy The policy to be added to the client.
+ @param index The index at which to insert the policy.
+ @param error A pointer to an error that upon failure is set to an error object describing the policy could not be added.
+ */
+- (BOOL)insertPolicy:(LYRPolicy *)policy atIndex:(NSUInteger)index error:(NSError **)error;
+
+/**
+ @abstract Removes the specified policy from the receiver.
+ @param policy The policy to be removed from the client.
+ @param error A pointer to an error that upon failure is set to an error object describing the policy could not be added.
+ @return A Boolean value that indicates if the given policy was removed.
+ */
+- (BOOL)removePolicy:(LYRPolicy *)policy error:(NSError **)error;
 
 @end
 
