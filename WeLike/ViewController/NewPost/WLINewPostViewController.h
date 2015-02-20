@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "WLIViewController.h"
+#import "WLINearbyViewController.h"
 #import <AviarySDK/AviarySDK.h>
 
 @interface WLINewPostViewController : WLIViewController <UIActionSheetDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, AFPhotoEditorControllerDelegate>

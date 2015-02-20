@@ -1,22 +1,18 @@
 //
 //  WLINearbyViewController.h
-//  WeLike
 //
-//  Created by Planet 1107 on 20/11/13.
-//  Copyright (c) 2013 Planet 1107. All rights reserved.
+//
+//  Created by navneeth 
+//  Copyright (c) 2015 Navneeth Ramprasad. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import <MapKit/MapKit.h>
 #import "WLIViewController.h"
 #import "UIImageView+AFNetworking.h"
 
-@interface WLINearbyViewController : WLIViewController <MKMapViewDelegate> {
-    
-    CLLocation *lastLocation;
-}
+@interface WLINearbyViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
-@property (strong, nonatomic) IBOutlet MKMapView *mapViewNearby;
-@property (strong, nonatomic) NSArray *users;
+@property (nonatomic, strong) UIRefreshControl *refreshControl;
+
 
 @end

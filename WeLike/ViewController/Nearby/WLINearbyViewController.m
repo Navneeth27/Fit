@@ -1,155 +1,83 @@
 //
 //  WLINearbyViewController.m
-//  WeLike
 //
-//  Created by Planet 1107 on 20/11/13.
-//  Copyright (c) 2013 Planet 1107. All rights reserved.
+//
+//  Created by Navneeth
+//  Copyright (c) 2015 Navneeth Ramprasad. All rights reserved.
 //
 
 #import "WLINearbyViewController.h"
 #import "WLIProfileViewController.h"
 #import "WLIUser.h"
 #import "GlobalDefines.h"
+#import "UIKit+AFNetworking.h"
+
+@interface WLINearbyViewController ()
+
+@end
 
 @implementation WLINearbyViewController
-
-
-#pragma mark - Object lifecycle
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-        self.title = @"Nearby";
-    }
-    return self;
+{
+    NSMutableArray *tableData;
 }
 
-
-#pragma mark - View lifecycle
-
-- (void)viewDidLoad {
-    
+- (void)viewDidLoad
+{
     [super viewDidLoad];
+    // Initialize table data
+    tableData = [NSMutableArray arrayWithObjects:@"Trainer1", @"Trainer2", @"Trainer3", @"Trainer4", @"Trainer5", @"Trainer6", @"Trainer7", @"Trainer8", @"Trainer9", @"Trainer10", nil];
+    UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
     
-    UIButton *reloadButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    reloadButton.adjustsImageWhenHighlighted = NO;
-    reloadButton.frame = CGRectMake(0.0f, 0.0f, 40.0f, 30.0f);
-    [reloadButton setImage:[UIImage imageNamed:@"nav-btn-reload.png"] forState:UIControlStateNormal];
-    [reloadButton addTarget:self action:@selector(barButtonItemReloadTouchUpInside:) forControlEvents:UIControlEventTouchUpInside];
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:reloadButton];
+    // Configure Refresh Control
+    [refreshControl addTarget:self action:@selector(refresh:) forControlEvents:UIControlEventValueChanged];
+    
+    // Configure View Controller
+    [self setRefreshControl:refreshControl];
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-    
-    [super viewWillAppear:animated];
-    
-    if (lastLocation && !loading) {
-        MKUserLocation *userLocation = self.mapViewNearby.userLocation;
-        if (userLocation) {
-            CLLocation *newLocation = [[CLLocation alloc] initWithLatitude:userLocation.coordinate.latitude longitude:userLocation.coordinate.longitude];
-            lastLocation = newLocation;
-            
-            [self reloadData];
-        }
-    }
+- (void)viewDidUnload
+{
+    [super viewDidUnload];
+    // Release any retained subviews of the main view.
 }
 
-- (void)viewDidAppear:(BOOL)animated {
-    
-    [super viewDidAppear:animated];
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
-- (void)didReceiveMemoryWarning {
-    
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [tableData count];
 }
 
-
-#pragma mark - Data loading methods
-
-- (void)reloadData {
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *simpleTableIdentifier = @"SimpleTableItem";
     
-    [hud show:YES];
-    loading = YES;
-    int page = (self.users.count / kDefaultPageSize) + 1;
-    [sharedConnect usersAroundLatitude:lastLocation.coordinate.latitude longitude:lastLocation.coordinate.longitude distance:10000 page:page pageSize:kDefaultPageSize onCompletion:^(NSMutableArray *users, ServerResponse serverResponseCode) {
-        [hud hide:YES];
-        loading = NO;
-        self.users = users;
-        loadMore = users.count == kDefaultPageSize;
-        [self.mapViewNearby addAnnotations:users];
-        [self.mapViewNearby setRegion:MKCoordinateRegionMake(lastLocation.coordinate, MKCoordinateSpanMake(0, 5)) animated:YES];
-    }];
-}
-
-
-#pragma mark - Actions methods
-
-- (void)barButtonItemReloadTouchUpInside:(UIBarButtonItem*)barButtonItemSave {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
     
-    if (!loading) {
-        CLLocationCoordinate2D coordinate = self.mapViewNearby.centerCoordinate;
-        CLLocation *location = [[CLLocation alloc] initWithLatitude:coordinate.latitude longitude:coordinate.longitude];
-        lastLocation = location;
-        [self reloadData];
-    }
-}
-
-
-#pragma mark - MKMapViewDelegate methods
-
-- (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation {
-    
-    CLLocation *newLocation = [[CLLocation alloc] initWithLatitude:userLocation.coordinate.latitude longitude:userLocation.coordinate.longitude];
-    if (!loading && (!lastLocation || [newLocation distanceFromLocation:lastLocation] > 1000)) {
-        lastLocation = newLocation;
-        [self reloadData];
-    }
-}
-
-- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id < MKAnnotation >)annotation {
-    
-    if ([annotation isKindOfClass:[MKUserLocation class]]) {
-        return nil;
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
     }
     
-    WLIUser *company = (WLIUser*)annotation;
+    cell.textLabel.text = [tableData objectAtIndex:indexPath.row];
     
-    NSString *annotationIdentifier = @"CompanyPin";
-    MKAnnotationView *annotationView = [mapView dequeueReusableAnnotationViewWithIdentifier:annotationIdentifier];
-    if (!annotationView) {
-        annotationView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:annotationIdentifier];
-        annotationView.image = [UIImage imageNamed:@"map-pin.png"];
-        annotationView.canShowCallout = YES;
-        
-        UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 30.0f, 30.0f)];
-        imageView.contentMode = UIViewContentModeScaleAspectFill;
-        annotationView.leftCalloutAccessoryView = imageView;
-        
-        UIImageView *overlay = [[UIImageView alloc] initWithFrame:imageView.frame];
-        overlay.image = [UIImage imageNamed:@"avatar-overlay.png"];
-        [imageView addSubview:overlay];
-        
-        UIButton *button = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
-        button.tintColor = [UIColor colorWithRed:92.0f/255.0f green:173.0f/255.0f blue:255.0f/255.0f alpha:1.0f];
-        annotationView.rightCalloutAccessoryView = button;
-    }
-    NSURL *url = [NSURL URLWithString:company.userAvatarPath];
-    [(UIImageView*)annotationView.leftCalloutAccessoryView setImageWithURL:url placeholderImage:nil];
-    
-    return annotationView;
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;    
+    return cell;
 }
 
-- (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control {
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // Remove the row from data model
+    [tableData removeObjectAtIndex:indexPath.row];
     
-    WLIUser *company = (WLIUser*)view.annotation;
-    WLIProfileViewController *profileViewController = [[WLIProfileViewController alloc] initWithNibName:@"WLIProfileViewController" bundle:nil];
-    profileViewController.user = company;
-    [self.navigationController pushViewController:profileViewController animated:YES];
+    // Request table view to reload
+    [tableView reloadData];
 }
+
+
 
 
 @end
+

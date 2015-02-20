@@ -7,12 +7,12 @@
 //
 
 #import "WLIAppDelegate.h"
-#import "WLINewPostViewController.h"
-#import "WLINearbyViewController.h"
 #import "WLIPopularViewController.h"
 #import "WLIProfileViewController.h"
 #import "WLITimelineViewController.h"
 #import "WLIConnect.h"
+#import "WLINewPostViewController.h"
+#import "WLINearbyViewController.h"
 
 @implementation WLIAppDelegate
 
@@ -107,8 +107,8 @@
 - (BOOL)tabBarController:(UITabBarController *)tabBarController  shouldSelectViewController:(UIViewController *)viewController {
     
     UINavigationController *navigationViewController = (UINavigationController *)viewController;
-    if ([navigationViewController.topViewController isKindOfClass:[WLINewPostViewController class]]) {
-        WLINewPostViewController *newPostViewController = [[WLINewPostViewController alloc] initWithNibName:@"WLINewPostViewController" bundle:nil];
+    if ([navigationViewController.topViewController isKindOfClass:[WLIWelcomeViewController class]]) {
+        WLIWelcomeViewController *newPostViewController = [[WLINewPostViewController alloc] initWithNibName:@"WLINewPostViewController" bundle:nil];
         UINavigationController *newPostNavigationController = [[UINavigationController alloc] initWithRootViewController:newPostViewController];
         newPostNavigationController.navigationBar.translucent = NO;
         [tabBarController presentViewController:newPostNavigationController animated:YES completion:nil];

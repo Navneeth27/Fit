@@ -10,128 +10,42 @@
 	<string>46</string>
 	<key>objects</key>
 	<dict>
-		<key>02E4873125070A382A095F13</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>7410C3561B01CBA635F6A3FC</string>
-				<string>975559D98C82A30A3F15587D</string>
-				<string>5CDD98BC7F4C16757ECD14DE</string>
-				<string>E2D5CF26E39ADC06B1225DDA</string>
-				<string>1301BB8F70D76D2927F99BDC</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>0300AC4BB7170FAE2B029CD9</key>
+		<key>00786AA2A4E7A29D08712B54</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>1F72964020A981CEE73E4F74</string>
+				<string>F93A94C84157DE6635C779CC</string>
+				<string>7CC835B34E019E572006405D</string>
+				<string>64284484511EAD036AB8339E</string>
+				<string>7B3E457F9D63994FC7FD0AB2</string>
+				<string>CDD8171096D16106BF0A0327</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>Frameworks</string>
+			<string>iOS</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>054479F95A97F1C5ED9DB9E9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>20141006202908488_add_tombstone_duplicate_events_by_client_id.sql</string>
-			<key>path</key>
-			<string>LayerKit.embeddedframework/LayerKit.framework/Versions/A/Resources/layer-client-messaging-schema.bundle/20141006202908488_add_tombstone_duplicate_events_by_client_id.sql</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0574C55029208377179E64EB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-Fitovate-LayerKit-Private.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>09680AD9235B6CE1C29E537D</key>
+		<key>0621355F1780A164975F263C</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>5BA54C2E9552C6CA10EDFD7F</string>
+				<string>EBF39FF4B21D411536A1B4E8</string>
+				<string>A24806E35B04E2F20F916392</string>
+				<string>2EA689FE3A7916D415972358</string>
+				<string>5559758CE10D647BAC9775A9</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0BCEE26D48CAAEBED20B8749</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CD9D4F030D70B295C572D2C0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Targets Support Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0DF81DCFD56B2F6B7B21A414</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>20141002091849299_correct-track_inserts_of_events_delete.sql</string>
+			<string>Support Files</string>
 			<key>path</key>
-			<string>LayerKit.embeddedframework/LayerKit.framework/Versions/A/Resources/layer-client-messaging-schema.bundle/20141002091849299_correct-track_inserts_of_events_delete.sql</string>
+			<string>../Target Support Files/Pods-Fitovate-LayerKit</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>0E1A814CE2269ECA5FEF9111</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>20140708154438053_change_insert_trigger_on_messages.sql</string>
-			<key>path</key>
-			<string>LayerKit.embeddedframework/LayerKit.framework/Versions/A/Resources/layer-client-messaging-schema.bundle/20140708154438053_change_insert_trigger_on_messages.sql</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0F3BD16F8E88228E6BC3D7A9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>20140628105322170_drop_and_clean_case_indent_dates_uniques.sql</string>
-			<key>path</key>
-			<string>LayerKit.embeddedframework/LayerKit.framework/Versions/A/Resources/layer-client-messaging-schema.bundle/20140628105322170_drop_and_clean_case_indent_dates_uniques.sql</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>122528FE50CAC2DDA1FB06D7</key>
+		<key>081672EFEC54445FA43629F1</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -144,97 +58,96 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>1301BB8F70D76D2927F99BDC</key>
+		<key>0926233A3CBF3E5132348742</key>
 		<dict>
 			<key>fileRef</key>
-			<string>D9CAD1254056793143ADDF3B</string>
+			<string>F93A94C84157DE6635C779CC</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>13D991F21EED3FA6862B818D</key>
+		<key>0BC0FBCE1340E47B8AF8F84C</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>name</key>
-			<string>20140707082435390_drop_tombstone_trigger.sql</string>
+			<string>20140701095427050_add_trigger_for_messaging_receipts.sql</string>
 			<key>path</key>
-			<string>LayerKit.embeddedframework/LayerKit.framework/Versions/A/Resources/layer-client-messaging-schema.bundle/20140707082435390_drop_tombstone_trigger.sql</string>
+			<string>LayerKit.embeddedframework/LayerKit.framework/Versions/A/Resources/layer-client-messaging-schema.bundle/20140701095427050_add_trigger_for_messaging_receipts.sql</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>1660B8253BC84F60CCBABFD9</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-Fitovate-LayerKit.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>1A28E10CA43046264151801F</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>85127FA7005F97AB99F6FC8C</string>
-				<string>24DEA4B37359ED98C05E784D</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>1C27AE8465524B0FE52DF4E9</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>9FA1F1A46DE6930467ABB9F9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>1D6C95D1852D21CE15B1F00A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-Fitovate.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1F72964020A981CEE73E4F74</key>
+		<key>0ECD51700033465159C9564D</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>60F9AFEC2A9170BAE0117F8E</string>
-				<string>380FF300483D686669220760</string>
-				<string>52D34D84173F480CDA6B5BCE</string>
-				<string>D7041B94F6D5113B1965E67D</string>
-				<string>D9CAD1254056793143ADDF3B</string>
+				<string>5DDEF22EDDA70C069FE3B76A</string>
+				<string>8D57953E6B33978168AE59B2</string>
+				<string>0621355F1780A164975F263C</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>iOS</string>
+			<string>LayerKit</string>
+			<key>path</key>
+			<string>LayerKit</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>235AF1CCED86912287A21526</key>
+		<key>10E6EC348CB5D2E5D69CAF87</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>B82FE7B449196A444299E5D9</string>
+			<key>buildPhases</key>
+			<array>
+				<string>5F2E72DD74DF46CC0BEB7DD2</string>
+				<string>CEFF80FED5A1C398AA7DF72D</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>ED304001E6E6ADE6EE4BBB22</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-Fitovate</string>
+			<key>productName</key>
+			<string>Pods-Fitovate</string>
+			<key>productReference</key>
+			<string>BF512EF76A4ADAFB434BF7BD</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>12705961C6F994422A41F049</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>20140709095453868_drop_track_sending_of_messages.sql</string>
+			<key>path</key>
+			<string>LayerKit.embeddedframework/LayerKit.framework/Versions/A/Resources/layer-client-messaging-schema.bundle/20140709095453868_drop_track_sending_of_messages.sql</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>13EBD9FC0FD056D44C6F16A2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>20141006140917614_add-client_id.sql</string>
+			<key>path</key>
+			<string>LayerKit.embeddedframework/LayerKit.framework/Versions/A/Resources/layer-client-messaging-schema.bundle/20141006140917614_add-client_id.sql</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>15091164085447E8645B79CF</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -249,380 +162,100 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>24DEA4B37359ED98C05E784D</key>
+		<key>171CC29CBF9D10A3FCFDB634</key>
 		<dict>
-			<key>baseConfigurationReference</key>
-			<string>0574C55029208377179E64EB</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/Pods-Fitovate-LayerKit/Pods-Fitovate-LayerKit-prefix.pch</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>OTHER_CFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_CPLUSPLUSFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
+			<key>fileRef</key>
+			<string>2EA689FE3A7916D415972358</string>
 			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
+			<string>PBXBuildFile</string>
 		</dict>
-		<key>2560522B71BCE22872FE8B0A</key>
+		<key>1BCFFC3EB66685621F9E632D</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>name</key>
-			<string>20140717013309255_drop_is_draft_from_messages.sql</string>
+			<string>layer-client-messaging-schema.sql</string>
 			<key>path</key>
-			<string>LayerKit.embeddedframework/LayerKit.framework/Versions/A/Resources/layer-client-messaging-schema.bundle/20140717013309255_drop_is_draft_from_messages.sql</string>
+			<string>LayerKit.embeddedframework/LayerKit.framework/Versions/A/Resources/layer-client-messaging-schema.bundle/layer-client-messaging-schema.sql</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>296DFFA336990C0E7F7876EF</key>
+		<key>1FCD442B27ABB370D8109924</key>
 		<dict>
-			<key>baseConfigurationReference</key>
-			<string>1D6C95D1852D21CE15B1F00A</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>OTHER_CFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_CPLUSPLUSFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
+			<key>fileRef</key>
+			<string>7CC835B34E019E572006405D</string>
 			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
+			<string>PBXBuildFile</string>
 		</dict>
-		<key>3336B93BBB44B56D7B0707AC</key>
+		<key>2A69CC8396C0AF00CC364291</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>name</key>
-			<string>20141002175255465_making_version_a_required_field.sql</string>
+			<string>20140706185141044_add_object_identifiers.sql</string>
 			<key>path</key>
-			<string>LayerKit.embeddedframework/LayerKit.framework/Versions/A/Resources/layer-client-messaging-schema.bundle/20141002175255465_making_version_a_required_field.sql</string>
+			<string>LayerKit.embeddedframework/LayerKit.framework/Versions/A/Resources/layer-client-messaging-schema.bundle/20140706185141044_add_object_identifiers.sql</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>35A2AC90EC2E83399E516CAF</key>
+		<key>2C0A7CCE16BD5C80C28F8D40</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>name</key>
-			<string>20140701144934637_adjust_constraints_of_receipts_table.sql</string>
+			<string>20140707082435390_drop_tombstone_trigger.sql</string>
 			<key>path</key>
-			<string>LayerKit.embeddedframework/LayerKit.framework/Versions/A/Resources/layer-client-messaging-schema.bundle/20140701144934637_adjust_constraints_of_receipts_table.sql</string>
+			<string>LayerKit.embeddedframework/LayerKit.framework/Versions/A/Resources/layer-client-messaging-schema.bundle/20140707082435390_drop_tombstone_trigger.sql</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>380FF300483D686669220760</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>3A36468B35E0D9DA2068711C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>DAA29A63C0E7E43C5AAEEA15</string>
-				<string>0300AC4BB7170FAE2B029CD9</string>
-				<string>09680AD9235B6CE1C29E537D</string>
-				<string>88387D8B31E62B6AA3E2BF63</string>
-				<string>0BCEE26D48CAAEBED20B8749</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>46C93A940E2B69D08D082AD2</key>
+		<key>2EA689FE3A7916D415972358</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
+			<string>sourcecode.c.objc</string>
 			<key>path</key>
-			<string>Pods-Fitovate-resources.sh</string>
+			<string>Pods-Fitovate-LayerKit-dummy.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>4857441117E0AF29827261C8</key>
+		<key>315568967BA225F1EC0C7BAB</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>20141009125010758_indices.sql</string>
-			<key>path</key>
-			<string>LayerKit.embeddedframework/LayerKit.framework/Versions/A/Resources/layer-client-messaging-schema.bundle/20141009125010758_indices.sql</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>48CBA8F2FC4E3B18378845DF</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
+			<key>buildConfigurationList</key>
+			<string>5D2308CB05A03C88C48DB93D</string>
+			<key>buildPhases</key>
 			<array>
-				<string>FDA94A300C8D4A7200F2054A</string>
+				<string>F28B8A231AD69EF9AE0AA9A5</string>
+				<string>CF87DE2FC0E35E0CE3002EA2</string>
 			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
 			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>52CCA132471BBA15A5C700B6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
+			<string>PBXNativeTarget</string>
 			<key>name</key>
 			<string>Pods-Fitovate-LayerKit</string>
-			<key>target</key>
-			<string>A79EE685A18F71B578E59071</string>
-			<key>targetProxy</key>
-			<string>E1A996BF320321F34F3667B2</string>
+			<key>productName</key>
+			<string>Pods-Fitovate-LayerKit</string>
+			<key>productReference</key>
+			<string>C8877A87EB78A4EA0F37E2E0</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
 		</dict>
-		<key>52D34D84173F480CDA6B5BCE</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>MobileCoreServices.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/MobileCoreServices.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>556BE238DC47BD787D011279</key>
-		<dict>
-			<key>fileRef</key>
-			<string>380FF300483D686669220760</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>566BA2153864D3646EAF42FA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>20141007110138268_client-id-indices.sql</string>
-			<key>path</key>
-			<string>LayerKit.embeddedframework/LayerKit.framework/Versions/A/Resources/layer-client-messaging-schema.bundle/20141007110138268_client-id-indices.sql</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5B43FE8130C8EB32DE08AD99</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>20140717021208447_restore-lost-triggers.sql</string>
-			<key>path</key>
-			<string>LayerKit.embeddedframework/LayerKit.framework/Versions/A/Resources/layer-client-messaging-schema.bundle/20140717021208447_restore-lost-triggers.sql</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5BA54C2E9552C6CA10EDFD7F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>F38DC0BC3A0F1C7B1DCE1C8C</string>
-				<string>E9CBF119E5E6719EBD26813C</string>
-				<string>D2995B8E133E72CD78AF0506</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>LayerKit</string>
-			<key>path</key>
-			<string>LayerKit</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5CDD98BC7F4C16757ECD14DE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>52D34D84173F480CDA6B5BCE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>60F9AFEC2A9170BAE0117F8E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CFNetwork.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CFNetwork.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>6D08E5CB2550BE8FD0FE9820</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>20140701095427050_add_trigger_for_messaging_receipts.sql</string>
-			<key>path</key>
-			<string>LayerKit.embeddedframework/LayerKit.framework/Versions/A/Resources/layer-client-messaging-schema.bundle/20140701095427050_add_trigger_for_messaging_receipts.sql</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6DC0521121E61211121C196F</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-Fitovate.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>7410C3561B01CBA635F6A3FC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>60F9AFEC2A9170BAE0117F8E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>7E78E14ACE07781CDA0B6F0D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>20140707175635814_add_is_draft_to_messages.sql</string>
-			<key>path</key>
-			<string>LayerKit.embeddedframework/LayerKit.framework/Versions/A/Resources/layer-client-messaging-schema.bundle/20140707175635814_add_is_draft_to_messages.sql</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7ECBB780597A41FB4D4403D2</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-Fitovate.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7F3A07A4864F9A9FE788BC3E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>20140628114921198_remove_creator_id_from_tombstone_wipe_for_ordering.sql</string>
-			<key>path</key>
-			<string>LayerKit.embeddedframework/LayerKit.framework/Versions/A/Resources/layer-client-messaging-schema.bundle/20140628114921198_remove_creator_id_from_tombstone_wipe_for_ordering.sql</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>85127FA7005F97AB99F6FC8C</key>
+		<key>3598E13BAFCB72DDF17CB8A9</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>0574C55029208377179E64EB</string>
+			<string>598F0D11161D75EED544EB27</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>ALWAYS_SEARCH_USER_PATHS</key>
@@ -637,8 +270,6 @@
 				<string>0</string>
 				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
 				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/Pods-Fitovate-LayerKit/Pods-Fitovate-LayerKit-prefix.pch</string>
 				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
 				<array>
 					<string>DEBUG=1</string>
@@ -668,38 +299,12 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
-		<key>852FCBE362C711C88227763D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-Fitovate-environment.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8545030A5E83860E96C16D8E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>20140820112730372_add_unique_constraint_to_message_recipient_status.sql</string>
-			<key>path</key>
-			<string>LayerKit.embeddedframework/LayerKit.framework/Versions/A/Resources/layer-client-messaging-schema.bundle/20140820112730372_add_unique_constraint_to_message_recipient_status.sql</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>88387D8B31E62B6AA3E2BF63</key>
+		<key>39CFB83702873AF744912DD3</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>6DC0521121E61211121C196F</string>
-				<string>1660B8253BC84F60CCBABFD9</string>
+				<string>BF512EF76A4ADAFB434BF7BD</string>
+				<string>C8877A87EB78A4EA0F37E2E0</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -708,34 +313,41 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>8915A5D1494AAC082D1C80FC</key>
+		<key>3A6DBF98823076D501E4BE10</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
+			<key>name</key>
+			<string>20141006202908488_add_tombstone_duplicate_events_by_client_id.sql</string>
 			<key>path</key>
-			<string>Pods-Fitovate-acknowledgements.plist</string>
+			<string>LayerKit.embeddedframework/LayerKit.framework/Versions/A/Resources/layer-client-messaging-schema.bundle/20141006202908488_add_tombstone_duplicate_events_by_client_id.sql</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>956C28FCDC8B249416E74BF7</key>
+		<key>42B41F65643E1932A66E4C32</key>
 		<dict>
-			<key>buildConfigurations</key>
+			<key>children</key>
 			<array>
-				<string>F71367EC55BA7F441EC46C5E</string>
-				<string>296DFFA336990C0E7F7876EF</string>
+				<string>76B638B51AC4AE7D863EA887</string>
+				<string>4D5EF6D0EAA63799BFC030EB</string>
+				<string>081672EFEC54445FA43629F1</string>
+				<string>4B229D01BC36BB3466F938D9</string>
+				<string>7DDBEF57DDD294F67CCD9517</string>
+				<string>598F0D11161D75EED544EB27</string>
+				<string>A70CE088731A4487A1262383</string>
 			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
 			<key>isa</key>
-			<string>XCConfigurationList</string>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-Fitovate</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-Fitovate</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
-		<key>95943014AB4505BFFA5407A0</key>
+		<key>46EFE7747E2792D562939C45</key>
 		<dict>
 			<key>buildSettings</key>
 			<dict>
@@ -802,7 +414,20 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
-		<key>960C68BFB37B7C2EC8DDBC70</key>
+		<key>4B229D01BC36BB3466F938D9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-Fitovate-environment.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4D076D53FD8337898240C1B3</key>
 		<dict>
 			<key>buildSettings</key>
 			<dict>
@@ -864,54 +489,20 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
-		<key>975559D98C82A30A3F15587D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>380FF300483D686669220760</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>985DBC0393C43D8B3743496B</key>
+		<key>4D5EF6D0EAA63799BFC030EB</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
+			<string>text.plist.xml</string>
 			<key>path</key>
-			<string>Pods-Fitovate-LayerKit.xcconfig</string>
+			<string>Pods-Fitovate-acknowledgements.plist</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>997E3DE3BC4C9895959C1D4E</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>95943014AB4505BFFA5407A0</string>
-				<string>960C68BFB37B7C2EC8DDBC70</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>99C2B044A67903F1C6F85B26</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>20141002175510495_track_streams_and_stream_members_with_deleted_at_column.sql</string>
-			<key>path</key>
-			<string>LayerKit.embeddedframework/LayerKit.framework/Versions/A/Resources/layer-client-messaging-schema.bundle/20141002175510495_track_streams_and_stream_members_with_deleted_at_column.sql</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9A53DF953CD8DA57895F273E</key>
+		<key>4EC4A7EB351B34465B956E4F</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -924,362 +515,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>9AC2B4271F615969BC2B3649</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>20140709095453868_drop_track_sending_of_messages.sql</string>
-			<key>path</key>
-			<string>LayerKit.embeddedframework/LayerKit.framework/Versions/A/Resources/layer-client-messaging-schema.bundle/20140709095453868_drop_track_sending_of_messages.sql</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9FA1F1A46DE6930467ABB9F9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FC356EFB239006596964BB6D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A79EE685A18F71B578E59071</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>1A28E10CA43046264151801F</string>
-			<key>buildPhases</key>
-			<array>
-				<string>1C27AE8465524B0FE52DF4E9</string>
-				<string>02E4873125070A382A095F13</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-Fitovate-LayerKit</string>
-			<key>productName</key>
-			<string>Pods-Fitovate-LayerKit</string>
-			<key>productReference</key>
-			<string>1660B8253BC84F60CCBABFD9</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>AD98FC673DC0CFBE913AFABF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>20141110114425514_remote_keyed_values.sql</string>
-			<key>path</key>
-			<string>LayerKit.embeddedframework/LayerKit.framework/Versions/A/Resources/layer-client-messaging-schema.bundle/20141110114425514_remote_keyed_values.sql</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B00FC56B6130DFDC0FB8B614</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>556BE238DC47BD787D011279</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>B234B26EF41F865C4F9D4D44</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>20141027152445461_fix_invalid_identifier_types.sql</string>
-			<key>path</key>
-			<string>LayerKit.embeddedframework/LayerKit.framework/Versions/A/Resources/layer-client-messaging-schema.bundle/20141027152445461_fix_invalid_identifier_types.sql</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BA2541F4D785A0CD45A3BB4F</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0510</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>997E3DE3BC4C9895959C1D4E</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>3A36468B35E0D9DA2068711C</string>
-			<key>productRefGroup</key>
-			<string>88387D8B31E62B6AA3E2BF63</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>F92A5C5774D573032A319AB9</string>
-				<string>A79EE685A18F71B578E59071</string>
-			</array>
-		</dict>
-		<key>BAA764CDE33870FF002DA383</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-Fitovate-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C83E9101D4CE8E79ED66432B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>20140708092626927_adjust_triggers_for_drafting.sql</string>
-			<key>path</key>
-			<string>LayerKit.embeddedframework/LayerKit.framework/Versions/A/Resources/layer-client-messaging-schema.bundle/20140708092626927_adjust_triggers_for_drafting.sql</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CCA0E6617A03FF6B3429CA9E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>20140701114842931_add_timestamps_back_to_messages.sql</string>
-			<key>path</key>
-			<string>LayerKit.embeddedframework/LayerKit.framework/Versions/A/Resources/layer-client-messaging-schema.bundle/20140701114842931_add_timestamps_back_to_messages.sql</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CD9D4F030D70B295C572D2C0</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BAA764CDE33870FF002DA383</string>
-				<string>8915A5D1494AAC082D1C80FC</string>
-				<string>122528FE50CAC2DDA1FB06D7</string>
-				<string>852FCBE362C711C88227763D</string>
-				<string>46C93A940E2B69D08D082AD2</string>
-				<string>7ECBB780597A41FB4D4403D2</string>
-				<string>1D6C95D1852D21CE15B1F00A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-Fitovate</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-Fitovate</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D23045E6A95F5663CD47A178</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>layer-client-messaging-schema.sql</string>
-			<key>path</key>
-			<string>LayerKit.embeddedframework/LayerKit.framework/Versions/A/Resources/layer-client-messaging-schema.bundle/layer-client-messaging-schema.sql</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2995B8E133E72CD78AF0506</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>985DBC0393C43D8B3743496B</string>
-				<string>0574C55029208377179E64EB</string>
-				<string>FC356EFB239006596964BB6D</string>
-				<string>F04184D54C1950982914CAB0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>../Target Support Files/Pods-Fitovate-LayerKit</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D43F04C800A56B3A5727A0B6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>20140715104949748_drop_message_index_table_add_message_index_column.sql</string>
-			<key>path</key>
-			<string>LayerKit.embeddedframework/LayerKit.framework/Versions/A/Resources/layer-client-messaging-schema.bundle/20140715104949748_drop_message_index_table_add_message_index_column.sql</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D7041B94F6D5113B1965E67D</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Security.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Security.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>D9CAD1254056793143ADDF3B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>SystemConfiguration.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/SystemConfiguration.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>DAA29A63C0E7E43C5AAEEA15</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>name</key>
-			<string>Podfile</string>
-			<key>path</key>
-			<string>../Podfile</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-			<key>xcLanguageSpecificationIdentifier</key>
-			<string>xcode.lang.ruby</string>
-		</dict>
-		<key>DB1E3CA551A67B2C8F70603E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>20141009125004707_min-max-synced-seq.sql</string>
-			<key>path</key>
-			<string>LayerKit.embeddedframework/LayerKit.framework/Versions/A/Resources/layer-client-messaging-schema.bundle/20141009125004707_min-max-synced-seq.sql</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E1A996BF320321F34F3667B2</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>BA2541F4D785A0CD45A3BB4F</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>A79EE685A18F71B578E59071</string>
-			<key>remoteInfo</key>
-			<string>Pods-Fitovate-LayerKit</string>
-		</dict>
-		<key>E2D5CF26E39ADC06B1225DDA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D7041B94F6D5113B1965E67D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E8BDEA8B22A1E8DE6B91F00E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>20141006140917614_add-client_id.sql</string>
-			<key>path</key>
-			<string>LayerKit.embeddedframework/LayerKit.framework/Versions/A/Resources/layer-client-messaging-schema.bundle/20141006140917614_add-client_id.sql</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E9CBF119E5E6719EBD26813C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0F3BD16F8E88228E6BC3D7A9</string>
-				<string>7F3A07A4864F9A9FE788BC3E</string>
-				<string>6D08E5CB2550BE8FD0FE9820</string>
-				<string>CCA0E6617A03FF6B3429CA9E</string>
-				<string>35A2AC90EC2E83399E516CAF</string>
-				<string>F46F6532943EC3B33DC23FEC</string>
-				<string>13D991F21EED3FA6862B818D</string>
-				<string>7E78E14ACE07781CDA0B6F0D</string>
-				<string>C83E9101D4CE8E79ED66432B</string>
-				<string>0E1A814CE2269ECA5FEF9111</string>
-				<string>9AC2B4271F615969BC2B3649</string>
-				<string>D43F04C800A56B3A5727A0B6</string>
-				<string>2560522B71BCE22872FE8B0A</string>
-				<string>5B43FE8130C8EB32DE08AD99</string>
-				<string>F34192A84F85C2D14AC6A75E</string>
-				<string>8545030A5E83860E96C16D8E</string>
-				<string>9A53DF953CD8DA57895F273E</string>
-				<string>0DF81DCFD56B2F6B7B21A414</string>
-				<string>3336B93BBB44B56D7B0707AC</string>
-				<string>99C2B044A67903F1C6F85B26</string>
-				<string>E8BDEA8B22A1E8DE6B91F00E</string>
-				<string>054479F95A97F1C5ED9DB9E9</string>
-				<string>566BA2153864D3646EAF42FA</string>
-				<string>DB1E3CA551A67B2C8F70603E</string>
-				<string>4857441117E0AF29827261C8</string>
-				<string>B234B26EF41F865C4F9D4D44</string>
-				<string>FB262220AB8A20549C333187</string>
-				<string>AD98FC673DC0CFBE913AFABF</string>
-				<string>235AF1CCED86912287A21526</string>
-				<string>D23045E6A95F5663CD47A178</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Resources</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F04184D54C1950982914CAB0</key>
+		<key>5559758CE10D647BAC9775A9</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1292,24 +528,51 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>F34192A84F85C2D14AC6A75E</key>
+		<key>598F0D11161D75EED544EB27</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-Fitovate.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5CEA47BD6B4BAB214147BB79</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>name</key>
-			<string>20140806143305965_add_created_at_to_conversations.sql</string>
+			<string>20140701144934637_adjust_constraints_of_receipts_table.sql</string>
 			<key>path</key>
-			<string>LayerKit.embeddedframework/LayerKit.framework/Versions/A/Resources/layer-client-messaging-schema.bundle/20140806143305965_add_created_at_to_conversations.sql</string>
+			<string>LayerKit.embeddedframework/LayerKit.framework/Versions/A/Resources/layer-client-messaging-schema.bundle/20140701144934637_adjust_constraints_of_receipts_table.sql</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>F38DC0BC3A0F1C7B1DCE1C8C</key>
+		<key>5D2308CB05A03C88C48DB93D</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>64FC061136D1C9AAED8D7262</string>
+				<string>FA1FD292D2D5D82FE9BFDC70</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>5DDEF22EDDA70C069FE3B76A</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>F9B86D70750E6D80C6AC2412</string>
+				<string>DCDAFB9195477FBF57B7544F</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -1318,23 +581,36 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>F46F6532943EC3B33DC23FEC</key>
+		<key>5F2E72DD74DF46CC0BEB7DD2</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>807E0838BBAB21C85B34C465</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>64284484511EAD036AB8339E</key>
+		<dict>
 			<key>isa</key>
 			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
 			<key>name</key>
-			<string>20140706185141044_add_object_identifiers.sql</string>
+			<string>MobileCoreServices.framework</string>
 			<key>path</key>
-			<string>LayerKit.embeddedframework/LayerKit.framework/Versions/A/Resources/layer-client-messaging-schema.bundle/20140706185141044_add_object_identifiers.sql</string>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/MobileCoreServices.framework</string>
 			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>DEVELOPER_DIR</string>
 		</dict>
-		<key>F71367EC55BA7F441EC46C5E</key>
+		<key>64FC061136D1C9AAED8D7262</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>7ECBB780597A41FB4D4403D2</string>
+			<string>A24806E35B04E2F20F916392</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>ALWAYS_SEARCH_USER_PATHS</key>
@@ -1349,6 +625,8 @@
 				<string>0</string>
 				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
 				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/Pods-Fitovate-LayerKit/Pods-Fitovate-LayerKit-prefix.pch</string>
 				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
 				<array>
 					<string>DEBUG=1</string>
@@ -1378,46 +656,572 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
-		<key>F92A5C5774D573032A319AB9</key>
+		<key>65B9DA19582DD171409C8024</key>
 		<dict>
-			<key>buildConfigurationList</key>
-			<string>956C28FCDC8B249416E74BF7</string>
-			<key>buildPhases</key>
+			<key>children</key>
 			<array>
-				<string>48CBA8F2FC4E3B18378845DF</string>
-				<string>B00FC56B6130DFDC0FB8B614</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>52CCA132471BBA15A5C700B6</string>
+				<string>AC69B2E0681E44F8B79D6850</string>
+				<string>807D16619B3307FA6D129A43</string>
+				<string>C3DC34F2FFF7AEF4FC6C8AA2</string>
+				<string>39CFB83702873AF744912DD3</string>
+				<string>A34C88A1556655E2A7108B1E</string>
 			</array>
 			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-Fitovate</string>
-			<key>productName</key>
-			<string>Pods-Fitovate</string>
-			<key>productReference</key>
-			<string>6DC0521121E61211121C196F</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
-		<key>F9B86D70750E6D80C6AC2412</key>
+		<key>66A193AA82599A45DA819D01</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>20140820112730372_add_unique_constraint_to_message_recipient_status.sql</string>
+			<key>path</key>
+			<string>LayerKit.embeddedframework/LayerKit.framework/Versions/A/Resources/layer-client-messaging-schema.bundle/20140820112730372_add_unique_constraint_to_message_recipient_status.sql</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6716C3B6DCE57E374F56DDEA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>20140628105322170_drop_and_clean_case_indent_dates_uniques.sql</string>
+			<key>path</key>
+			<string>LayerKit.embeddedframework/LayerKit.framework/Versions/A/Resources/layer-client-messaging-schema.bundle/20140628105322170_drop_and_clean_case_indent_dates_uniques.sql</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6ACA9D9B8352F37F081B5198</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>8C37DA7F523273DDAE6299F1</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>315568967BA225F1EC0C7BAB</string>
+			<key>remoteInfo</key>
+			<string>Pods-Fitovate-LayerKit</string>
+		</dict>
+		<key>71A59E9DCC49C25AE8E318E6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>20140806143305965_add_created_at_to_conversations.sql</string>
+			<key>path</key>
+			<string>LayerKit.embeddedframework/LayerKit.framework/Versions/A/Resources/layer-client-messaging-schema.bundle/20140806143305965_add_created_at_to_conversations.sql</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>724CD249331128EFFCD30C75</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CDD8171096D16106BF0A0327</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>74A09840C5E3B052C77C73B0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>20140628114921198_remove_creator_id_from_tombstone_wipe_for_ordering.sql</string>
+			<key>path</key>
+			<string>LayerKit.embeddedframework/LayerKit.framework/Versions/A/Resources/layer-client-messaging-schema.bundle/20140628114921198_remove_creator_id_from_tombstone_wipe_for_ordering.sql</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76B638B51AC4AE7D863EA887</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-Fitovate-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>78CDD00350E8BF14AC6EE132</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>20141027152445461_fix_invalid_identifier_types.sql</string>
+			<key>path</key>
+			<string>LayerKit.embeddedframework/LayerKit.framework/Versions/A/Resources/layer-client-messaging-schema.bundle/20141027152445461_fix_invalid_identifier_types.sql</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7A98DEE5659EF3FE3A32C2C1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>20141007110138268_client-id-indices.sql</string>
+			<key>path</key>
+			<string>LayerKit.embeddedframework/LayerKit.framework/Versions/A/Resources/layer-client-messaging-schema.bundle/20141007110138268_client-id-indices.sql</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7B3E457F9D63994FC7FD0AB2</key>
 		<dict>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>wrapper.framework</string>
 			<key>name</key>
-			<string>LayerKit.framework</string>
+			<string>Security.framework</string>
 			<key>path</key>
-			<string>LayerKit.embeddedframework/LayerKit.framework</string>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Security.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>7CC835B34E019E572006405D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>7DDBEF57DDD294F67CCD9517</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-Fitovate-resources.sh</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>FB262220AB8A20549C333187</key>
+		<key>807D16619B3307FA6D129A43</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>00786AA2A4E7A29D08712B54</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>807E0838BBAB21C85B34C465</key>
+		<dict>
+			<key>fileRef</key>
+			<string>081672EFEC54445FA43629F1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>8842104366DB13F91059B05A</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>A70CE088731A4487A1262383</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>OTHER_CFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_CPLUSPLUSFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>8C37DA7F523273DDAE6299F1</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0510</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>AFD55B0157E6EB0B205C9B12</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>65B9DA19582DD171409C8024</string>
+			<key>productRefGroup</key>
+			<string>39CFB83702873AF744912DD3</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>10E6EC348CB5D2E5D69CAF87</string>
+				<string>315568967BA225F1EC0C7BAB</string>
+			</array>
+		</dict>
+		<key>8D57953E6B33978168AE59B2</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6716C3B6DCE57E374F56DDEA</string>
+				<string>74A09840C5E3B052C77C73B0</string>
+				<string>0BC0FBCE1340E47B8AF8F84C</string>
+				<string>98BB5008B806F4CBE5690943</string>
+				<string>5CEA47BD6B4BAB214147BB79</string>
+				<string>2A69CC8396C0AF00CC364291</string>
+				<string>2C0A7CCE16BD5C80C28F8D40</string>
+				<string>E85F1AC7CB0FF22045B3D9D6</string>
+				<string>F115A483DFA5EB66558E6AF8</string>
+				<string>F998B19352B10C1A425196D8</string>
+				<string>12705961C6F994422A41F049</string>
+				<string>ACD70CE9552C197DDE6CB373</string>
+				<string>EF3EE1E4ABA8EE40E7E0C5DF</string>
+				<string>EE5F69CA47880E56BD5CE72A</string>
+				<string>71A59E9DCC49C25AE8E318E6</string>
+				<string>66A193AA82599A45DA819D01</string>
+				<string>4EC4A7EB351B34465B956E4F</string>
+				<string>E6BD1205C009CBF12F504F88</string>
+				<string>F67BDBB2DF67432DAE02E4DF</string>
+				<string>C625BCF97D79FAD3F0316537</string>
+				<string>13EBD9FC0FD056D44C6F16A2</string>
+				<string>3A6DBF98823076D501E4BE10</string>
+				<string>7A98DEE5659EF3FE3A32C2C1</string>
+				<string>E6C02B9503B8749B8B9B4E05</string>
+				<string>DFE67A58612D1B71BA0692EA</string>
+				<string>78CDD00350E8BF14AC6EE132</string>
+				<string>DB3E2609539786D6581B59F3</string>
+				<string>9767EA23064790724DA475C4</string>
+				<string>C6074602288B1CFA110E886E</string>
+				<string>15091164085447E8645B79CF</string>
+				<string>1BCFFC3EB66685621F9E632D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Resources</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9767EA23064790724DA475C4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>20141110114425514_remote_keyed_values.sql</string>
+			<key>path</key>
+			<string>LayerKit.embeddedframework/LayerKit.framework/Versions/A/Resources/layer-client-messaging-schema.bundle/20141110114425514_remote_keyed_values.sql</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>98BB5008B806F4CBE5690943</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>20140701114842931_add_timestamps_back_to_messages.sql</string>
+			<key>path</key>
+			<string>LayerKit.embeddedframework/LayerKit.framework/Versions/A/Resources/layer-client-messaging-schema.bundle/20140701114842931_add_timestamps_back_to_messages.sql</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A24806E35B04E2F20F916392</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-Fitovate-LayerKit-Private.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A34C88A1556655E2A7108B1E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>42B41F65643E1932A66E4C32</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Targets Support Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A70CE088731A4487A1262383</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-Fitovate.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A7EACA3513EA3C24FB66C21B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>64284484511EAD036AB8339E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>A841F0B1E6C7C8F3584E217A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7CC835B34E019E572006405D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>AC69B2E0681E44F8B79D6850</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>name</key>
+			<string>Podfile</string>
+			<key>path</key>
+			<string>../Podfile</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.ruby</string>
+		</dict>
+		<key>ACD70CE9552C197DDE6CB373</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>20140715104949748_drop_message_index_table_add_message_index_column.sql</string>
+			<key>path</key>
+			<string>LayerKit.embeddedframework/LayerKit.framework/Versions/A/Resources/layer-client-messaging-schema.bundle/20140715104949748_drop_message_index_table_add_message_index_column.sql</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AE4C740D2048AF9115C9CD10</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7B3E457F9D63994FC7FD0AB2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>AFD55B0157E6EB0B205C9B12</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>46EFE7747E2792D562939C45</string>
+				<string>4D076D53FD8337898240C1B3</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>B82FE7B449196A444299E5D9</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>3598E13BAFCB72DDF17CB8A9</string>
+				<string>8842104366DB13F91059B05A</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>BF512EF76A4ADAFB434BF7BD</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-Fitovate.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>C3DC34F2FFF7AEF4FC6C8AA2</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>0ECD51700033465159C9564D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C6074602288B1CFA110E886E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>20150207191203003_create_block_list.sql</string>
+			<key>path</key>
+			<string>LayerKit.embeddedframework/LayerKit.framework/Versions/A/Resources/layer-client-messaging-schema.bundle/20150207191203003_create_block_list.sql</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C625BCF97D79FAD3F0316537</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>20141002175510495_track_streams_and_stream_members_with_deleted_at_column.sql</string>
+			<key>path</key>
+			<string>LayerKit.embeddedframework/LayerKit.framework/Versions/A/Resources/layer-client-messaging-schema.bundle/20141002175510495_track_streams_and_stream_members_with_deleted_at_column.sql</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C8877A87EB78A4EA0F37E2E0</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-Fitovate-LayerKit.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>CDD8171096D16106BF0A0327</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>SystemConfiguration.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/SystemConfiguration.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>CEFF80FED5A1C398AA7DF72D</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>A841F0B1E6C7C8F3584E217A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>CF87DE2FC0E35E0CE3002EA2</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>0926233A3CBF3E5132348742</string>
+				<string>1FCD442B27ABB370D8109924</string>
+				<string>A7EACA3513EA3C24FB66C21B</string>
+				<string>AE4C740D2048AF9115C9CD10</string>
+				<string>724CD249331128EFFCD30C75</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>DB3E2609539786D6581B59F3</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1430,28 +1234,238 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>FC356EFB239006596964BB6D</key>
+		<key>DCDAFB9195477FBF57B7544F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>LayerKit.framework</string>
+			<key>path</key>
+			<string>LayerKit.embeddedframework/LayerKit.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DFE67A58612D1B71BA0692EA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>20141009125010758_indices.sql</string>
+			<key>path</key>
+			<string>LayerKit.embeddedframework/LayerKit.framework/Versions/A/Resources/layer-client-messaging-schema.bundle/20141009125010758_indices.sql</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E6BD1205C009CBF12F504F88</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>20141002091849299_correct-track_inserts_of_events_delete.sql</string>
+			<key>path</key>
+			<string>LayerKit.embeddedframework/LayerKit.framework/Versions/A/Resources/layer-client-messaging-schema.bundle/20141002091849299_correct-track_inserts_of_events_delete.sql</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E6C02B9503B8749B8B9B4E05</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>20141009125004707_min-max-synced-seq.sql</string>
+			<key>path</key>
+			<string>LayerKit.embeddedframework/LayerKit.framework/Versions/A/Resources/layer-client-messaging-schema.bundle/20141009125004707_min-max-synced-seq.sql</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E85F1AC7CB0FF22045B3D9D6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>20140707175635814_add_is_draft_to_messages.sql</string>
+			<key>path</key>
+			<string>LayerKit.embeddedframework/LayerKit.framework/Versions/A/Resources/layer-client-messaging-schema.bundle/20140707175635814_add_is_draft_to_messages.sql</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EBF39FF4B21D411536A1B4E8</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
+			<string>text.xcconfig</string>
 			<key>path</key>
-			<string>Pods-Fitovate-LayerKit-dummy.m</string>
+			<string>Pods-Fitovate-LayerKit.xcconfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>FDA94A300C8D4A7200F2054A</key>
+		<key>ED304001E6E6ADE6EE4BBB22</key>
 		<dict>
-			<key>fileRef</key>
-			<string>122528FE50CAC2DDA1FB06D7</string>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>Pods-Fitovate-LayerKit</string>
+			<key>target</key>
+			<string>315568967BA225F1EC0C7BAB</string>
+			<key>targetProxy</key>
+			<string>6ACA9D9B8352F37F081B5198</string>
+		</dict>
+		<key>EE5F69CA47880E56BD5CE72A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>20140717021208447_restore-lost-triggers.sql</string>
+			<key>path</key>
+			<string>LayerKit.embeddedframework/LayerKit.framework/Versions/A/Resources/layer-client-messaging-schema.bundle/20140717021208447_restore-lost-triggers.sql</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EF3EE1E4ABA8EE40E7E0C5DF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>20140717013309255_drop_is_draft_from_messages.sql</string>
+			<key>path</key>
+			<string>LayerKit.embeddedframework/LayerKit.framework/Versions/A/Resources/layer-client-messaging-schema.bundle/20140717013309255_drop_is_draft_from_messages.sql</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F115A483DFA5EB66558E6AF8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>20140708092626927_adjust_triggers_for_drafting.sql</string>
+			<key>path</key>
+			<string>LayerKit.embeddedframework/LayerKit.framework/Versions/A/Resources/layer-client-messaging-schema.bundle/20140708092626927_adjust_triggers_for_drafting.sql</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F28B8A231AD69EF9AE0AA9A5</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>171CC29CBF9D10A3FCFDB634</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>F67BDBB2DF67432DAE02E4DF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>20141002175255465_making_version_a_required_field.sql</string>
+			<key>path</key>
+			<string>LayerKit.embeddedframework/LayerKit.framework/Versions/A/Resources/layer-client-messaging-schema.bundle/20141002175255465_making_version_a_required_field.sql</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F93A94C84157DE6635C779CC</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CFNetwork.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CFNetwork.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>F998B19352B10C1A425196D8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>20140708154438053_change_insert_trigger_on_messages.sql</string>
+			<key>path</key>
+			<string>LayerKit.embeddedframework/LayerKit.framework/Versions/A/Resources/layer-client-messaging-schema.bundle/20140708154438053_change_insert_trigger_on_messages.sql</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FA1FD292D2D5D82FE9BFDC70</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>A24806E35B04E2F20F916392</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>DSTROOT</key>
+				<string>/tmp/xcodeproj.dst</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/Pods-Fitovate-LayerKit/Pods-Fitovate-LayerKit-prefix.pch</string>
+				<key>INSTALL_PATH</key>
+				<string>$(BUILT_PRODUCTS_DIR)</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>OTHER_CFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_CPLUSPLUSFLAGS</key>
+				<array>
+					<string>-DNS_BLOCK_ASSERTIONS=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
 		</dict>
 	</dict>
 	<key>rootObject</key>
-	<string>BA2541F4D785A0CD45A3BB4F</string>
+	<string>8C37DA7F523273DDAE6299F1</string>
 </dict>
 </plist>

@@ -78,8 +78,6 @@
 		2C6D27E61896BACA00C459CB /* WLILikesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C6D27251896BACA00C459CB /* WLILikesViewController.xib */; };
 		2C6D27E71896BACA00C459CB /* WLILoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6D27281896BACA00C459CB /* WLILoginViewController.m */; };
 		2C6D27E81896BACA00C459CB /* WLILoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C6D27291896BACA00C459CB /* WLILoginViewController.xib */; };
-		2C6D27E91896BACA00C459CB /* WLINearbyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6D272C1896BACA00C459CB /* WLINearbyViewController.m */; };
-		2C6D27EA1896BACA00C459CB /* WLINearbyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C6D272D1896BACA00C459CB /* WLINearbyViewController.xib */; };
 		2C6D27EB1896BACA00C459CB /* WLINewPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6D27301896BACA00C459CB /* WLINewPostViewController.m */; };
 		2C6D27EC1896BACA00C459CB /* WLINewPostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C6D27311896BACA00C459CB /* WLINewPostViewController.xib */; };
 		2C6D27ED1896BACA00C459CB /* WLIPopularViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6D27341896BACA00C459CB /* WLIPopularViewController.m */; };
@@ -145,7 +143,6 @@
 		2C8AF2801A1B772F0003B22E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C8AF27F1A1B772F0003B22E /* QuartzCore.framework */; };
 		2C8AF2861A1B77F40003B22E /* AviarySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C8AF2841A1B77F40003B22E /* AviarySDK.framework */; };
 		2C8AF2871A1B77F40003B22E /* AviarySDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2C8AF2851A1B77F40003B22E /* AviarySDKResources.bundle */; };
-		2CCE1A9917ECD32B00680126 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CCE1A9817ECD32B00680126 /* Foundation.framework */; };
 		2CCE1A9B17ECD32B00680126 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CCE1A9A17ECD32B00680126 /* CoreGraphics.framework */; };
 		2CCE1A9D17ECD32B00680126 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CCE1A9C17ECD32B00680126 /* UIKit.framework */; };
 		6B0A19D41A69E86A002A35C2 /* i386Symbols.c in Sources */ = {isa = PBXBuildFile; fileRef = 6B0A19D31A69E86A002A35C2 /* i386Symbols.c */; };
@@ -156,6 +153,9 @@
 		6B130BE51A730E9300FE0E0C /* LQSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B130BE31A730E9300FE0E0C /* LQSViewController.xib */; };
 		6B130BE81A73108E00FE0E0C /* messagesbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B130BE61A73108E00FE0E0C /* messagesbutton@2x.png */; };
 		6B130BE91A73108E00FE0E0C /* messagesbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B130BE71A73108E00FE0E0C /* messagesbutton.png */; };
+		6B1D24D01A95BC4E003D9EB5 /* LayerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B1D24CB1A95BBEF003D9EB5 /* LayerKit.framework */; };
+		6B1D25251A96B209003D9EB5 /* WLINearbyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1D25241A96B209003D9EB5 /* WLINearbyViewController.m */; };
+		6B1D25271A96B212003D9EB5 /* WLINearbyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B1D25261A96B212003D9EB5 /* WLINearbyViewController.xib */; };
 		6B267D321A65ED3B00F0C056 /* tabbartimeline@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B267D301A65ED3B00F0C056 /* tabbartimeline@2x.png */; };
 		6B267D331A65ED3B00F0C056 /* tabbartimeline.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B267D311A65ED3B00F0C056 /* tabbartimeline.png */; };
 		6B267D361A65EE5000F0C056 /* nav-btn-close.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B267D341A65EE5000F0C056 /* nav-btn-close.png */; };
@@ -351,9 +351,6 @@
 		2C6D27271896BACA00C459CB /* WLILoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLILoginViewController.h; sourceTree = "<group>"; };
 		2C6D27281896BACA00C459CB /* WLILoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLILoginViewController.m; sourceTree = "<group>"; };
 		2C6D27291896BACA00C459CB /* WLILoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WLILoginViewController.xib; sourceTree = "<group>"; };
-		2C6D272B1896BACA00C459CB /* WLINearbyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLINearbyViewController.h; sourceTree = "<group>"; };
-		2C6D272C1896BACA00C459CB /* WLINearbyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLINearbyViewController.m; sourceTree = "<group>"; };
-		2C6D272D1896BACA00C459CB /* WLINearbyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WLINearbyViewController.xib; sourceTree = "<group>"; };
 		2C6D272F1896BACA00C459CB /* WLINewPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLINewPostViewController.h; sourceTree = "<group>"; };
 		2C6D27301896BACA00C459CB /* WLINewPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLINewPostViewController.m; sourceTree = "<group>"; };
 		2C6D27311896BACA00C459CB /* WLINewPostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WLINewPostViewController.xib; sourceTree = "<group>"; };
@@ -446,6 +443,13 @@
 		6B130BE31A730E9300FE0E0C /* LQSViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LQSViewController.xib; path = LayerMessaging/LQSViewController.xib; sourceTree = "<group>"; };
 		6B130BE61A73108E00FE0E0C /* messagesbutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "messagesbutton@2x.png"; sourceTree = "<group>"; };
 		6B130BE71A73108E00FE0E0C /* messagesbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = messagesbutton.png; sourceTree = "<group>"; };
+		6B1D24CB1A95BBEF003D9EB5 /* LayerKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LayerKit.framework; sourceTree = "<group>"; };
+		6B1D24CC1A95BBEF003D9EB5 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		6B1D24CD1A95BBEF003D9EB5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6B1D24CE1A95BC07003D9EB5 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		6B1D25231A96B1F9003D9EB5 /* WLINearbyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLINearbyViewController.h; sourceTree = "<group>"; };
+		6B1D25241A96B209003D9EB5 /* WLINearbyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLINearbyViewController.m; sourceTree = "<group>"; };
+		6B1D25261A96B212003D9EB5 /* WLINearbyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WLINearbyViewController.xib; sourceTree = "<group>"; };
 		6B267D301A65ED3B00F0C056 /* tabbartimeline@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbartimeline@2x.png"; sourceTree = "<group>"; };
 		6B267D311A65ED3B00F0C056 /* tabbartimeline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbartimeline.png; sourceTree = "<group>"; };
 		6B267D341A65EE5000F0C056 /* nav-btn-close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav-btn-close.png"; sourceTree = "<group>"; };
@@ -518,6 +522,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B1D24D01A95BC4E003D9EB5 /* LayerKit.framework in Frameworks */,
 				6B28E1A01A69F180007A3C24 /* CoreTelephony.framework in Frameworks */,
 				6B28E19E1A69F14F007A3C24 /* CoreMedia.framework in Frameworks */,
 				6B28E19C1A69F111007A3C24 /* AudioToolbox.framework in Frameworks */,
@@ -540,7 +545,6 @@
 				C7B4244B183D0809003B51D0 /* MapKit.framework in Frameworks */,
 				2CCE1A9B17ECD32B00680126 /* CoreGraphics.framework in Frameworks */,
 				2CCE1A9D17ECD32B00680126 /* UIKit.framework in Frameworks */,
-				2CCE1A9917ECD32B00680126 /* Foundation.framework in Frameworks */,
 				6F2154DF4C2A89AFB0C493C0 /* libPods-Fitovate.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -929,13 +933,13 @@
 		2C6D27151896BACA00C459CB /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				6B1D25031A95EFF3003D9EB5 /* Nearby */,
 				6B130BDD1A730D3900FE0E0C /* LayerMessaging */,
 				2C6D27161896BACA00C459CB /* Comments */,
 				2C6D271A1896BACA00C459CB /* Followers */,
 				2C6D271E1896BACA00C459CB /* Following */,
 				2C6D27221896BACA00C459CB /* Likes */,
 				2C6D27261896BACA00C459CB /* Login */,
-				2C6D272A1896BACA00C459CB /* Nearby */,
 				2C6D272E1896BACA00C459CB /* NewPost */,
 				2C6D27321896BACA00C459CB /* Popular */,
 				2C6D27361896BACA00C459CB /* Post */,
@@ -998,16 +1002,6 @@
 				2C6D27291896BACA00C459CB /* WLILoginViewController.xib */,
 			);
 			path = Login;
-			sourceTree = "<group>";
-		};
-		2C6D272A1896BACA00C459CB /* Nearby */ = {
-			isa = PBXGroup;
-			children = (
-				2C6D272B1896BACA00C459CB /* WLINearbyViewController.h */,
-				2C6D272C1896BACA00C459CB /* WLINearbyViewController.m */,
-				2C6D272D1896BACA00C459CB /* WLINearbyViewController.xib */,
-			);
-			path = Nearby;
 			sourceTree = "<group>";
 		};
 		2C6D272E1896BACA00C459CB /* NewPost */ = {
@@ -1290,6 +1284,8 @@
 		2CCE1A9717ECD32B00680126 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6B1D24CE1A95BC07003D9EB5 /* Bolts.framework */,
+				6B1D24C91A95BBEF003D9EB5 /* LayerKit */,
 				6B28E19F1A69F180007A3C24 /* CoreTelephony.framework */,
 				6B28E19D1A69F14F007A3C24 /* CoreMedia.framework */,
 				6B28E19B1A69F111007A3C24 /* AudioToolbox.framework */,
@@ -1332,6 +1328,35 @@
 				6B66C77A1A8C1FA20057962A /* WLIActivityViewController.xib */,
 			);
 			name = LayerMessaging;
+			sourceTree = "<group>";
+		};
+		6B1D24C91A95BBEF003D9EB5 /* LayerKit */ = {
+			isa = PBXGroup;
+			children = (
+				6B1D24CA1A95BBEF003D9EB5 /* LayerKit.embeddedframework */,
+				6B1D24CC1A95BBEF003D9EB5 /* LICENSE.md */,
+				6B1D24CD1A95BBEF003D9EB5 /* README.md */,
+			);
+			name = LayerKit;
+			path = Pods/LayerKit;
+			sourceTree = "<group>";
+		};
+		6B1D24CA1A95BBEF003D9EB5 /* LayerKit.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				6B1D24CB1A95BBEF003D9EB5 /* LayerKit.framework */,
+			);
+			path = LayerKit.embeddedframework;
+			sourceTree = "<group>";
+		};
+		6B1D25031A95EFF3003D9EB5 /* Nearby */ = {
+			isa = PBXGroup;
+			children = (
+				6B1D25231A96B1F9003D9EB5 /* WLINearbyViewController.h */,
+				6B1D25241A96B209003D9EB5 /* WLINearbyViewController.m */,
+				6B1D25261A96B212003D9EB5 /* WLINearbyViewController.xib */,
+			);
+			path = Nearby;
 			sourceTree = "<group>";
 		};
 		AD71602E1A38BABB0043E740 /* AWSJson */ = {
@@ -1401,6 +1426,7 @@
 				en,
 				es,
 				ru,
+				Base,
 			);
 			mainGroup = 2CCE1A8C17ECD32B00680126;
 			productRefGroup = 2CCE1A9617ECD32B00680126 /* Products */;
@@ -1424,7 +1450,6 @@
 				AD8CF6F51A322BB10002250B /* whitebg.png in Resources */,
 				2C6D282B1896BACA00C459CB /* custom-activity@2x.png in Resources */,
 				2C6D28101896BACA00C459CB /* AppIcon57x57@2x.png in Resources */,
-				2C6D27EA1896BACA00C459CB /* WLINearbyViewController.xib in Resources */,
 				6B267D321A65ED3B00F0C056 /* tabbartimeline@2x.png in Resources */,
 				2C6D28151896BACA00C459CB /* iTunesArtwork@2x.png in Resources */,
 				6B130BE81A73108E00FE0E0C /* messagesbutton@2x.png in Resources */,
@@ -1487,6 +1512,7 @@
 				2C6D281A1896BACA00C459CB /* nav-back64.png in Resources */,
 				2C6D28011896BACA00C459CB /* btn-comment@2x.png in Resources */,
 				AD7160451A38BAC60043E740 /* kinesis-2013-12-02.json in Resources */,
+				6B1D25271A96B212003D9EB5 /* WLINearbyViewController.xib in Resources */,
 				2C6D281B1896BACA00C459CB /* nav-back64@2x.png in Resources */,
 				2C6D28111896BACA00C459CB /* AppIcon60x60.png in Resources */,
 				2C6D27D91896BACA00C459CB /* WLIPostCell.xib in Resources */,
@@ -1597,7 +1623,6 @@
 				6B5E08A81A609B160020D78B /* WLIChooseVideoViewController.m in Sources */,
 				2C6D27C81896BACA00C459CB /* main.m in Sources */,
 				2C6D27C01896BACA00C459CB /* SBJsonStreamWriter.m in Sources */,
-				2C6D27E91896BACA00C459CB /* WLINearbyViewController.m in Sources */,
 				2C6D27D81896BACA00C459CB /* WLIPostCell.m in Sources */,
 				2C6D27FA1896BACA00C459CB /* WLITimelineViewController.m in Sources */,
 				6BA374E91A8031A000250A62 /* LQSChatMessageCell.m in Sources */,
@@ -1638,6 +1663,7 @@
 				2C6D27F11896BACA00C459CB /* WLIEditProfileViewController.m in Sources */,
 				2C6D27CB1896BACA00C459CB /* WLIFollow.m in Sources */,
 				2C6D27C91896BACA00C459CB /* WLIComment.m in Sources */,
+				6B1D25251A96B209003D9EB5 /* WLINearbyViewController.m in Sources */,
 				2C6D27E11896BACA00C459CB /* WLIFollowersViewController.m in Sources */,
 				2C5B5C831A1A8F9500175A58 /* UIRefreshControl+AFNetworking.m in Sources */,
 				6B130BE41A730E9300FE0E0C /* LQSViewController.m in Sources */,
@@ -1747,6 +1773,8 @@
 			baseConfigurationReference = 8067EB659182C964662ECA13 /* Pods-Fitovate.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"Users/benjamin.harvey/Desktop/stuff/Fitovate/wlinew/wli/ooVooSDK-iOS.framework",
 					"$(PROJECT_DIR)/WeLike/3rdParty/AviarySDK",
@@ -1756,10 +1784,12 @@
 					"/Users/panafold/Downloads/Bolts-iOS",
 					2/ios,
 					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/LayerKit/LayerKit.embeddedframework",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WeLike/Fitovate-Prefix.pch";
 				INFOPLIST_FILE = "WeLike/Fitovate-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/WeLike/3rdParty/AviarySDK",
@@ -1771,6 +1801,8 @@
 					"$(inherited)",
 				);
 				PRODUCT_NAME = Fitovate;
+				SWIFT_OBJC_BRIDGING_HEADER = "WeLike/ViewController/Nearby/Fitovate-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1781,6 +1813,8 @@
 			baseConfigurationReference = BDC45570F8982954861FB6E7 /* Pods-Fitovate.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"Users/benjamin.harvey/Desktop/stuff/Fitovate/wlinew/wli/ooVooSDK-iOS.framework",
 					"$(PROJECT_DIR)/WeLike/3rdParty/AviarySDK",
@@ -1790,10 +1824,12 @@
 					"/Users/panafold/Downloads/Bolts-iOS",
 					2/ios,
 					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/LayerKit/LayerKit.embeddedframework",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WeLike/Fitovate-Prefix.pch";
 				INFOPLIST_FILE = "WeLike/Fitovate-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/WeLike/3rdParty/AviarySDK",
@@ -1805,6 +1841,7 @@
 					"$(inherited)",
 				);
 				PRODUCT_NAME = Fitovate;
+				SWIFT_OBJC_BRIDGING_HEADER = "WeLike/ViewController/Nearby/Fitovate-Bridging-Header.h";
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
