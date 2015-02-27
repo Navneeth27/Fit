@@ -71,7 +71,7 @@ extern NSString *const LYRMessageOptionsPushNotificationSoundNameKey;
  @abstract The conversation that the receiver is a part of.
  @discussion The `conversation` property is queryable via the `LYRPredicateOperatorIsEqualTo`, `LYRPredicateOperatorIsNotEqualTo`, `LYRPredicateOperatorIsIn`, and `LYRPredicateOperatorIsNotIn` operators.
  */
-@property (nonatomic, readonly) LYRConversation *conversation LYR_QUERYABLE_PROPERTY;
+@property (nonatomic, readonly) LYRConversation *conversation LYR_QUERYABLE_PROPERTY LYR_QUERYABLE_FROM(LYRMessagePart);
 
 /**
  @abstract An array of message parts (modeled by the `LYRMessagePart` class) that provide access to the content of the receiver.

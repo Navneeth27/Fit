@@ -14,6 +14,7 @@
 #import "LYRMessagePart.h"
 #import "LYRConstants.h"
 #import "LYRPolicy.h"
+#import "LYRProgress.h"
 
 @class LYRClient, LYRQuery, LYRQueryController;
 
@@ -115,6 +116,38 @@ extern NSString *const LYRTypingIndicatorValueUserInfoKey;
  */
 extern NSString *const LYRTypingIndicatorParticipantUserInfoKey;
 
+/**
+ @abstract Posted when the client will begin transfering content.
+ */
+extern NSString *const LYRClientWillBeginContentTransferNotification;
+
+/**
+ @abstract Posted when the client finishes the content transfer.
+ */
+extern NSString *const LYRClientDidFinishContentTransferNotification;
+
+/**
+ @abstract A key into the `userInfo` of either `LYRClientWillBeginContentTransferNotification`, or
+ `LYRClientDidFinishContentTransferNotification` whose value is the `LYRContentTransferType`
+ enum indicating either an upload or a download transfer type.
+ */
+extern NSString *const LYRClientContentTransferTypeUserInfoKey;
+
+/**
+ @abstract A key into the `userInfo` of either `LYRClientWillBeginContentTransferNotification`, or
+ `LYRClientDidFinishContentTransferNotification` whose value is an `LYRMessagePart` instance
+ of which the client did begin or finish the uploading or downloading process (depending
+ on the transfer type).
+ */
+extern NSString *const LYRClientContentTransferObjectUserInfoKey;
+
+/**
+ @abstract A key into the `userInfo` of either `LYRClientWillBeginContentTransferNotification`, or
+ `LYRClientDidFinishContentTransferNotification` whose value is an `LYRProgress` instance
+ that tracks the transfer progress of object's content.
+ */
+extern NSString *const LYRClientContentTransferProgressUserInfoKey;
+
 ///----------------------
 /// @name Client Delegate
 ///----------------------
@@ -211,6 +244,23 @@ extern NSString *const LYRTypingIndicatorParticipantUserInfoKey;
  @param error An error describing the nature of the operation failure.
  */
 - (void)layerClient:(LYRClient *)client didFailOperationWithError:(NSError *)error;
+
+/**
+ @abstract Tells the delegate that a content transfer will begin.
+ @param client The client that will begin the content transfer.
+ @param contentTransferType Type enum representing the content transfer type.
+ @param object Object whose content will begin transfering.
+ @param progress The `LYRProgress` instance that tracks the progress of the object.
+ */
+- (void)layerClient:(LYRClient *)client willBeginContentTransfer:(LYRContentTransferType)contentTransferType ofObject:(id)object withProgress:(LYRProgress *)progress;
+
+/**
+ @abstract Tells the delegate that a content transfer has finished.
+ @param client The client that will begin the content transfer.
+ @param contentTransferType Type enum representing the content transfer type.
+ @param object Object whose content did finish transfering.
+ */
+- (void)layerClient:(LYRClient *)client didFinishContentTransfer:(LYRContentTransferType)contentTransferType ofObject:(id)object;
 
 @end
 
@@ -310,7 +360,7 @@ extern NSString *const LYRTypingIndicatorParticipantUserInfoKey;
 
 /**
  @abstract Deauthenticates the client, disposing of any previously established user identity and disallowing access to the Layer communication services until a new identity is established. All existing messaging data is purged from the database.
- @param completiuon A block to be executed when the deauthentication operation has completed. The block has no return value and has two arguments: a Boolean value indicating if deauthentication was successful and an error describing the failure if it was not.
+ @param completion A block to be executed when the deauthentication operation has completed. The block has no return value and has two arguments: a Boolean value indicating if deauthentication was successful and an error describing the failure if it was not.
  */
 - (void)deauthenticateWithCompletion:(void (^)(BOOL success, NSError *error))completion;
 
@@ -319,7 +369,7 @@ extern NSString *const LYRTypingIndicatorParticipantUserInfoKey;
 ///-------------------------------------------------------
 
 /**
- @abstract Tells the receiver to update the device token used to deliver Push Notificaitons to the current device via the Apple Push Notification Service.
+ @abstract Tells the receiver to update the device token used to deliver Push Notifications to the current device via the Apple Push Notification Service.
  @param deviceToken An `NSData` object containing the device token.
  @param error A reference to an `NSError` object that will contain error information in case the action was not successful.
  @return A Boolean value that determines whether the action was successful.
@@ -425,6 +475,54 @@ extern NSString *const LYRTypingIndicatorParticipantUserInfoKey;
  @return A Boolean value that indicates if the given policy was removed.
  */
 - (BOOL)removePolicy:(LYRPolicy *)policy error:(NSError **)error;
+
+///---------------------------------
+/// @name Managing Content Transfers
+///---------------------------------
+
+/**
+ @abstract Specifies the maximum amount of disk space (in bytes) that may be utilized for storing downloaded message part content. A value of zero (the default) indicates that
+ an unlimited amount of disk space may be utilized.
+ @discussion Once current disk utilization of downloaded message part content exceeds the maximum capacity the system will delete content on a least recently used basis until
+ the total utilization is 80% of the configured disk capacity. Note that auto-downloaded content that gets deleted is not automatically downloaded again.
+ */
+@property (nonatomic, assign) NSUInteger diskCapacity;
+
+/**
+ @abstract Returns the amount of disk space currently being utilized for the storage of downloaded message part content.
+ @note The property is not updated in real-time, it may time some amount of time for it to update.
+ @discussion Utilization may periodically peak above the configured `diskCapacity` while synchronization or downloads are in progress, but will be rebalanced once all operations
+ have completed.
+ */
+@property (nonatomic, readonly) NSUInteger currentDiskUtilization;
+
+/**
+ @abstract A Boolean value that determines whether or not the client will execute content transfers while the application is in a background state.
+ @discussion In order to utilize background transfers your application must implement the `UIApplicateDelegate` method `application:handleEventsForBackgroundURLSession:completionHandler:` and forward calls to the `LYRClient` method `handleBackgroundContentTransfersForSessionWithIdentifier:completion:`.
+ @note Changes to this flag will not affect any transfers already in progress.
+ */
+@property (nonatomic) BOOL backgroundContentTransferEnabled;
+
+/**
+ @abstract Handles content transfer events from iOS and synchronizes the client if required.
+ @param sessionIdentifier URL session identifier handed by the `application:handleEventsForBackgroundURLSession:completionHandler:`.
+ @param completion The block that will be called once Layer has successfully handled content transfers. It is your responsibility to call the UIApplication delegate method's completion handler. Note that this block is only called if the method returns `YES`.
+ @return A Boolean value that indicates whether or not the client handled the content transfers for the given background session identifier. `YES` will be returned if the session identifier refers to a background session that was created by the Layer client, else `NO`.
+ @note The receiver must be authenticated else a warning will be logged and `NO` will be returned. The completion is only invoked if the return value is `YES`.
+ */
+- (BOOL)handleBackgroundContentTransfersForSession:(NSString *)sessionIdentifier completion:(void(^)(NSArray *changes, NSError *error))completion;
+
+/**
+ @abstract Configures the set of MIME Types for `LYRMessagePart` objects that will be automatically downloaded upon synchronization.
+ @discussion A value of `nil` indicates that all content is to be downloaded automatically and an empty `NSSet` indicates that no content should be. The default value is a set containing the MIME Type @"text/plain".
+ */
+@property (nonatomic) NSSet *autodownloadMIMETypes;
+
+/**
+ @abstract Configures the maximum size (in bytes) for `LYRMessagePart` objects that will be automatically downloaded upon synchronization.
+ @discussion The default value is `0`.
+ */
+@property (nonatomic) NSUInteger autodownloadMaximumContentSize;
 
 @end
 

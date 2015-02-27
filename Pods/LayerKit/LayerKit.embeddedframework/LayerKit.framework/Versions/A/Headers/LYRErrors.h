@@ -20,6 +20,9 @@ typedef NS_ENUM(NSUInteger, LYRError) {
     LYRErrorDataLengthExceedsMaximum                = 1004,
     LYRErrorMessageAlreadyMarkedAsRead              = 1005,
     LYRErrorObjectNotSent                           = 1006,
+    LYRErrorMessagePartContentAlreadyAvailable      = 1007,
+    LYRErrorMessagePartContentAlreadyPurged         = 1008,
+    LYRErrorMessagePartContentInlined               = 1009,
     
     // Validation Errors
     LYRErrorInvalidKey                              = 2000,

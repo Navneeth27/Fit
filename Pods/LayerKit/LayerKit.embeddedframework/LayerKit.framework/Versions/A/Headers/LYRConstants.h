@@ -50,7 +50,7 @@ extern NSString *const LYRObjectChangeOldValueKey; // The value before synchroni
 extern NSString *const LYRObjectChangeNewValueKey; // The value after synchronization
 
 ///-----------------------
-/// @name Typing indicator
+/// @name Typing Indicator
 ///-----------------------
 
 /**
@@ -60,4 +60,16 @@ typedef NS_ENUM(NSUInteger, LYRTypingIndicator) {
     LYRTypingDidBegin   = 0,
     LYRTypingDidPause   = 1,
     LYRTypingDidFinish  = 2
+};
+
+///-----------------------
+/// @name Content Transfer
+///-----------------------
+
+/**
+ @abstract The `LYRContentTransferType` values describe the type of a transfer. Used when LYRClient calls to the delegate via `layerClient:willBeginContentTransfer:ofObject:withProgress` and `layerClient:didFinishContentTransfer:ofObject:` methods.
+ */
+typedef NS_ENUM(NSInteger, LYRContentTransferType) {
+    LYRContentTransferTypeDownload              = 0,
+    LYRContentTransferTypeUpload                = 1
 };
