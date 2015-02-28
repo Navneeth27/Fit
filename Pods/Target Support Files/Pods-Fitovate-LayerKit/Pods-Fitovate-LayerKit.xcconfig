@@ -1,3 +1,0 @@
-PODS_FITOVATE_LAYERKIT_ENABLE_NS_ASSERTIONS = YES
-PODS_FITOVATE_LAYERKIT_FRAMEWORK_SEARCH_PATHS = "$(PODS_ROOT)/LayerKit/LayerKit.embeddedframework"
-PODS_FITOVATE_LAYERKIT_OTHER_LDFLAGS = -l"z" -framework "CFNetwork" -framework "LayerKit" -framework "MobileCoreServices" -framework "Security" -framework "SystemConfiguration"
