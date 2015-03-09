@@ -14,8 +14,6 @@
 
 @interface WLIRegisterViewController ()
 
-
-
 @end
 
 @implementation WLIRegisterViewController
@@ -369,12 +367,14 @@
     
     /*arrImage = [NSArray arrayWithObjects:[UIImage imageNamed:@"apple.png"], [UIImage *imageNamed:@"apple2.png"], [UIImage imageNamed:@"apple.png"], [UIImage imageNamed:@"apple2.png"], [UIImage imageNamed:@"apple.png"], [UIImage imageNamed:@"apple2.png"], [UIImage imageNamed:@"apple.png"], [UIImage imageNamed:@"apple2.png"], [UIImage imageNamed:@"apple.png"], [UIImage imageNamed:@"apple2.png"], nil];*/
     
+    
     if(dropDown == nil) {
         CGFloat f = 250;
         dropDown = [[NIDropDown alloc]showDropDown:sender :&f :arr :arrImage :@"down"];
         dropDown.delegate = self;
     }
     else {
+        
         [dropDown hideDropDown:sender];
         [self rel];
     }
