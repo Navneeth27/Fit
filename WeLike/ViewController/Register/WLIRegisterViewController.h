@@ -8,10 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import "WLIViewController.h"
+#import "NIDropDown.h"
 
-@interface WLIRegisterViewController : WLIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIActionSheetDelegate, MKMapViewDelegate> {
+@interface WLIRegisterViewController : WLIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIActionSheetDelegate, MKMapViewDelegate, NIDropDownDelegate> {
     
     BOOL locatedUser;
+    NIDropDown *dropDown;
+    
+   IBOutlet UIButton *chooseSpeciality;
+    
 }
 
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollViewRegister;
@@ -30,8 +35,22 @@
 @property (strong, nonatomic) IBOutlet MKMapView *mapViewLocation;
 @property (strong, nonatomic) IBOutlet UIButton *buttonRegister;
 
+@property (retain, nonatomic) IBOutlet UIButton *chooseSpeciality;
+
+
+- (IBAction)selectClients:(id)sender;
+
+
+//@property (weak, nonatomic) IBOutlet UIPickerView *picker;
+
+
+
 - (IBAction)buttonSelectAvatarTouchUpInside:(UIButton *)sender;
 - (IBAction)segmentedControlUserTypeValueChanged:(UISegmentedControl *)sender;
 - (IBAction)buttonRegisterTouchUpInside:(id)sender;
+
+
+
+-(void)rel;
 
 @end

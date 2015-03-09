@@ -156,7 +156,9 @@
 		6B1D24D01A95BC4E003D9EB5 /* LayerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B1D24CB1A95BBEF003D9EB5 /* LayerKit.framework */; };
 		6B1D25251A96B209003D9EB5 /* WLINearbyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1D25241A96B209003D9EB5 /* WLINearbyViewController.m */; };
 		6B1D25271A96B212003D9EB5 /* WLINearbyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B1D25261A96B212003D9EB5 /* WLINearbyViewController.xib */; };
-		6B1D25391A9EF045003D9EB5 /* Fitovate_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B1D25381A9EF045003D9EB5 /* Fitovate_background.png */; };
+		6B1D253D1A9FD3BE003D9EB5 /* Fitovate_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B1D253C1A9FD3BE003D9EB5 /* Fitovate_background.png */; };
+		6B1D254C1AA10460003D9EB5 /* chatapp-ios-icon_1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B1D254B1AA10460003D9EB5 /* chatapp-ios-icon_1x.png */; };
+		6B1D25521AAB823C003D9EB5 /* NIDropDown.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1D25511AAB823C003D9EB5 /* NIDropDown.m */; };
 		6B267D321A65ED3B00F0C056 /* tabbartimeline@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B267D301A65ED3B00F0C056 /* tabbartimeline@2x.png */; };
 		6B267D331A65ED3B00F0C056 /* tabbartimeline.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B267D311A65ED3B00F0C056 /* tabbartimeline.png */; };
 		6B267D361A65EE5000F0C056 /* nav-btn-close.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B267D341A65EE5000F0C056 /* nav-btn-close.png */; };
@@ -216,7 +218,6 @@
 		C7B424B7183D2519003B51D0 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7B424B6183D2519003B51D0 /* MessageUI.framework */; };
 		C7B424B9183D2540003B51D0 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C7B424B8183D2540003B51D0 /* libsqlite3.0.dylib */; };
 		C7B424BB183D254C003B51D0 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C7B424BA183D254C003B51D0 /* libz.1.2.5.dylib */; };
-		C7B424BD183D2563003B51D0 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7B424BC183D2563003B51D0 /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -451,7 +452,14 @@
 		6B1D25231A96B1F9003D9EB5 /* WLINearbyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLINearbyViewController.h; sourceTree = "<group>"; };
 		6B1D25241A96B209003D9EB5 /* WLINearbyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLINearbyViewController.m; sourceTree = "<group>"; };
 		6B1D25261A96B212003D9EB5 /* WLINearbyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WLINearbyViewController.xib; sourceTree = "<group>"; };
-		6B1D25381A9EF045003D9EB5 /* Fitovate_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Fitovate_background.png; path = ../../../../../../../../Volumes/Transcend/Fitovate_background.png; sourceTree = "<group>"; };
+		6B1D253C1A9FD3BE003D9EB5 /* Fitovate_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Fitovate_background.png; path = ../../../../../../../../Volumes/Transcend/Fitovate_background.png; sourceTree = "<group>"; };
+		6B1D25431AA04332003D9EB5 /* LayerKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LayerKit.framework; sourceTree = "<group>"; };
+		6B1D25441AA04332003D9EB5 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		6B1D25451AA04332003D9EB5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6B1D25461AA0437F003D9EB5 /* LayerKit */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = LayerKit; path = Pods/LayerKit/LayerKit.embeddedframework/LayerKit.framework/Versions/A/LayerKit; sourceTree = "<group>"; };
+		6B1D254B1AA10460003D9EB5 /* chatapp-ios-icon_1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "chatapp-ios-icon_1x.png"; path = "../../../../../../../../Volumes/Transcend/chatapp-ios-icon_1x.png"; sourceTree = "<group>"; };
+		6B1D25501AAB823C003D9EB5 /* NIDropDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIDropDown.h; sourceTree = "<group>"; };
+		6B1D25511AAB823C003D9EB5 /* NIDropDown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIDropDown.m; sourceTree = "<group>"; };
 		6B267D301A65ED3B00F0C056 /* tabbartimeline@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbartimeline@2x.png"; sourceTree = "<group>"; };
 		6B267D311A65ED3B00F0C056 /* tabbartimeline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbartimeline.png; sourceTree = "<group>"; };
 		6B267D341A65EE5000F0C056 /* nav-btn-close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav-btn-close.png"; sourceTree = "<group>"; };
@@ -516,7 +524,6 @@
 		C7B424B6183D2519003B51D0 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		C7B424B8183D2540003B51D0 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		C7B424BA183D254C003B51D0 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
-		C7B424BC183D2563003B51D0 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -538,7 +545,6 @@
 				2C8AF27E1A1B77220003B22E /* OpenGLES.framework in Frameworks */,
 				2C8AF27B1A1B76BB0003B22E /* Accelerate.framework in Frameworks */,
 				AD7160191A38B9A90043E740 /* AWSiOSSDKv2.framework in Frameworks */,
-				C7B424BD183D2563003B51D0 /* StoreKit.framework in Frameworks */,
 				C7B424BB183D254C003B51D0 /* libz.1.2.5.dylib in Frameworks */,
 				C7B424B9183D2540003B51D0 /* libsqlite3.0.dylib in Frameworks */,
 				2C8AF2861A1B77F40003B22E /* AviarySDK.framework in Frameworks */,
@@ -1043,6 +1049,7 @@
 				2C6D273F1896BACA00C459CB /* WLIProfileViewController.h */,
 				2C6D27401896BACA00C459CB /* WLIProfileViewController.m */,
 				2C6D27411896BACA00C459CB /* WLIProfileViewController.xib */,
+				6B1D254B1AA10460003D9EB5 /* chatapp-ios-icon_1x.png */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -1066,6 +1073,8 @@
 				6B5E08A51A609B160020D78B /* WLIChooseVideoViewController.h */,
 				6B5E08A61A609B160020D78B /* WLIChooseVideoViewController.m */,
 				6B5E08A71A609B160020D78B /* WLIChooseVideoViewController.xib */,
+				6B1D25501AAB823C003D9EB5 /* NIDropDown.h */,
+				6B1D25511AAB823C003D9EB5 /* NIDropDown.m */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -1104,8 +1113,8 @@
 			children = (
 				2C6D27521896BACA00C459CB /* WLIWelcomeViewController.h */,
 				2C6D27531896BACA00C459CB /* WLIWelcomeViewController.m */,
-				6B1D25381A9EF045003D9EB5 /* Fitovate_background.png */,
 				2C6D27541896BACA00C459CB /* WLIWelcomeViewController.xib */,
+				6B1D253C1A9FD3BE003D9EB5 /* Fitovate_background.png */,
 			);
 			path = Welcome;
 			sourceTree = "<group>";
@@ -1287,6 +1296,8 @@
 		2CCE1A9717ECD32B00680126 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6B1D25461AA0437F003D9EB5 /* LayerKit */,
+				6B1D25411AA04332003D9EB5 /* LayerKit */,
 				6B1D24CE1A95BC07003D9EB5 /* Bolts.framework */,
 				6B1D24C91A95BBEF003D9EB5 /* LayerKit */,
 				6B28E19F1A69F180007A3C24 /* CoreTelephony.framework */,
@@ -1304,7 +1315,6 @@
 				2C8AF27F1A1B772F0003B22E /* QuartzCore.framework */,
 				2C8AF27D1A1B77220003B22E /* OpenGLES.framework */,
 				2C8AF27A1A1B76BB0003B22E /* Accelerate.framework */,
-				C7B424BC183D2563003B51D0 /* StoreKit.framework */,
 				C7B424BA183D254C003B51D0 /* libz.1.2.5.dylib */,
 				C7B424B8183D2540003B51D0 /* libsqlite3.0.dylib */,
 				C7B424B6183D2519003B51D0 /* MessageUI.framework */,
@@ -1362,6 +1372,25 @@
 			path = Nearby;
 			sourceTree = "<group>";
 		};
+		6B1D25411AA04332003D9EB5 /* LayerKit */ = {
+			isa = PBXGroup;
+			children = (
+				6B1D25421AA04332003D9EB5 /* LayerKit.embeddedframework */,
+				6B1D25441AA04332003D9EB5 /* LICENSE.md */,
+				6B1D25451AA04332003D9EB5 /* README.md */,
+			);
+			name = LayerKit;
+			path = Pods/LayerKit;
+			sourceTree = "<group>";
+		};
+		6B1D25421AA04332003D9EB5 /* LayerKit.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				6B1D25431AA04332003D9EB5 /* LayerKit.framework */,
+			);
+			path = LayerKit.embeddedframework;
+			sourceTree = "<group>";
+		};
 		AD71602E1A38BABB0043E740 /* AWSJson */ = {
 			isa = PBXGroup;
 			children = (
@@ -1417,7 +1446,12 @@
 				ORGANIZATIONNAME = "Goran Vuksic";
 				TargetAttributes = {
 					2CCE1A9417ECD32B00680126 = {
-						DevelopmentTeam = 55NN688S43;
+						DevelopmentTeam = HC6J3468J7;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -1470,6 +1504,7 @@
 				6B774EDB1A6A197A007A8277 /* tabbarprofile.png in Resources */,
 				2C6D28021896BACA00C459CB /* btn-follow.png in Resources */,
 				2C6D27D31896BACA00C459CB /* WLILikeCell.xib in Resources */,
+				6B1D254C1AA10460003D9EB5 /* chatapp-ios-icon_1x.png in Resources */,
 				2C6D27EE1896BACA00C459CB /* WLIPopularViewController.xib in Resources */,
 				2C6D280D1896BACA00C459CB /* AppIcon29x29.png in Resources */,
 				2C6D27B61896BACA00C459CB /* MNMPullToRefreshIcon@2x.png in Resources */,
@@ -1523,7 +1558,7 @@
 				2C6D282A1896BACA00C459CB /* custom-activity.png in Resources */,
 				6B267D371A65EE5000F0C056 /* nav-btn-close@2x.png in Resources */,
 				2C6D282C1896BACA00C459CB /* pulldown-refresh-icon.png in Resources */,
-				6B1D25391A9EF045003D9EB5 /* Fitovate_background.png in Resources */,
+				6B1D253D1A9FD3BE003D9EB5 /* Fitovate_background.png in Resources */,
 				6BDEA69D1A7847070077651F /* nav-btn-reload@2x.png in Resources */,
 				2C6D283C1896BACA00C459CB /* welcome-logo@2x.png in Resources */,
 				2C6D27E21896BACA00C459CB /* WLIFollowersViewController.xib in Resources */,
@@ -1620,6 +1655,7 @@
 				2C6D27C21896BACA00C459CB /* SBJsonStreamWriterState.m in Sources */,
 				2C5B5C7E1A1A8F9500175A58 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				2C5B5C7F1A1A8F9500175A58 /* UIAlertView+AFNetworking.m in Sources */,
+				6B1D25521AAB823C003D9EB5 /* NIDropDown.m in Sources */,
 				2C6D27B31896BACA00C459CB /* WLIActivityIndicator.m in Sources */,
 				2C6D27F91896BACA00C459CB /* WLITabBarController.m in Sources */,
 				2C6D27BB1896BACA00C459CB /* SBJsonStreamParser.m in Sources */,
@@ -1718,7 +1754,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Navneeth Ramprasad (D439JYQCPH)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Navneeth Ramprasad (D439JYQCPH)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1736,6 +1773,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "d3231919-4f6b-4e3f-a726-826481aed37c";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -1756,7 +1794,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Navneeth Ramprasad (D439JYQCPH)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Navneeth Ramprasad (D439JYQCPH)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1767,6 +1806,8 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "d3231919-4f6b-4e3f-a726-826481aed37c";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1778,6 +1819,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"Users/benjamin.harvey/Desktop/stuff/Fitovate/wlinew/wli/ooVooSDK-iOS.framework",
@@ -1793,11 +1836,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WeLike/Fitovate-Prefix.pch";
 				INFOPLIST_FILE = "WeLike/Fitovate-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/WeLike/3rdParty/AviarySDK",
 					"$(PROJECT_DIR)/WeLike/3rdParty/AviarySDK",
+					"$(PROJECT_DIR)/Pods/LayerKit/LayerKit.embeddedframework/LayerKit.framework/Versions/A",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
@@ -1805,6 +1850,7 @@
 					"$(inherited)",
 				);
 				PRODUCT_NAME = Fitovate;
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "WeLike/ViewController/Nearby/Fitovate-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VALID_ARCHS = "armv7 armv7s";
@@ -1818,6 +1864,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"Users/benjamin.harvey/Desktop/stuff/Fitovate/wlinew/wli/ooVooSDK-iOS.framework",
@@ -1833,11 +1881,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WeLike/Fitovate-Prefix.pch";
 				INFOPLIST_FILE = "WeLike/Fitovate-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/WeLike/3rdParty/AviarySDK",
 					"$(PROJECT_DIR)/WeLike/3rdParty/AviarySDK",
+					"$(PROJECT_DIR)/Pods/LayerKit/LayerKit.embeddedframework/LayerKit.framework/Versions/A",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
@@ -1845,6 +1895,7 @@
 					"$(inherited)",
 				);
 				PRODUCT_NAME = Fitovate;
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "WeLike/ViewController/Nearby/Fitovate-Bridging-Header.h";
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;

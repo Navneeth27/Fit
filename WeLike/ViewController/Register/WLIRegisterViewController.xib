@@ -8,10 +8,11 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WLIRegisterViewController">
             <connections>
                 <outlet property="buttonRegister" destination="Y1r-1R-aQB" id="26p-he-yrh"/>
+                <outlet property="chooseSpeciality" destination="I2w-e6-h3B" id="dIs-DF-lqh"/>
                 <outlet property="imageViewAvatar" destination="tsx-7v-yWS" id="reH-0z-IGj"/>
                 <outlet property="mapViewLocation" destination="rhb-AH-odE" id="zpo-Y4-MU4"/>
                 <outlet property="scrollViewRegister" destination="Dtr-hy-Roh" id="bdG-9h-T33"/>
-                <outlet property="segmentedControlUserType" destination="X8g-J7-h74" id="LEM-Pp-W7h"/>
+                <outlet property="segmentedControlUserType" destination="X8g-J7-h74" id="fnA-p4-lWP"/>
                 <outlet property="textFieldAddress" destination="G21-8z-pdy" id="iA8-6A-2wo"/>
                 <outlet property="textFieldEmail" destination="ti3-lE-yF1" id="dbN-KY-5hq"/>
                 <outlet property="textFieldFullName" destination="ZFq-Hf-Qxw" id="eur-dB-oj7"/>
@@ -56,9 +57,10 @@
                 </scrollView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <point key="canvasLocation" x="308" y="228"/>
         </view>
         <view contentMode="scaleToFill" id="Mko-Le-OHc">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="437"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="697"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email address" minimumFontSize="17" id="ti3-lE-yF1">
@@ -92,11 +94,11 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar-empty.png" id="tsx-7v-yWS">
-                    <rect key="frame" x="110" y="20" width="100" height="100"/>
+                    <rect key="frame" x="110" y="12" width="100" height="100"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="bgt-gd-7WF">
-                    <rect key="frame" x="110" y="20" width="100" height="100"/>
+                    <rect key="frame" x="110" y="12" width="100" height="100"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <state key="normal" image="avatar-overlay.png">
@@ -123,19 +125,19 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="phone" minimumFontSize="17" id="nJn-R7-Oad">
-                            <rect key="frame" x="20" y="20" width="280" height="30"/>
+                            <rect key="frame" x="20" y="74" width="280" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                         </textField>
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="web address" minimumFontSize="17" id="Gkb-GJ-TQ5">
-                            <rect key="frame" x="20" y="68" width="280" height="30"/>
+                            <rect key="frame" x="20" y="119" width="280" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="long press on map to place pin" minimumFontSize="17" id="G21-8z-pdy">
-                            <rect key="frame" x="20" y="116" width="280" height="30"/>
+                            <rect key="frame" x="20" y="181" width="280" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
@@ -149,6 +151,19 @@
                                 <outletCollection property="gestureRecognizers" destination="BuF-Yj-0hT" appends="YES" id="1iK-oI-Yzi"/>
                             </connections>
                         </mapView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="I2w-e6-h3B">
+                            <rect key="frame" x="20" y="18" width="280" height="41"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.088752694430000001" green="0.69994652270000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                            <state key="normal" title="Choose Speciality">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="selectClients:" destination="-1" eventType="touchUpInside" id="Dpd-Oa-t6V"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                 </view>
@@ -156,6 +171,7 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="207" y="394.5"/>
         </view>
         <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="BuF-Yj-0hT">
             <connections>

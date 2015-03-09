@@ -1,4 +1,4 @@
-//
+           //
 //  LQSViewController.m
 //  Fitovate
 //
@@ -45,34 +45,6 @@
 }
 //this displays all messages
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    return [self.queryController numberOfObjectsInSection:0];
-}
-
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    static NSString *simpleTableIdentifier = @"myCell";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
-    
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
-    }
-    
-    return cell;
-}
-
-- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Get Message Object from queryController
-    LYRMessage *message = [self.queryController objectAtIndexPath:indexPath];
-    
-    // Set cell text to "<Sender>: <Message Contents>"
-    LYRMessagePart *messagePart = message.parts[0];
-    cell.textLabel.text = [NSString stringWithFormat:@"%@:%@",[message sentByUserID], [[NSString alloc] initWithData:messagePart.data encoding:NSUTF8StringEncoding]];
-}
 
 
 
@@ -95,31 +67,6 @@
     [self sendMessage:@"test message sending"];
 }
 
-- (void)sendMessage:(NSString *)messageText{
-    // If no conversations exist, create a new conversation object with two participants
-    if (!self.conversation) {
-        NSError *error = nil;
-        self.conversation = [self.layerClient newConversationWithParticipants:[NSSet setWithArray:@[ @"Simulator", @ "Dashboard" ]] options:nil error:&error];
-        if (!self.conversation) {
-            NSLog(@"New Conversation creation failed: %@", error);
-        }
-    }
-    
-    // Creates a message part with text/plain MIME Type
-    LYRMessagePart *messagePart = [LYRMessagePart messagePartWithText:messageText];
-    
-    // Creates and returns a new message object with the given conversation and array of message parts
-    LYRMessage *message = [self.layerClient newMessageWithParts:@[messagePart] options:@{LYRMessageOptionsPushNotificationAlertKey: messageText} error:nil];
-    
-    // Sends the specified message
-    NSError *error;
-    BOOL success = [self.conversation sendMessage:message error:&error];
-    if (success) {
-        NSLog(@"Message queued to be sent: %@", messageText);
-    } else {
-        NSLog(@"Message send failed: %@", error);
-    }
-}
 
 /*
  #pragma mark - Navigation
@@ -225,6 +172,34 @@
         
     }] resume];
 }
+
+- (void)sendMessage:(NSString *)messageText{
+    // If no conversations exist, create a new conversation object with two participants
+    if (!self.conversation) {
+        NSError *error = nil;
+        self.conversation = [self.layerClient newConversationWithParticipants:[NSSet setWithArray:@[ @"Simulator", @ "Dashboard" ]] options:nil error:&error];
+        if (!self.conversation) {
+            NSLog(@"New Conversation creation failed: %@", error);
+        }
+    }
+    
+    // Creates a message part with text/plain MIME Type
+    LYRMessagePart *messagePart = [LYRMessagePart messagePartWithText:messageText];
+    
+    // Creates and returns a new message object with the given conversation and array of message parts
+    LYRMessage *message = [self.layerClient newMessageWithParts:@[messagePart] options:@{LYRMessageOptionsPushNotificationAlertKey: messageText} error:nil];
+    
+    // Sends the specified message
+    NSError *error;
+    BOOL success = [self.conversation sendMessage:message error:&error];
+    if (success) {
+        NSLog(@"Message queued to be sent: %@", messageText);
+    } else {
+        NSLog(@"Message send failed: %@", error);
+    }
+}
+
+
 - (void)fetchLayerConversation
 {
     LYRQuery *query = [LYRQuery queryWithClass:[LYRConversation class]];
@@ -311,5 +286,36 @@ newIndexPath:(NSIndexPath *)newIndexPath
     [self.tableView endUpdates];
 }
 //this displays all messages
+
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [self.queryController numberOfObjectsInSection:0];
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *simpleTableIdentifier = @"myCell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
+    }
+    
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // Get Message Object from queryController
+    LYRMessage *message = [self.queryController objectAtIndexPath:indexPath];
+    
+    // Set cell text to "<Sender>: <Message Contents>"
+    LYRMessagePart *messagePart = message.parts[0];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@:%@",[message sentByUserID], [[NSString alloc] initWithData:messagePart.data encoding:NSUTF8StringEncoding]];
+}
+
 
 @end

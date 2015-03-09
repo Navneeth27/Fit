@@ -16,10 +16,15 @@
 
 @implementation WLIAppDelegate
 
+@synthesize window = _window;
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+   WLIRegisterViewController *vc= [[WLIRegisterViewController alloc] init];
+    self.window.rootViewController = vc;
+
     
     CLAuthorizationStatus locationAuthorizationStatus = [CLLocationManager authorizationStatus];
     if (locationAuthorizationStatus != kCLAuthorizationStatusDenied) {
@@ -34,7 +39,7 @@
     // navigation bar appearance
     [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:92.0f/255.0f green:173.0f/255.0f blue:255.0f/255.0f alpha:1.0f]];
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
-
+    
     [[UINavigationBar appearance] setTitleTextAttributes:
      [NSDictionary dictionaryWithObjectsAndKeys:
       [UIFont fontWithName:@"Pacifico-Regular" size:24
@@ -55,13 +60,13 @@
     navigationBarAppearance.backgroundColor = [UIColor clearColor];
     [navigationBarAppearance setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
     navigationBarAppearance.shadowImage = [[UIImage alloc] init];
-     [[UINavigationBar appearance] setTitleTextAttributes:
-      [NSDictionary dictionaryWithObjectsAndKeys:
-       [UIColor whiteColor],UITextAttributeTextColor,
-       [UIColor clearColor], UITextAttributeTextShadowColor,
-       [UIFont fontWithName:@"Pacifico-Regular" size:24],
-       NSFontAttributeName, nil]];
-
+    [[UINavigationBar appearance] setTitleTextAttributes:
+     [NSDictionary dictionaryWithObjectsAndKeys:
+      [UIColor whiteColor],UITextAttributeTextColor,
+      [UIColor clearColor], UITextAttributeTextShadowColor,
+      [UIFont fontWithName:@"Pacifico-Regular" size:24],
+      NSFontAttributeName, nil]];
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
@@ -69,7 +74,7 @@
     
     //benmark
     [[ooVooController sharedController] initSdk:@"12349983352060"
-     applicationToken:@"MDAxMDAxAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoE%2FTxwzvba3Wy%2FupvESaKZhg1ngT4E8V7bqvT1RpL5F0UIW8FKbWarcsUJ51Nx%2BGwlHpeETeLbU4B8AYBUSRsopL5aGEZx7OrKL%2B%2B60kOeKuNLZuf%2FTVdRXKNLa1LuXU%3D" baseUrl:[[NSUserDefaults standardUserDefaults] stringForKey:@"production"]];
+                               applicationToken:@"MDAxMDAxAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoE%2FTxwzvba3Wy%2FupvESaKZhg1ngT4E8V7bqvT1RpL5F0UIW8FKbWarcsUJ51Nx%2BGwlHpeETeLbU4B8AYBUSRsopL5aGEZx7OrKL%2B%2B60kOeKuNLZuf%2FTVdRXKNLa1LuXU%3D" baseUrl:[[NSUserDefaults standardUserDefaults] stringForKey:@"production"]];
     
     return YES;
 }
@@ -82,7 +87,7 @@
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
+    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
 
@@ -175,21 +180,21 @@
     UIImage *coloredImg = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-
+    
     UITabBarItem *timelineTabBarItem = [[UITabBarItem alloc] initWithTitle:@"Timeline" image:[[UIImage imageNamed:@"tabbartimeline"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"tabbartimeline"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
     
     timelineViewController.tabBarItem = timelineTabBarItem;
-     UITabBarItem *popularTabBarItem = [[UITabBarItem alloc] initWithTitle:@"Popular" image:[[UIImage imageNamed:@"tabbarpopular"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"tabbarpopular"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+    UITabBarItem *popularTabBarItem = [[UITabBarItem alloc] initWithTitle:@"Popular" image:[[UIImage imageNamed:@"tabbarpopular"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"tabbarpopular"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
     
     popularViewController.tabBarItem = popularTabBarItem;
-       UITabBarItem *newPostTabBarItem = [[UITabBarItem alloc] initWithTitle:@"New post" image:[[UIImage imageNamed:@"tabbarnewpost"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"tabbarnewpost"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+    UITabBarItem *newPostTabBarItem = [[UITabBarItem alloc] initWithTitle:@"New post" image:[[UIImage imageNamed:@"tabbarnewpost"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"tabbarnewpost"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
     
     newPostViewController.tabBarItem = newPostTabBarItem;
-       UITabBarItem *nearbyTabBarItem = [[UITabBarItem alloc] initWithTitle:@"Trainers" image:[[UIImage imageNamed:@"tabbarnearby"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"tabbarnearby"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
-
+    UITabBarItem *nearbyTabBarItem = [[UITabBarItem alloc] initWithTitle:@"Trainers" image:[[UIImage imageNamed:@"tabbarnearby"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"tabbarnearby"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+    
     nearbyViewController.tabBarItem = nearbyTabBarItem;
     
-       UITabBarItem *profileTabBarItem = [[UITabBarItem alloc] initWithTitle:@"Profile" image:[[UIImage imageNamed:@"tabbarprofile"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"tabbarprofile"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+    UITabBarItem *profileTabBarItem = [[UITabBarItem alloc] initWithTitle:@"Profile" image:[[UIImage imageNamed:@"tabbarprofile"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"tabbarprofile"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
     profileViewController.tabBarItem = profileTabBarItem;
     
     self.window.rootViewController = self.tabBarController;

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <LayerKit/LayerKit.h>
 
-@interface LQSViewController : UIViewController <UITableViewDelegate, UITableViewDataSource,LYRQueryControllerDelegate>
+@interface LQSViewController : UIViewController <UITextViewDelegate, UITableViewDelegate, UITableViewDataSource,LYRQueryControllerDelegate>
 
 @property (strong, nonatomic) LYRClient *layerClient;
 @property (nonatomic, retain) LYRQueryController *queryController;

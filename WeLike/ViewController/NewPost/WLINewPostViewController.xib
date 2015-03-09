@@ -11,6 +11,7 @@
                 <outlet property="imageViewPost" destination="1x9-ho-YWz" id="ymH-hk-4Ag"/>
                 <outlet property="textViewPost" destination="ooW-dO-BSV" id="FXD-Kx-Fmx"/>
                 <outlet property="view" destination="1" id="3"/>
+                <outlet property="webView" destination="CVD-u3-uRc" id="aMB-9n-bGS"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -42,6 +43,7 @@
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
                 </textView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fMo-jO-P4u">
                     <rect key="frame" x="230" y="300" width="80" height="30"/>
@@ -55,9 +57,45 @@
                         <action selector="buttonSendTouchUpInside:" destination="-1" eventType="touchUpInside" id="SIj-Om-K6h"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="eJo-JR-wWx">
+                    <rect key="frame" x="141" y="422" width="39" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Video">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="goBack" destination="CVD-u3-uRc" eventType="touchUpInside" id="FEV-Fy-A8f"/>
+                        <action selector="goForward" destination="CVD-u3-uRc" eventType="touchUpInside" id="EDd-OH-EC1"/>
+                        <action selector="reload" destination="CVD-u3-uRc" eventType="touchUpInside" id="8Cq-Xx-SMb"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+            <point key="canvasLocation" x="220" y="317"/>
         </view>
+        <viewController id="3B7-iH-IV8">
+            <view key="view" contentMode="scaleToFill" id="EOk-eg-iXF">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            </view>
+            <point key="canvasLocation" x="598" y="423"/>
+        </viewController>
+        <viewController id="8wm-tk-lsy">
+            <view key="view" contentMode="scaleToFill" id="0c8-pC-mWz">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <webView contentMode="scaleToFill" id="CVD-u3-uRc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </webView>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            </view>
+            <point key="canvasLocation" x="586" y="317"/>
+        </viewController>
     </objects>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

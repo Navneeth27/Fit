@@ -3,14 +3,24 @@
 //  WeLike
 //
 //  Created by Planet 1107 on 20/11/13.
+//  Modified by Navneeth Ramprasad on 03/06/2015
 //  Copyright (c) 2013 Planet 1107. All rights reserved.
 //
 
 #import "WLIRegisterViewController.h"
 #import "WLIChooseVideoViewController.h"
+#import "NIDropDown.h"
+#import "QuartzCore/QuartzCore.h"
+
+@interface WLIRegisterViewController ()
+
+
+
+@end
 
 @implementation WLIRegisterViewController
 
+@synthesize chooseSpeciality = _chooseSpeciality;
 
 #pragma mark - Object lifecycle
 
@@ -29,17 +39,61 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
+    
     self.title = @"Register";
 
     [self.scrollViewRegister addSubview:self.viewContentRegister];
     [self adjustViewFrames];
+    chooseSpeciality.layer.borderWidth = 1;
+    chooseSpeciality.layer.borderColor = [[UIColor blackColor] CGColor];
+    chooseSpeciality.layer.cornerRadius = 5;
+
+    
+    //Initializing picker data
+    //pickerData = @[@"Personal Trainer", @"Group Fitness Trainer", @"Sport Specific Trainer", @"Yoga Intsructor", @"Pilates Instructor", @"Health Coach"];
+    
+    //Connect data
+    
+    //self.picker.dataSource = self;
+    //self.picker.delegate = self;
 }
 
+
+- (void)viewDidUnload {
+    //    [btnSelect release];
+    chooseSpeciality = nil;
+    //[self chooseSpeciality:nil];
+    [super viewDidUnload];
+}
 - (void)didReceiveMemoryWarning {
     
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+
+// The number of columns of data
+//- (int)numberOfComponentsInPickerView:(UIPickerView *)pickerView
+//{
+    //return 1;
+//}
+
+// The number of rows of data
+/*- (int)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
+{
+    return pickerData.count;
+}*/
+
+// The data to return for the row and component (column) that's being passed in
+/*- (NSString*)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
+{
+    return pickerData[row];
+}*/
 
 
 #pragma mark - Button methods
@@ -130,6 +184,7 @@
         }
     }
 }
+
 
 - (IBAction)segmentedControlUserTypeValueChanged:(UISegmentedControl *)sender {
     
@@ -305,5 +360,34 @@
     self.mapViewLocation.delegate = nil;
     self.mapViewLocation.userTrackingMode = MKUserTrackingModeNone;
 }
+
+- (IBAction)selectClients:(id)sender {
+    
+    NSArray *arr = [[NSArray alloc] init];
+    arr = [NSArray arrayWithObjects:@"Personal Trainer", @"Group Fitness Instructor", @"Sport Specific Trainer", @"Yoga Instructor", @"Pilates Instructor", @"Health Coach",nil];
+    NSArray * arrImage = [[NSArray alloc] init];
+    
+    /*arrImage = [NSArray arrayWithObjects:[UIImage imageNamed:@"apple.png"], [UIImage *imageNamed:@"apple2.png"], [UIImage imageNamed:@"apple.png"], [UIImage imageNamed:@"apple2.png"], [UIImage imageNamed:@"apple.png"], [UIImage imageNamed:@"apple2.png"], [UIImage imageNamed:@"apple.png"], [UIImage imageNamed:@"apple2.png"], [UIImage imageNamed:@"apple.png"], [UIImage imageNamed:@"apple2.png"], nil];*/
+    
+    if(dropDown == nil) {
+        CGFloat f = 250;
+        dropDown = [[NIDropDown alloc]showDropDown:sender :&f :arr :arrImage :@"down"];
+        dropDown.delegate = self;
+    }
+    else {
+        [dropDown hideDropDown:sender];
+        [self rel];
+    }
+}
+
+- (void) niDropDownDelegateMethod: (NIDropDown *) sender {
+    [self rel];
+}
+
+-(void)rel{
+    //[dropDown release];
+    dropDown = nil;
+}
+
 
 @end

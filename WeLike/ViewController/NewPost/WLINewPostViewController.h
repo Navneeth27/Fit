@@ -16,6 +16,7 @@
 @property (strong, nonatomic) IBOutlet UIImageView *imageViewPost;
 @property (strong, nonatomic) IBOutlet UIButton *buttonPostImage;
 @property (strong, nonatomic) IBOutlet UITextView *textViewPost;
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
 
 - (IBAction)buttonPostImageTouchUpInside:(id)sender;
 - (IBAction)buttonSendTouchUpInside:(id)sender;
