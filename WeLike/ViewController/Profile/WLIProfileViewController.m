@@ -15,6 +15,7 @@
 #import "WLIWelcomeViewController.h"
 #import "WLIAppDelegate.h"
 #import <MediaPlayer/MediaPlayer.h>
+#import "LQSViewController.h"
 
 @implementation WLIProfileViewController
 MPMoviePlayerController *moviePlayerController;
@@ -71,6 +72,22 @@ MPMoviePlayerController *moviePlayerController;
         self.labelWeb.alpha = 0.0f;
         self.labelEmail.alpha = 0.0f;
     }
+    
+    UIButton *button =[[UIButton alloc] initWithFrame:CGRectMake(0, 0, 35, 35)];
+    [button setImage:[UIImage imageNamed:@"messagesbutton.png"] forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(goToMessages) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *back = [[UIBarButtonItem alloc] initWithCustomView:button];
+    
+    self.navigationItem.rightBarButtonItem =back;
+    
+    }
+
+-(void)goToMessages {
+    NSLog(@"Eh up, someone just pressed the button!");
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Home" style:UIBarButtonItemStylePlain target:nil action:nil];
+    LQSViewController *newVc = [[LQSViewController alloc]init];
+    [self.navigationController pushViewController:newVc animated:YES];
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated {

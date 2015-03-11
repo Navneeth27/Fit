@@ -29,6 +29,9 @@
 @property (strong, nonatomic) IBOutlet UITextField *textFieldAddress;
 @property (strong, nonatomic) IBOutlet MKMapView *mapViewLocation;
 
+
+
+
 - (IBAction)buttonSelectAvatarTouchUpInside:(UIButton *)sender;
 - (IBAction)handleLongTapGesture:(UILongPressGestureRecognizer *)sender;
 

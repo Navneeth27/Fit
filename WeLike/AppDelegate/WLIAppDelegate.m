@@ -52,6 +52,7 @@
     } else {
         [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"nav-back44.png"] forBarMetrics:UIBarMetricsDefault];
     }
+        
     
     // status bar appearance
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
