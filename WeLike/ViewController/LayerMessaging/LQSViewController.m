@@ -55,6 +55,7 @@
     
     // Display Alert Message
     [messageAlert show];
+    //messageAlert.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -64,7 +65,7 @@
 -(IBAction)SendBtnClick:(id)sender
 {
     NSLog(@"BtnClick");
-    [self sendMessage:@"test message sending"];
+    //[self sendMessage:@"test message sending"];
 }
 
 
@@ -237,7 +238,7 @@
     BOOL success = [self.queryController execute:&error];
     if (success) {
         NSLog(@"Query fetched %tu message objects", [self.queryController numberOfObjectsInSection:0]);
-        [self.tableView reloadData];
+       // [self.tableView reloadData];
     } else {
         NSLog(@"Query failed with error: %@", error);
     }
